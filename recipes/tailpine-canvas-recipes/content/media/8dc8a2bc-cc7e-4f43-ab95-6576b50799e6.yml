@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 8dc8a2bc-cc7e-4f43-ab95-6576b50799e6
+  bundle: image
+  default_langcode: en
+  depends:
+    ade5bfad-42ad-4036-b8b2-dc17a8ef04d8: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: christian-buehner-DItYlc26zVI-unsplash.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: p4
+      title: ''
+      width: 7952
+      height: 5304
+      entity: ade5bfad-42ad-4036-b8b2-dc17a8ef04d8

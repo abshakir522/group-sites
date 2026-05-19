@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 64c89dd0-2856-445f-ac05-eb744c410835
+  bundle: image
+  default_langcode: en
+  depends:
+    5fb20486-555d-4a01-8860-aab0e4c4c55a: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: logo7.png
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: l7
+      title: ''
+      width: 135
+      height: 34
+      entity: 5fb20486-555d-4a01-8860-aab0e4c4c55a

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 8da070bd-b2d7-4a09-81b7-f4a1256ff4bf
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: camera.jpg
+  uri:
+    -
+      value: 'public://2026-03/camera.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 384194
+  status:
+    -
+      value: true

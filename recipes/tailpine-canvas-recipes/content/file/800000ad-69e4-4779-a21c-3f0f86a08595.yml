@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 800000ad-69e4-4779-a21c-3f0f86a08595
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: leio-mclaren-L2dTmhQzx4Q-unsplash.jpg
+  uri:
+    -
+      value: 'public://2026-03/leio-mclaren-L2dTmhQzx4Q-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 2868535
+  status:
+    -
+      value: true

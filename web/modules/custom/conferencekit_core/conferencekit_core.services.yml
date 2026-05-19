@@ -1,0 +1,8 @@
+services:
+  conferencekit_core.front_page_path_processor:
+    class: Drupal\conferencekit_core\PathProcessor\ConferenceFrontPagePathProcessor
+    arguments:
+      - '@domain.negotiator'
+      - '@entity.repository'
+    tags:
+      - { name: path_processor_inbound, priority: 250 }

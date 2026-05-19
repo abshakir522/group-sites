@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 0e45f786-64c3-4f51-8c85-067e2f9f30aa
+  bundle: image
+  default_langcode: en
+  depends:
+    8cb089dd-ffa0-491c-a040-ae96cd5f8afa: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: nilshornschuh-lynx.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: lynx
+      title: ''
+      width: 1536
+      height: 1920
+      entity: 8cb089dd-ffa0-491c-a040-ae96cd5f8afa

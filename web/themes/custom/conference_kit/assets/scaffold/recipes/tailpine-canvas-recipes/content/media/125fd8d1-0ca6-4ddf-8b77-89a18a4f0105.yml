@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 125fd8d1-0ca6-4ddf-8b77-89a18a4f0105
+  bundle: image
+  default_langcode: en
+  depends:
+    6a2c9dc2-f518-4560-9308-29e1cca53743: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: diego-hernandez-MSepzbKFz10-unsplash.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: p5
+      title: ''
+      width: 3178
+      height: 3178
+      entity: 6a2c9dc2-f518-4560-9308-29e1cca53743

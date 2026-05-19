@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_us_footer
+    - field.storage.block_content.field_location
+  module:
+    - text
+id: block_content.contact_us_footer.field_location
+field_name: field_location
+entity_type: block_content
+bundle: contact_us_footer
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

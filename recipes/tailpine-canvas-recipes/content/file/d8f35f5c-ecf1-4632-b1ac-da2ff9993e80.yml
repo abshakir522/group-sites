@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d8f35f5c-ecf1-4632-b1ac-da2ff9993e80
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pexels-laptop.jpg
+  uri:
+    -
+      value: 'public://2026-03/pexels-laptop.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 317488
+  status:
+    -
+      value: true

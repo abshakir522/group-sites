@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: baefda1e-4eda-4a6a-9113-6aed6b7fda47
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: count_down.mp4
+  uri:
+    -
+      value: 'public://2026-03/count_down.mp4'
+  filemime:
+    -
+      value: video/mp4
+  filesize:
+    -
+      value: 3128195
+  status:
+    -
+      value: true

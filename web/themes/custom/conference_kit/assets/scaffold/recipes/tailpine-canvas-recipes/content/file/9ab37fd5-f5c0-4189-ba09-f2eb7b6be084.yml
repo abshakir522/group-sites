@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9ab37fd5-f5c0-4189-ba09-f2eb7b6be084
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: anonima_desktop.jpg
+  uri:
+    -
+      value: 'public://2026-03/anonima_desktop.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 400054
+  status:
+    -
+      value: true

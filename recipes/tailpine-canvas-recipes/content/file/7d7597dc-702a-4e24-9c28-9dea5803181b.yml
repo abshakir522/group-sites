@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 7d7597dc-702a-4e24-9c28-9dea5803181b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: compagnons-a19OVaa2rzA-unsplash.jpg
+  uri:
+    -
+      value: 'public://2026-03/compagnons-a19OVaa2rzA-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 1314649
+  status:
+    -
+      value: true

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d45781de-13b4-47de-9fca-893b26893dc0
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: stubaileyphoto-plane-6511877_1920.jpg
+  uri:
+    -
+      value: 'public://2026-03/stubaileyphoto-plane-6511877_1920.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 537044
+  status:
+    -
+      value: true

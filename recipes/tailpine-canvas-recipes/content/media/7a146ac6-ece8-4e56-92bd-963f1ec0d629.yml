@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 7a146ac6-ece8-4e56-92bd-963f1ec0d629
+  bundle: image
+  default_langcode: en
+  depends:
+    ea911821-6b97-4f4c-9731-df7f37133cb8: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: team3.png
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: t3
+      title: ''
+      width: 400
+      height: 600
+      entity: ea911821-6b97-4f4c-9731-df7f37133cb8

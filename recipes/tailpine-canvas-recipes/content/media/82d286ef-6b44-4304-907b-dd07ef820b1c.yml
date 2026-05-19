@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 82d286ef-6b44-4304-907b-dd07ef820b1c
+  bundle: image
+  default_langcode: en
+  depends:
+    b8909def-3dd6-471d-b913-c4960adcac5e: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: news1.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: news2
+      title: ''
+      width: 605
+      height: 330
+      entity: b8909def-3dd6-471d-b913-c4960adcac5e

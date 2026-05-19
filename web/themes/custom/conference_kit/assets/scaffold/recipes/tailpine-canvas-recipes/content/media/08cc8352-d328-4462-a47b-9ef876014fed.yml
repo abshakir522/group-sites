@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 08cc8352-d328-4462-a47b-9ef876014fed
+  bundle: image
+  default_langcode: en
+  depends:
+    1990d443-1273-4742-b91a-7f2851ea750e: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: heladodementa-technology-1587673_1920.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: tech
+      title: ''
+      width: 1920
+      height: 1440
+      entity: 1990d443-1273-4742-b91a-7f2851ea750e

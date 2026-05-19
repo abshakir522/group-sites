@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: a4a42e44-81a1-4732-ab5b-a8e9c12669a6
+  bundle: image
+  default_langcode: en
+  depends:
+    0d1a992f-f77e-4878-82ac-cbdcbc902324: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: pexels-blur-1853262_1920.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: trad
+      title: ''
+      width: 1920
+      height: 1440
+      entity: 0d1a992f-f77e-4878-82ac-cbdcbc902324

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5b4b2ac7-6295-49ad-83e6-d5436f459f6e
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: oguz-yagiz-kara-MZf0mI14RI0-unsplash.jpg
+  uri:
+    -
+      value: 'public://2026-03/oguz-yagiz-kara-MZf0mI14RI0-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 2472435
+  status:
+    -
+      value: true

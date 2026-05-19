@@ -1,0 +1,3108 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: 1ad68650-b159-4797-b4ad-e238e57dd227
+  default_langcode: en
+  depends:
+    47e87da2-ba6f-43aa-96d3-5c607f36838f: file
+    75f9178a-9c92-43f3-b0e6-cbec3ddc5d99: media
+    baefda1e-4eda-4a6a-9113-6aed6b7fda47: file
+    c86a1616-0a07-4f79-b7fa-a40fa59d35be: media
+    f9438eef-98e5-4c6e-84d9-e2e313457e25: file
+    380e2a33-fb4f-45d8-b6cd-d601263b6704: media
+    9ab37fd5-f5c0-4189-ba09-f2eb7b6be084: file
+    03262608-a64a-4b91-9af0-4c073f49135d: media
+    b54fb595-20d2-4963-b109-08d63723d7df: file
+    c0698f82-9114-465d-bb2e-70beff21e163: media
+    8cb089dd-ffa0-491c-a040-ae96cd5f8afa: file
+    0e45f786-64c3-4f51-8c85-067e2f9f30aa: media
+    30b51d8c-5997-4b18-bbba-63aad9145b7e: file
+    23e25430-0a6c-4f3d-b83a-045401cf0d09: media
+    57153882-289a-4d19-8192-927b24adf4fc: file
+    7e5cdbe2-31dd-46d8-aa7f-8233f23ee568: media
+    1c59f5ae-0479-41a0-850a-2bee5088e16f: file
+    43138d90-151e-4110-8f92-721131122a96: media
+    e3650ead-8aa7-4de3-8938-c275aef40a32: file
+    861f70f9-e9b8-49d7-a404-c7ba475bfc21: media
+    befcb988-2a2c-4b71-a008-a423b6e0115a: file
+    74230ef2-1529-4228-bb51-227c383129ef: media
+    725ab667-640e-4757-a385-111f2c4cee85: file
+    90fd3eaa-2f14-49a3-b3af-20cc75ca8ce6: media
+    d45781de-13b4-47de-9fca-893b26893dc0: file
+    95d7a0c5-7469-4577-ac22-d65e8a29aa96: media
+    29ba176c-a227-4bfa-843e-e6c17439837b: file
+    41ded319-b3f6-47ee-8d83-b126adab22fb: media
+    8da070bd-b2d7-4a09-81b7-f4a1256ff4bf: file
+    f41be4b8-49be-423a-8cdd-27084d1567c8: media
+    a8d653bf-d3f4-4218-bf38-259412e76acb: file
+    eda16bf4-0c82-4093-8437-e34376c45cf7: media
+    d8f35f5c-ecf1-4632-b1ac-da2ff9993e80: file
+    8f93e7ae-0744-4f0a-ac80-4e4509bba012: media
+    5b4b2ac7-6295-49ad-83e6-d5436f459f6e: file
+    b1664105-143b-4ed4-8505-467b2e6bd576: media
+    800000ad-69e4-4779-a21c-3f0f86a08595: file
+    b4fa4cab-d6aa-4932-ac2a-869e9c3fcd51: media
+    7d7597dc-702a-4e24-9c28-9dea5803181b: file
+    25479f81-ab62-4c63-91c9-ed4dbd3e5447: media
+    062a8999-4ec4-46be-9306-b9f1367d83ca: file
+    97c97311-5114-4faf-a351-b1785527145b: media
+    0346d801-7eb1-4c09-81cd-c03dd16fa191: file
+    ab8bda89-4d79-4f9d-8703-0831e72b1390: media
+    1990d443-1273-4742-b91a-7f2851ea750e: file
+    08cc8352-d328-4462-a47b-9ef876014fed: media
+    0d1a992f-f77e-4878-82ac-cbdcbc902324: file
+    a4a42e44-81a1-4732-ab5b-a8e9c12669a6: media
+    5e9259df-dfce-4afe-828e-4a8f244649eb: file
+    6a989f34-20f3-4ea2-883d-38e200ef29ef: media
+    d53bba3e-83b0-42e9-9b6e-d4064446ca2e: file
+    5a375bef-1cf2-45f0-8f4e-0660c6b7d107: media
+    5fb20486-555d-4a01-8860-aab0e4c4c55a: file
+    64c89dd0-2856-445f-ac05-eb744c410835: media
+    1d3f84a1-8afa-45b6-9649-817411abd8e5: file
+    da4571f5-cdbb-4b17-8f42-6fe334915329: media
+    296f4a67-ab1a-4224-b0a8-a72efff2ffd3: file
+    0471974a-8087-44c4-b42c-8fe5069b6d19: media
+    bf1ac4b4-1e3b-4a20-ada4-41560524b873: file
+    4615c022-3c52-404b-8e8b-827d03167de6: media
+    11469761-6367-4901-82cf-b0f6e492c781: file
+    687f67cd-6a32-451f-aeac-2796caacf4a7: media
+    3daf00b8-06a7-4549-bf20-1c9ff84cbb73: file
+    7f9349d2-0f2a-4dda-9f44-f78ea1e6e6f7: media
+    37612f36-57f6-4223-a6a9-e4b02eb2113d: file
+    f4c0bb68-bdf9-4241-8e71-f7dcbe89c026: media
+    ea911821-6b97-4f4c-9731-df7f37133cb8: file
+    7a146ac6-ece8-4e56-92bd-963f1ec0d629: media
+    f86313df-13de-4cde-ab87-2092f9f16e29: file
+    c1131686-a311-4b85-b63e-f3d82da5bf61: media
+    2954b944-32e4-4597-aef4-90c48027bac1: file
+    08ce250a-203e-4a62-953a-9d8661979c9e: media
+    aa9dfb49-387f-4654-b777-a7b86d1d8539: file
+    31d23973-52fc-4b08-a991-f709124ad93e: media
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  owner:
+    -
+      target_id: 1
+  title:
+    -
+      value: Showcase
+  components:
+    -
+      uuid: adfe0f2d-5123-4f8a-befc-40ce6ad17584
+      component_id: sdc.tailpine.base_hero
+      inputs:
+        background_type: image
+        bg_color: primary
+        bg_image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 75f9178a-9c92-43f3-b0e6-cbec3ddc5d99
+            target_type: media
+        bg_video:
+          sourceType: default-relative-url
+          value:
+            src: 'https://media.istockphoto.com/id/1340051874/video/aerial-top-down-view-of-a-container-cargo-ship.mp4?s=mp4-640x640-is&k=20&c=5qPpYI7TOJiOYzKq9V2myBvUno6Fq2XM3ITPGFE8Cd8='
+            poster: 'https://example.com/600x400.png'
+          jsonSchema:
+            type: object
+            properties:
+              src:
+                type: string
+                contentMediaType: 'video/*'
+                format: uri-reference
+                x-allowed-schemes:
+                  - http
+                  - https
+              poster:
+                type: string
+                contentMediaType: 'image/*'
+                format: uri-reference
+                x-allowed-schemes:
+                  - http
+                  - https
+            required:
+              - src
+          componentId: sdc.tailpine.base_hero
+        enable_overlay: true
+        overlay_color: black
+        padding_top_m: 320px
+        padding_top_t: 384px
+        padding_top_D: 384px
+        padding_bottom_m: 140px
+        padding_bottom_t: 160px
+        padding_bottom_D: 192px
+        content_direction: row
+        content_width: '80'
+        show_heading: true
+        show_description: true
+        show_cta_primary: true
+        enable_animation: false
+        video_autoplay: false
+        video_loop: false
+        video_muted: false
+        show_content_region: false
+        show_cta_secondary: false
+        overlay_opacity: '40'
+    -
+      parent_uuid: adfe0f2d-5123-4f8a-befc-40ce6ad17584
+      slot: heading
+      uuid: 6727a4f8-2454-486f-8034-5182301ced96
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: '      Redefining Learning for a New Era'
+        text_size: text-8xl(96px)
+        font_weight: font-extrabold
+        heading_text_width: full
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+        level: 1
+        text_color: white
+    -
+      parent_uuid: adfe0f2d-5123-4f8a-befc-40ce6ad17584
+      slot: description
+      uuid: 2e58a173-430e-4554-b4ee-82629660bf20
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        text_content:
+          value: '<p>Techesolve provides custom software, cloud services, and IT support</p>'
+          format: canvas_html_block
+        html_tag: div
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '48'
+        text_color: white
+        text_size: text-xl(20px)
+    -
+      parent_uuid: adfe0f2d-5123-4f8a-befc-40ce6ad17584
+      slot: cta_primary
+      uuid: 7cd7145c-4557-47be-8ccb-309925389989
+      component_id: sdc.tailpine.canvas-cta
+      inputs:
+        link: 'https://example.com'
+        color_schema: primary
+        button_variant: hover_arrow_move
+        title: 'READ MORE'
+    -
+      uuid: 91aa85da-6885-43d2-b7ed-673fc27f92a0
+      component_id: sdc.tailpine.base_hero
+      inputs:
+        background_type: video
+        bg_color: primary
+        bg_image:
+          sourceType: default-relative-url
+          value:
+            src: bg.jpg
+            alt: 'Background Image'
+            width: 1900
+            height: 999
+          jsonSchema:
+            type: object
+            properties:
+              src:
+                type: string
+                contentMediaType: 'image/*'
+                format: uri-reference
+                x-allowed-schemes:
+                  - http
+                  - https
+              alt:
+                type: string
+              width:
+                type: integer
+              height:
+                type: integer
+            required:
+              - src
+          componentId: sdc.tailpine.base_hero
+        bg_video:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: c86a1616-0a07-4f79-b7fa-a40fa59d35be
+            target_type: media
+        enable_overlay: true
+        overlay_color: black
+        padding_top_m: 320px
+        padding_top_t: 384px
+        padding_top_D: 384px
+        padding_bottom_m: 56px
+        padding_bottom_t: 160px
+        padding_bottom_D: 192px
+        content_direction: column
+        content_width: '80'
+        show_heading: true
+        show_description: true
+        show_cta_primary: true
+        enable_animation: true
+        video_autoplay: true
+        video_loop: true
+        video_muted: true
+        show_content_region: false
+        show_cta_secondary: true
+        overlay_opacity: '40'
+    -
+      parent_uuid: 91aa85da-6885-43d2-b7ed-673fc27f92a0
+      slot: heading
+      uuid: 7a0a4875-39b2-42b1-98b8-eb758fe2cd52
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: '      Empowering Business Growth with Technology'
+        text_size: text-8xl(96px)
+        font_weight: font-extrabold
+        heading_text_width: full
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+        level: 1
+        text_color: white
+    -
+      parent_uuid: 91aa85da-6885-43d2-b7ed-673fc27f92a0
+      slot: description
+      uuid: 787a084b-2b52-420f-8790-ee70412546a1
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        text_content:
+          value: '<p>Techesolve provides custom software, cloud services, and IT support to streamline operations and drive business success.</p>'
+          format: canvas_html_block
+        html_tag: div
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '32'
+        text_color: white
+        text_size: text-xl(20px)
+    -
+      parent_uuid: 91aa85da-6885-43d2-b7ed-673fc27f92a0
+      slot: cta_primary
+      uuid: 517d6583-6918-4075-a20c-3fbb24cbf695
+      component_id: sdc.tailpine.canvas-cta
+      inputs:
+        link: 'https://example.com'
+        color_schema: primary
+        button_variant: hover_arrow_move
+        title: 'READ MORE'
+    -
+      parent_uuid: 91aa85da-6885-43d2-b7ed-673fc27f92a0
+      slot: cta_secondary
+      uuid: 46e5eed7-efa5-4e08-8561-c2e0f20ac2c7
+      component_id: sdc.tailpine.canvas-cta
+      inputs:
+        link: 'https://example.com'
+        button_variant: gradient
+        title: 'LEARN MORE'
+    -
+      uuid: c6b23186-9de0-469c-88c2-d9954c149632
+      component_id: sdc.tailpine.base_hero
+      inputs:
+        background_type: image
+        bg_color: primary
+        bg_image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 380e2a33-fb4f-45d8-b6cd-d601263b6704
+            target_type: media
+        bg_video:
+          sourceType: default-relative-url
+          value:
+            src: 'https://media.istockphoto.com/id/1340051874/video/aerial-top-down-view-of-a-container-cargo-ship.mp4?s=mp4-640x640-is&k=20&c=5qPpYI7TOJiOYzKq9V2myBvUno6Fq2XM3ITPGFE8Cd8='
+            poster: 'https://example.com/600x400.png'
+          jsonSchema:
+            type: object
+            properties:
+              src:
+                type: string
+                contentMediaType: 'video/*'
+                format: uri-reference
+                x-allowed-schemes:
+                  - http
+                  - https
+              poster:
+                type: string
+                contentMediaType: 'image/*'
+                format: uri-reference
+                x-allowed-schemes:
+                  - http
+                  - https
+            required:
+              - src
+          componentId: sdc.tailpine.base_hero
+        enable_overlay: true
+        overlay_color: black
+        padding_top_m: 320px
+        padding_top_t: 384px
+        padding_top_D: 384px
+        padding_bottom_m: 128px
+        padding_bottom_t: 140px
+        padding_bottom_D: 192px
+        content_direction: column
+        content_width: '80'
+        show_heading: true
+        show_description: true
+        show_cta_primary: true
+        enable_animation: true
+        video_autoplay: false
+        video_loop: false
+        video_muted: false
+        show_content_region: false
+        show_cta_secondary: true
+        overlay_opacity: '30'
+        content_alignment: center
+    -
+      parent_uuid: c6b23186-9de0-469c-88c2-d9954c149632
+      slot: heading
+      uuid: db084655-81f8-45db-9e68-19e48407fe4c
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: '      Empowering Business Growth with Technology'
+        text_size: text-8xl(96px)
+        font_weight: font-extrabold
+        heading_text_width: full
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+        level: 1
+        text_color: white
+        horizontal_align: center
+    -
+      parent_uuid: c6b23186-9de0-469c-88c2-d9954c149632
+      slot: description
+      uuid: ea9ce112-ecac-4093-b3c1-df6dbbe8f7ba
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        text_content:
+          value: '<p>Techesolve provides custom software, cloud services, and IT support to streamline operations and drive business success.</p>'
+          format: canvas_html_block
+        html_tag: div
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '32'
+        text_color: white
+        text_size: text-xl(20px)
+        vertical_align: bottom
+        horizontal_align: center
+    -
+      parent_uuid: c6b23186-9de0-469c-88c2-d9954c149632
+      slot: cta_primary
+      uuid: cfdb2cdb-b2b4-4b68-9e45-0bedda609f8c
+      component_id: sdc.tailpine.canvas-cta
+      inputs:
+        link: 'https://example.com'
+        color_schema: primary
+        button_variant: hover_arrow_move
+        title: 'READ MORE'
+    -
+      parent_uuid: c6b23186-9de0-469c-88c2-d9954c149632
+      slot: cta_secondary
+      uuid: aa550949-0154-4c0e-b508-fd6404bf3dbe
+      component_id: sdc.tailpine.canvas-cta
+      inputs:
+        link: 'https://example.com'
+        button_variant: outline_with_arrow
+        title: 'LEARN MORE'
+        color_schema: primary
+    -
+      uuid: fdae98f4-c482-4652-8a8e-52d6189b10e1
+      component_id: sdc.tailpine.base-media-text
+      inputs:
+        image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 03262608-a64a-4b91-9af0-4c073f49135d
+            target_type: media
+        layout_direction: row
+        enable_container: true
+        show_description: true
+        show_heading: true
+        gap: 24px
+        section_padding_inline: '0'
+        section_padding_block: '52'
+        content_padding_inline: '0'
+        content_padding_block: '0'
+        bg_color: transparent
+    -
+      parent_uuid: fdae98f4-c482-4652-8a8e-52d6189b10e1
+      slot: heading
+      uuid: 6e9d1603-48b7-405c-a351-34047080a349
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'Briefly And Concisely Explain What You Do For Your Audience'
+        text_size: text-5xl(48px)
+        font_weight: font-normal
+        heading_text_width: 90%
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+    -
+      parent_uuid: fdae98f4-c482-4652-8a8e-52d6189b10e1
+      slot: text
+      uuid: 7faf3618-3065-4469-844c-fcc940f5c9bc
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        text_content:
+          value: '<p>Ignorare commodius exquirere solida reprehensione sunt navigandi ita ignoratione. Linguam dediti error campum sequatur ullam concertationesque administrari fugit.Ignorare commodius exquirere solida reprehensione sunt navigandi ita ignoratione</p>'
+          format: canvas_html_block
+        html_tag: div
+        text_width: 90%
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+    -
+      parent_uuid: fdae98f4-c482-4652-8a8e-52d6189b10e1
+      slot: cta
+      uuid: 4a66495a-6923-4975-b09a-7100c6837aad
+      component_id: sdc.tailpine.canvas-cta
+      inputs:
+        title: 'Click Here'
+        link: 'https://example.com'
+        color_schema: primary
+        button_variant: hover_arrow_move
+    -
+      uuid: 993cefb6-a35e-44b0-872b-717f7d2ca0f2
+      component_id: sdc.tailpine.base-media-text
+      inputs:
+        image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: c0698f82-9114-465d-bb2e-70beff21e163
+            target_type: media
+        layout_direction: row-reverse
+        enable_container: true
+        show_description: true
+        show_heading: true
+        gap: 24px
+        section_padding_inline: '0'
+        section_padding_block: '52'
+        content_padding_inline: '0'
+        content_padding_block: '20'
+        bg_color: transparent
+        content_vertical_alignment: center
+    -
+      parent_uuid: 993cefb6-a35e-44b0-872b-717f7d2ca0f2
+      slot: heading
+      uuid: bbeed369-2ee2-4695-89db-7e8dfa8959e2
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'Briefly And Concisely Explain What You Do For Your Audience'
+        text_size: text-5xl(48px)
+        font_weight: font-normal
+        heading_text_width: 90%
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+    -
+      parent_uuid: 993cefb6-a35e-44b0-872b-717f7d2ca0f2
+      slot: text
+      uuid: d3a91e52-8909-4984-83ce-a24635e1c779
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        text_content:
+          value: '<p>Ignorare commodius exquirere solida reprehensione sunt navigandi ita ignoratione. Linguam dediti error campum sequatur ullam concertationesque administrari fugit.Ignorare commodius exquirere solida reprehensione sunt navigandi ita ignoratione</p>'
+          format: canvas_html_block
+        html_tag: div
+        text_width: 90%
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+    -
+      parent_uuid: 993cefb6-a35e-44b0-872b-717f7d2ca0f2
+      slot: cta
+      uuid: 6f905a20-d0c8-4db2-b10e-71c60b46a6d6
+      component_id: sdc.tailpine.canvas-cta
+      inputs:
+        title: 'Click Here'
+        link: 'https://example.com'
+        color_schema: primary
+        button_variant: hover_arrow_move
+    -
+      uuid: 456a4328-5f92-4486-aab4-5df4cddf8087
+      component_id: sdc.tailpine.canvas-section
+      inputs:
+        background_type: image
+        image_width: '50'
+        bg_color: medium
+        container_width: 100%
+        grid_layout: four_equal_columns
+        mobile_columns: cols_one
+        padding_top: '64'
+        padding_bottom: '64'
+        enable_overlay: false
+        overlay_color: dark
+        reverse_top_content: false
+        show_top_region: true
+        show_content_region: true
+        show_bottom_region: false
+        show_cta: false
+        enable_container: true
+        show_heading: true
+        padding_t: 64px
+        padding_b: 32px
+        show_description: true
+        gap: '24'
+    -
+      parent_uuid: 456a4328-5f92-4486-aab4-5df4cddf8087
+      slot: heading
+      uuid: 086cffb9-7655-46b0-a394-b844483e8aca
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'Briefly And Concisely Explain What You Do For Your Audience'
+        text_size: text-5xl(48px)
+        font_weight: font-normal
+        heading_text_width: full
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+    -
+      parent_uuid: 456a4328-5f92-4486-aab4-5df4cddf8087
+      slot: text
+      uuid: 40e2862a-17ce-4068-9446-4d4dc6d2d59d
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        text_content:
+          value: '<p>Ponatur siculis torquatos corporisque litterae consuetudine altera. Possumus triarius infinitum liber dixit sapiente quiddam.</p>'
+          format: canvas_html_block
+        html_tag: div
+        text_width: 90%
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+    -
+      parent_uuid: 456a4328-5f92-4486-aab4-5df4cddf8087
+      slot: content
+      uuid: dbd86f3e-5971-4a50-bc01-bcaab65135b3
+      component_id: sdc.tailpine.base-card
+      inputs:
+        show_image: false
+        show_heading: true
+        show_subtitle: true
+        subtitle_alignment: true
+        show_description: false
+        show_cta: false
+        show_secondary_image: false
+        background_type: image
+        background_image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 0e45f786-64c3-4f51-8c85-067e2f9f30aa
+            target_type: media
+        bg_color: white
+        enable_overlay: true
+        overlay_color: dark
+        corner_style: square
+        card_padding_inline: '0'
+        card_padding_block: '0'
+        content_padding_inline: '20'
+        content_padding_block: '20'
+        content_alignment: 'justify-start items-start'
+        cta_alignment: self-start
+        gap: '24'
+    -
+      parent_uuid: dbd86f3e-5971-4a50-bc01-bcaab65135b3
+      slot: heading
+      uuid: e18fd628-5e08-497f-96da-4d33ebfe1ae4
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'Card Style One '
+        text_size: text-xl(20px)
+        font_weight: font-bold
+        heading_text_width: full
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+        level: 2
+        horizontal_align: center
+    -
+      parent_uuid: dbd86f3e-5971-4a50-bc01-bcaab65135b3
+      slot: subtitle
+      uuid: 1f74f4b9-25df-4c0f-8cfd-ea8d1ef1fab5
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        html_tag: span
+        bg_color: primary
+        padding_inline: '16'
+        padding_block: '16'
+        margin_inline: '0'
+        margin_block: '0'
+        text_content:
+          value: '<p>Title One</p>'
+          format: canvas_html_block
+        text_classes: rounded-lg
+    -
+      parent_uuid: 456a4328-5f92-4486-aab4-5df4cddf8087
+      slot: content
+      uuid: 04680672-5099-46cc-8058-5ac1135a4991
+      component_id: sdc.tailpine.base-card
+      inputs:
+        show_image: false
+        show_heading: true
+        show_subtitle: true
+        subtitle_alignment: true
+        show_description: false
+        show_cta: false
+        show_secondary_image: false
+        background_type: image
+        background_image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 23e25430-0a6c-4f3d-b83a-045401cf0d09
+            target_type: media
+        bg_color: white
+        enable_overlay: true
+        overlay_color: dark
+        corner_style: square
+        card_padding_inline: '0'
+        card_padding_block: '0'
+        content_padding_inline: '20'
+        content_padding_block: '20'
+        content_alignment: 'justify-center items-center'
+        cta_alignment: self-start
+        gap: '24'
+    -
+      parent_uuid: 04680672-5099-46cc-8058-5ac1135a4991
+      slot: heading
+      uuid: 375549c0-3006-46f3-bd5a-83a321215baf
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'Card Style twp'
+        text_size: text-xl(20px)
+        font_weight: font-bold
+        heading_text_width: full
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+        level: 2
+        horizontal_align: center
+    -
+      parent_uuid: 04680672-5099-46cc-8058-5ac1135a4991
+      slot: subtitle
+      uuid: f2d196be-41d8-4bd8-978d-454afec3d2ac
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        html_tag: span
+        bg_color: primary
+        padding_inline: '16'
+        padding_block: '16'
+        margin_inline: '0'
+        margin_block: '0'
+        text_content:
+          value: '<p>Title two</p>'
+          format: canvas_html_block
+        text_classes: rounded-lg
+    -
+      parent_uuid: 456a4328-5f92-4486-aab4-5df4cddf8087
+      slot: content
+      uuid: 9f761cf6-ba19-4001-98c1-5da6b2fba7a2
+      component_id: sdc.tailpine.base-card
+      inputs:
+        show_image: true
+        show_heading: true
+        show_subtitle: true
+        subtitle_alignment: true
+        show_description: true
+        show_cta: false
+        show_secondary_image: false
+        background_type: color
+        background_image:
+          sourceType: default-relative-url
+          value:
+            src: card-bg.jpg
+            alt: 'Card background'
+            width: 800
+            height: 600
+          jsonSchema:
+            type: object
+            properties:
+              src:
+                type: string
+                contentMediaType: 'image/*'
+                format: uri-reference
+                x-allowed-schemes:
+                  - http
+                  - https
+              alt:
+                type: string
+              width:
+                type: integer
+              height:
+                type: integer
+            required:
+              - src
+          componentId: sdc.tailpine.base-card
+        enable_overlay: false
+        overlay_color: dark
+        corner_style: square
+        card_padding_inline: '0'
+        card_padding_block: '0'
+        content_padding_inline: '24'
+        content_padding_block: '40'
+        content_alignment: 'justify-start items-start'
+        cta_alignment: self-start
+        bg_color: white
+    -
+      parent_uuid: 9f761cf6-ba19-4001-98c1-5da6b2fba7a2
+      slot: image
+      uuid: b17749cc-3dbb-4da1-a17c-7d1093f98bd6
+      component_id: sdc.tailpine.image
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 7e5cdbe2-31dd-46d8-aa7f-8233f23ee568
+            target_type: media
+        url: 'https://example.com'
+        enable_hover_zoom: false
+        aspect_ratio: '4:3'
+    -
+      parent_uuid: 9f761cf6-ba19-4001-98c1-5da6b2fba7a2
+      slot: heading
+      uuid: 716d4b88-8603-4e1f-b5c4-779fd92e820e
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'Lorem ipsum dolor'
+        text_size: text-xl(20px)
+        font_weight: font-bold
+        heading_text_width: full
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+        level: 2
+    -
+      parent_uuid: 9f761cf6-ba19-4001-98c1-5da6b2fba7a2
+      slot: subtitle
+      uuid: 70a44cba-7072-4509-85d9-c0491ec4f6b0
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        html_tag: span
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        text_content:
+          value: '<p>TIGER</p>'
+          format: canvas_html_block
+        text_size: text-xl(20px)
+        text_color: medium
+        text_classes: font-semibold
+    -
+      parent_uuid: 9f761cf6-ba19-4001-98c1-5da6b2fba7a2
+      slot: text
+      uuid: 268a59b5-b9a9-49f1-b486-b17bd777c581
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        text_content:
+          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing&nbsp;</p>'
+          format: canvas_html_block
+        text_width: 90%
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        text_size: text-base(16px)
+        text_color: medium
+    -
+      parent_uuid: 456a4328-5f92-4486-aab4-5df4cddf8087
+      slot: content
+      uuid: 0c691e49-dd5e-407e-b840-9f9657e6ae75
+      component_id: sdc.tailpine.base-card
+      inputs:
+        show_image: true
+        show_heading: true
+        show_subtitle: false
+        subtitle_alignment: true
+        show_description: true
+        show_cta: true
+        show_secondary_image: false
+        background_type: image
+        background_image:
+          sourceType: default-relative-url
+          value:
+            src: card-bg.jpg
+            alt: 'Card background'
+            width: 800
+            height: 600
+          jsonSchema:
+            type: object
+            properties:
+              src:
+                type: string
+                contentMediaType: 'image/*'
+                format: uri-reference
+                x-allowed-schemes:
+                  - http
+                  - https
+              alt:
+                type: string
+              width:
+                type: integer
+              height:
+                type: integer
+            required:
+              - src
+          componentId: sdc.tailpine.base-card
+        bg_color: white
+        enable_overlay: false
+        overlay_color: dark
+        corner_style: square
+        card_padding_inline: '0'
+        card_padding_block: '0'
+        content_padding_inline: '20'
+        content_padding_block: '40'
+        content_alignment: 'justify-center items-center'
+        cta_alignment: self-start
+        gap: '8'
+    -
+      parent_uuid: 0c691e49-dd5e-407e-b840-9f9657e6ae75
+      slot: image
+      uuid: 69ea4656-9252-421c-b13e-d54b90d3d592
+      component_id: sdc.tailpine.image
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 43138d90-151e-4110-8f92-721131122a96
+            target_type: media
+        url: 'https://example.com'
+        enable_hover_zoom: false
+        aspect_ratio: '4:3'
+    -
+      parent_uuid: 0c691e49-dd5e-407e-b840-9f9657e6ae75
+      slot: cta
+      uuid: 30fa89b0-7a49-4503-a39b-44422b0289d8
+      component_id: sdc.tailpine.canvas-cta
+      inputs:
+        title: 'Click Here'
+        link: 'https://example.com'
+        button_variant: with_arrow
+        color_schema: primary
+        size: rounded-sm
+    -
+      parent_uuid: 0c691e49-dd5e-407e-b840-9f9657e6ae75
+      slot: heading
+      uuid: e2ceb496-b8da-4168-ae40-99cb5e80e460
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'Card Style four'
+        text_size: text-xl(20px)
+        font_weight: font-bold
+        heading_text_width: full
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+        level: 2
+        horizontal_align: center
+    -
+      parent_uuid: 0c691e49-dd5e-407e-b840-9f9657e6ae75
+      slot: text
+      uuid: c74c7ac3-9519-45b0-97ca-6539848648a7
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        text_content:
+          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, euismod</p>'
+          format: canvas_html_block
+        html_tag: div
+        text_width: full
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        horizontal_align: center
+    -
+      uuid: 35e5e312-41a1-48d9-9f91-8e296e80ae67
+      component_id: sdc.tailpine.canvas-section
+      inputs:
+        background_type: image
+        image_width: '50'
+        bg_color: secondary
+        container_width: 100%
+        grid_layout: four_equal_columns
+        mobile_columns: cols_one
+        padding_top: '64'
+        padding_bottom: '64'
+        enable_overlay: false
+        overlay_color: dark
+        reverse_top_content: false
+        show_top_region: true
+        show_content_region: true
+        show_bottom_region: false
+        show_cta: false
+        enable_container: true
+        show_heading: true
+        padding_t: 64px
+        padding_b: 32px
+        show_description: true
+        gap: '24'
+    -
+      parent_uuid: 35e5e312-41a1-48d9-9f91-8e296e80ae67
+      slot: heading
+      uuid: 3aa3b9d4-a309-49ac-8bb9-a148bf7d7ca4
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'Briefly And Concisely Explain What You Do For Your Audience'
+        text_size: text-5xl(48px)
+        font_weight: font-normal
+        heading_text_width: full
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+    -
+      parent_uuid: 35e5e312-41a1-48d9-9f91-8e296e80ae67
+      slot: text
+      uuid: 90e02b05-350f-448d-a1e2-2c9ab983e554
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        text_content:
+          value: '<p>Ponatur siculis torquatos corporisque litterae consuetudine altera. Possumus triarius infinitum liber dixit sapiente quiddam.</p>'
+          format: canvas_html_block
+        html_tag: div
+        text_width: 90%
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+    -
+      parent_uuid: 35e5e312-41a1-48d9-9f91-8e296e80ae67
+      slot: content
+      uuid: 33761a45-8225-44d4-a513-5b9e1a779da2
+      component_id: sdc.tailpine.base-card
+      inputs:
+        show_image: false
+        show_heading: true
+        show_subtitle: true
+        subtitle_alignment: true
+        show_description: false
+        show_cta: false
+        show_secondary_image: false
+        background_type: image
+        background_image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 861f70f9-e9b8-49d7-a404-c7ba475bfc21
+            target_type: media
+        bg_color: white
+        enable_overlay: true
+        overlay_color: dark
+        corner_style: square
+        card_padding_inline: '0'
+        card_padding_block: '0'
+        content_padding_inline: '20'
+        content_padding_block: '20'
+        content_alignment: 'justify-end items-start'
+        cta_alignment: self-start
+        gap: '24'
+    -
+      parent_uuid: 33761a45-8225-44d4-a513-5b9e1a779da2
+      slot: heading
+      uuid: 4aad8e31-8bcc-4a93-bf3f-4a680057d809
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'Card Style One '
+        text_size: text-xl(20px)
+        font_weight: font-bold
+        heading_text_width: full
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+        level: 2
+    -
+      parent_uuid: 33761a45-8225-44d4-a513-5b9e1a779da2
+      slot: subtitle
+      uuid: 65fcfb29-2b30-4f16-b3a3-66a149d79dde
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        html_tag: span
+        bg_color: primary
+        padding_inline: '16'
+        padding_block: '16'
+        margin_inline: '0'
+        margin_block: '0'
+        text_content:
+          value: '<p>Title One</p>'
+          format: canvas_html_block
+        text_classes: rounded-lg
+    -
+      parent_uuid: 35e5e312-41a1-48d9-9f91-8e296e80ae67
+      slot: content
+      uuid: a4444296-d5b2-4c6e-93ba-ce0ed8daf284
+      component_id: sdc.tailpine.base-card
+      inputs:
+        show_image: false
+        show_heading: true
+        show_subtitle: true
+        subtitle_alignment: true
+        show_description: false
+        show_cta: false
+        show_secondary_image: false
+        background_type: image
+        background_image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 74230ef2-1529-4228-bb51-227c383129ef
+            target_type: media
+        bg_color: white
+        enable_overlay: true
+        overlay_color: dark
+        corner_style: square
+        card_padding_inline: '0'
+        card_padding_block: '0'
+        content_padding_inline: '20'
+        content_padding_block: '20'
+        content_alignment: 'justify-center items-center'
+        cta_alignment: self-start
+        gap: '24'
+    -
+      parent_uuid: a4444296-d5b2-4c6e-93ba-ce0ed8daf284
+      slot: heading
+      uuid: 46a7e866-11fb-4293-a954-abd357cfa56e
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'Card Style One '
+        text_size: text-xl(20px)
+        font_weight: font-bold
+        heading_text_width: full
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+        level: 2
+        horizontal_align: center
+    -
+      parent_uuid: a4444296-d5b2-4c6e-93ba-ce0ed8daf284
+      slot: subtitle
+      uuid: a7df801b-f095-4a12-bf1d-e8c4dc65c897
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        html_tag: span
+        bg_color: primary
+        padding_inline: '16'
+        padding_block: '16'
+        margin_inline: '0'
+        margin_block: '0'
+        text_content:
+          value: '<p>Title One</p>'
+          format: canvas_html_block
+        text_classes: rounded-lg
+    -
+      parent_uuid: 35e5e312-41a1-48d9-9f91-8e296e80ae67
+      slot: content
+      uuid: adcfb16a-d1e2-4ae9-afd0-f880ecc4d30c
+      component_id: sdc.tailpine.base-card
+      inputs:
+        show_image: true
+        show_heading: true
+        show_subtitle: true
+        subtitle_alignment: true
+        show_description: false
+        show_cta: true
+        show_secondary_image: false
+        background_type: color
+        background_image:
+          sourceType: default-relative-url
+          value:
+            src: card-bg.jpg
+            alt: 'Card background'
+            width: 800
+            height: 600
+          jsonSchema:
+            type: object
+            properties:
+              src:
+                type: string
+                contentMediaType: 'image/*'
+                format: uri-reference
+                x-allowed-schemes:
+                  - http
+                  - https
+              alt:
+                type: string
+              width:
+                type: integer
+              height:
+                type: integer
+            required:
+              - src
+          componentId: sdc.tailpine.base-card
+        bg_color: white
+        enable_overlay: false
+        overlay_color: dark
+        corner_style: square
+        card_padding_inline: '0'
+        card_padding_block: '0'
+        content_padding_inline: '20'
+        content_padding_block: '20'
+        content_alignment: 'justify-end items-start'
+        cta_alignment: self-start
+        gap: '24'
+    -
+      parent_uuid: adcfb16a-d1e2-4ae9-afd0-f880ecc4d30c
+      slot: image
+      uuid: a10c3530-ee17-4d85-b69c-c2426dd992b0
+      component_id: sdc.tailpine.image
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 90fd3eaa-2f14-49a3-b3af-20cc75ca8ce6
+            target_type: media
+        url: 'https://example.com'
+        enable_hover_zoom: false
+        aspect_ratio: '4:3'
+    -
+      parent_uuid: adcfb16a-d1e2-4ae9-afd0-f880ecc4d30c
+      slot: cta
+      uuid: 3fad2786-19b8-48f0-bd75-2f5544dffcfa
+      component_id: sdc.tailpine.canvas-cta
+      inputs:
+        title: 'Click Here'
+        link: 'https://example.com'
+        button_variant: with_arrow
+        color_schema: primary
+        size: rounded-sm
+    -
+      parent_uuid: adcfb16a-d1e2-4ae9-afd0-f880ecc4d30c
+      slot: heading
+      uuid: 4f7ea328-3a50-422d-8524-a8fa4b123cfe
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'Card Style free'
+        text_size: text-xl(20px)
+        font_weight: font-bold
+        heading_text_width: full
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+        level: 2
+    -
+      parent_uuid: adcfb16a-d1e2-4ae9-afd0-f880ecc4d30c
+      slot: subtitle
+      uuid: 83e1a342-81dd-4a7f-94f4-285ca820dc0a
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        html_tag: span
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        text_content:
+          value: '<p>Ticket</p>'
+          format: canvas_html_block
+        text_size: text-xl(20px)
+        text_color: medium
+        text_classes: font-semibold
+    -
+      parent_uuid: 35e5e312-41a1-48d9-9f91-8e296e80ae67
+      slot: content
+      uuid: 4df9b93e-a5b0-4b72-b726-fea456d0d5bc
+      component_id: sdc.tailpine.base-card
+      inputs:
+        show_image: true
+        show_heading: true
+        show_subtitle: false
+        subtitle_alignment: true
+        show_description: true
+        show_cta: true
+        show_secondary_image: false
+        background_image:
+          sourceType: default-relative-url
+          value:
+            src: card-bg.jpg
+            alt: 'Card background'
+            width: 800
+            height: 600
+          jsonSchema:
+            type: object
+            properties:
+              src:
+                type: string
+                contentMediaType: 'image/*'
+                format: uri-reference
+                x-allowed-schemes:
+                  - http
+                  - https
+              alt:
+                type: string
+              width:
+                type: integer
+              height:
+                type: integer
+            required:
+              - src
+          componentId: sdc.tailpine.base-card
+        bg_color: white
+        enable_overlay: false
+        overlay_color: dark
+        corner_style: md
+        card_padding_inline: '8'
+        card_padding_block: '8'
+        content_padding_inline: '20'
+        content_padding_block: '20'
+        content_alignment: 'justify-center items-center'
+        cta_alignment: self-start
+        gap: '12'
+        background_type: color
+    -
+      parent_uuid: 4df9b93e-a5b0-4b72-b726-fea456d0d5bc
+      slot: image
+      uuid: 6cba0aea-197b-4dc9-b780-f550b41b22d3
+      component_id: sdc.tailpine.image
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 0e45f786-64c3-4f51-8c85-067e2f9f30aa
+            target_type: media
+        url: 'https://example.com'
+        enable_hover_zoom: false
+        aspect_ratio: '4:3'
+    -
+      parent_uuid: 4df9b93e-a5b0-4b72-b726-fea456d0d5bc
+      slot: cta
+      uuid: 712b02eb-62e5-41f4-a6e5-5baef563d92e
+      component_id: sdc.tailpine.canvas-cta
+      inputs:
+        title: 'Click Here'
+        link: 'https://example.com'
+        button_variant: hover_arrow_move
+        color_schema: secondary
+        size: rounded-sm
+    -
+      parent_uuid: 4df9b93e-a5b0-4b72-b726-fea456d0d5bc
+      slot: heading
+      uuid: 2d10b583-8d38-473f-9a42-ea0725d9e94e
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'Card Style four'
+        text_size: text-xl(20px)
+        font_weight: font-bold
+        heading_text_width: full
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+        level: 2
+        horizontal_align: center
+    -
+      parent_uuid: 4df9b93e-a5b0-4b72-b726-fea456d0d5bc
+      slot: subtitle
+      uuid: ce5be5c3-ee35-4885-a8d7-61e0f9ce162b
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        html_tag: span
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        text_content:
+          value: '<p>Ticket</p>'
+          format: canvas_html_block
+        text_size: text-xl(20px)
+        text_color: dark
+        text_classes: font-semibold
+    -
+      parent_uuid: 4df9b93e-a5b0-4b72-b726-fea456d0d5bc
+      slot: text
+      uuid: 78dd9aec-236c-4371-99e1-73413023fd74
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        text_content:
+          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, euismod</p>'
+          format: canvas_html_block
+        html_tag: div
+        text_width: full
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        horizontal_align: center
+    -
+      uuid: 9128607e-f9e9-420e-9605-7e055e463142
+      component_id: sdc.tailpine.canvas-section
+      inputs:
+        background_type: both
+        image_width: '60'
+        bg_color: primary
+        container_width: 100%
+        grid_layout: three_equal_columns
+        mobile_columns: cols_one
+        padding_top: '64'
+        padding_bottom: '64'
+        enable_overlay: true
+        overlay_color: black
+        reverse_top_content: false
+        show_top_region: true
+        show_content_region: true
+        show_bottom_region: false
+        show_cta: false
+        enable_container: true
+        show_heading: true
+        padding_t: 64px
+        padding_b: 32px
+        show_description: true
+        gap: '24'
+        content_alignment: left
+        bg_media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 95d7a0c5-7469-4577-ac22-d65e8a29aa96
+            target_type: media
+        overlay_opacity: '30'
+    -
+      parent_uuid: 9128607e-f9e9-420e-9605-7e055e463142
+      slot: heading
+      uuid: 9b3977b3-e89f-4d5d-87e6-90f17d6a44ee
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'Briefly And Concisely Explain What You Do For Your Audience'
+        text_size: text-5xl(48px)
+        font_weight: font-normal
+        heading_text_width: full
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+        heading_classes: leading-tight
+    -
+      parent_uuid: 9128607e-f9e9-420e-9605-7e055e463142
+      slot: text
+      uuid: 6f6916e5-0574-408d-ba48-f62279f96425
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        text_content:
+          value: '<p>Ponatur siculis torquatos corporisque litterae consuetudine altera. Possumus triarius infinitum liber dixit sapiente quiddam.</p>'
+          format: canvas_html_block
+        html_tag: div
+        text_width: 90%
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        text_color: light
+    -
+      parent_uuid: 9128607e-f9e9-420e-9605-7e055e463142
+      slot: content
+      uuid: 399785ff-48f6-47ae-9943-d585d8618f11
+      component_id: sdc.tailpine.base-card
+      inputs:
+        show_image: true
+        show_heading: true
+        show_subtitle: false
+        subtitle_alignment: true
+        show_description: true
+        show_cta: true
+        show_secondary_image: false
+        background_image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 41ded319-b3f6-47ee-8d83-b126adab22fb
+            target_type: media
+        bg_color: white
+        enable_overlay: false
+        overlay_color: dark
+        corner_style: md
+        card_padding_inline: '0'
+        card_padding_block: '0'
+        content_padding_inline: '20'
+        content_padding_block: '40'
+        content_alignment: 'justify-start items-start'
+        cta_alignment: self-start
+        gap: '16'
+        background_type: color
+    -
+      parent_uuid: 399785ff-48f6-47ae-9943-d585d8618f11
+      slot: image
+      uuid: ec61986e-5537-4f68-bba7-454d2edbfb64
+      component_id: sdc.tailpine.image
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: f41be4b8-49be-423a-8cdd-27084d1567c8
+            target_type: media
+        url: 'https://example.com'
+        enable_hover_zoom: false
+        aspect_ratio: '4:3'
+    -
+      parent_uuid: 399785ff-48f6-47ae-9943-d585d8618f11
+      slot: cta
+      uuid: dc71ff2d-b84b-437d-b1fc-6cb60fc666b1
+      component_id: sdc.tailpine.canvas-cta
+      inputs:
+        title: 'Click Here'
+        link: 'https://example.com'
+        button_variant: with_arrow
+        size: rounded-sm
+        color_schema: primary
+    -
+      parent_uuid: 399785ff-48f6-47ae-9943-d585d8618f11
+      slot: heading
+      uuid: 2bff8658-b7ef-47f5-a0ab-1d52e90319f3
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'Card Style four'
+        text_size: text-2xl(24px)
+        font_weight: font-bold
+        heading_text_width: full
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+        level: 2
+        horizontal_align: center
+    -
+      parent_uuid: 399785ff-48f6-47ae-9943-d585d8618f11
+      slot: subtitle
+      uuid: 6fd6176b-c5d9-4dcd-b9a2-2a8c1901e560
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        html_tag: span
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        text_content:
+          value: '<p>Ticket</p>'
+          format: canvas_html_block
+        text_size: text-xl(20px)
+        text_color: dark
+        text_classes: font-semibold
+    -
+      parent_uuid: 399785ff-48f6-47ae-9943-d585d8618f11
+      slot: text
+      uuid: d9e9646d-d098-4156-8378-4ec0b81d7524
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        text_content:
+          value: '<p>Ponatur siculis torquatos corporisque litterae consuetudine altera. Possumus triarius infinitum liber dixit sapiente quiddam.Ponatur siculis torquatos corporisque litterae consuetudine altera.</p>'
+          format: canvas_html_block
+        html_tag: div
+        text_width: full
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '10'
+        margin_inline: '0'
+        margin_block: '0'
+        horizontal_align: left
+        text_size: text-base(16px)
+    -
+      parent_uuid: 9128607e-f9e9-420e-9605-7e055e463142
+      slot: content
+      uuid: 0747241e-01a3-4aa3-aaf9-88a9cbd679d7
+      component_id: sdc.tailpine.base-card
+      inputs:
+        show_image: true
+        show_heading: true
+        show_subtitle: false
+        subtitle_alignment: true
+        show_description: true
+        show_cta: true
+        show_secondary_image: false
+        background_image:
+          sourceType: default-relative-url
+          value:
+            src: card-bg.jpg
+            alt: 'Card background'
+            width: 800
+            height: 600
+          jsonSchema:
+            type: object
+            properties:
+              src:
+                type: string
+                contentMediaType: 'image/*'
+                format: uri-reference
+                x-allowed-schemes:
+                  - http
+                  - https
+              alt:
+                type: string
+              width:
+                type: integer
+              height:
+                type: integer
+            required:
+              - src
+          componentId: sdc.tailpine.base-card
+        bg_color: white
+        enable_overlay: false
+        overlay_color: dark
+        corner_style: md
+        card_padding_inline: '0'
+        card_padding_block: '0'
+        content_padding_inline: '20'
+        content_padding_block: '40'
+        content_alignment: 'justify-start items-start'
+        cta_alignment: self-start
+        gap: '16'
+        background_type: color
+    -
+      parent_uuid: 0747241e-01a3-4aa3-aaf9-88a9cbd679d7
+      slot: image
+      uuid: 9e2ee94c-e2dc-4498-91e4-05b87ca3c054
+      component_id: sdc.tailpine.image
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: eda16bf4-0c82-4093-8437-e34376c45cf7
+            target_type: media
+        url: 'https://example.com'
+        enable_hover_zoom: false
+        aspect_ratio: '4:3'
+    -
+      parent_uuid: 0747241e-01a3-4aa3-aaf9-88a9cbd679d7
+      slot: cta
+      uuid: 50271ee1-cee2-4c35-9bb2-48950c38fd6c
+      component_id: sdc.tailpine.canvas-cta
+      inputs:
+        title: 'Click Here'
+        link: 'https://example.com'
+        button_variant: with_arrow
+        size: rounded-sm
+        color_schema: primary
+    -
+      parent_uuid: 0747241e-01a3-4aa3-aaf9-88a9cbd679d7
+      slot: heading
+      uuid: bd655b6a-484b-4419-a226-be21f7a59294
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'Card Style four'
+        text_size: text-2xl(24px)
+        font_weight: font-bold
+        heading_text_width: full
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+        level: 2
+        horizontal_align: center
+    -
+      parent_uuid: 0747241e-01a3-4aa3-aaf9-88a9cbd679d7
+      slot: subtitle
+      uuid: d07690a5-d4b9-452f-9179-78b07b65c9a3
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        html_tag: span
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        text_content:
+          value: '<p>Ticket</p>'
+          format: canvas_html_block
+        text_size: text-xl(20px)
+        text_color: dark
+        text_classes: font-semibold
+    -
+      parent_uuid: 0747241e-01a3-4aa3-aaf9-88a9cbd679d7
+      slot: text
+      uuid: 2aef8535-dbb1-4939-af12-23e6a1ce1c63
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        text_content:
+          value: '<p>Ponatur siculis torquatos corporisque litterae consuetudine altera. Possumus triarius infinitum liber dixit sapiente quiddam.Ponatur siculis torquatos corporisque litterae consuetudine altera.</p>'
+          format: canvas_html_block
+        html_tag: div
+        text_width: full
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '10'
+        margin_inline: '0'
+        margin_block: '0'
+        horizontal_align: left
+        text_size: text-base(16px)
+    -
+      parent_uuid: 9128607e-f9e9-420e-9605-7e055e463142
+      slot: content
+      uuid: 8556ab4f-c8c9-417e-bdf1-afd96a4db58b
+      component_id: sdc.tailpine.base-card
+      inputs:
+        show_image: true
+        show_heading: true
+        show_subtitle: false
+        subtitle_alignment: true
+        show_description: true
+        show_cta: true
+        show_secondary_image: false
+        background_image:
+          sourceType: default-relative-url
+          value:
+            src: card-bg.jpg
+            alt: 'Card background'
+            width: 800
+            height: 600
+          jsonSchema:
+            type: object
+            properties:
+              src:
+                type: string
+                contentMediaType: 'image/*'
+                format: uri-reference
+                x-allowed-schemes:
+                  - http
+                  - https
+              alt:
+                type: string
+              width:
+                type: integer
+              height:
+                type: integer
+            required:
+              - src
+          componentId: sdc.tailpine.base-card
+        bg_color: white
+        enable_overlay: false
+        overlay_color: dark
+        corner_style: md
+        card_padding_inline: '0'
+        card_padding_block: '0'
+        content_padding_inline: '20'
+        content_padding_block: '40'
+        content_alignment: 'justify-start items-start'
+        cta_alignment: self-start
+        gap: '16'
+        background_type: color
+    -
+      parent_uuid: 8556ab4f-c8c9-417e-bdf1-afd96a4db58b
+      slot: image
+      uuid: db802b00-a90c-4f70-8f95-b634364f74cd
+      component_id: sdc.tailpine.image
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 8f93e7ae-0744-4f0a-ac80-4e4509bba012
+            target_type: media
+        url: 'https://example.com'
+        enable_hover_zoom: false
+        aspect_ratio: '4:3'
+    -
+      parent_uuid: 8556ab4f-c8c9-417e-bdf1-afd96a4db58b
+      slot: cta
+      uuid: 6aa023a7-eccb-4ed5-a18f-ca34ce644b1a
+      component_id: sdc.tailpine.canvas-cta
+      inputs:
+        title: 'Click Here'
+        link: 'https://example.com'
+        button_variant: with_arrow
+        size: rounded-sm
+        color_schema: primary
+    -
+      parent_uuid: 8556ab4f-c8c9-417e-bdf1-afd96a4db58b
+      slot: heading
+      uuid: 41ccddbf-061c-40b9-a089-c584a78078eb
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'Card Style four'
+        text_size: text-2xl(24px)
+        font_weight: font-bold
+        heading_text_width: full
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+        level: 2
+        horizontal_align: center
+    -
+      parent_uuid: 8556ab4f-c8c9-417e-bdf1-afd96a4db58b
+      slot: subtitle
+      uuid: 2000d0f8-3fb0-41cc-804e-33f8397fee5c
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        html_tag: span
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        text_content:
+          value: '<p>Ticket</p>'
+          format: canvas_html_block
+        text_size: text-xl(20px)
+        text_color: dark
+        text_classes: font-semibold
+    -
+      parent_uuid: 8556ab4f-c8c9-417e-bdf1-afd96a4db58b
+      slot: text
+      uuid: 80a67a51-bf3e-4270-a8b5-49eeed76391d
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        text_content:
+          value: '<p>Ponatur siculis torquatos corporisque litterae consuetudine altera. Possumus triarius infinitum liber dixit sapiente quiddam.Ponatur siculis torquatos corporisque litterae consuetudine altera.</p>'
+          format: canvas_html_block
+        html_tag: div
+        text_width: full
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '10'
+        margin_inline: '0'
+        margin_block: '0'
+        horizontal_align: left
+        text_size: text-base(16px)
+    -
+      uuid: 8732eb0b-3d2e-419c-a0e2-7e207635c8d4
+      component_id: sdc.tailpine.canvas-section
+      inputs:
+        background_type: color
+        image_width: '50'
+        bg_color: light
+        container_width: 100%
+        grid_layout: four_equal_columns
+        mobile_columns: cols_one
+        padding_top: '96'
+        padding_bottom: '96'
+        enable_overlay: false
+        overlay_color: black
+        reverse_top_content: false
+        show_top_region: true
+        show_content_region: true
+        show_bottom_region: false
+        show_cta: true
+        enable_container: true
+        show_heading: true
+        padding_t: 64px
+        padding_b: 32px
+        show_description: false
+        gap: '24'
+    -
+      parent_uuid: 8732eb0b-3d2e-419c-a0e2-7e207635c8d4
+      slot: heading
+      uuid: dd0f4dde-b1e5-4441-8928-3d4c32456da2
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'All Team Members'
+        level: 4
+        text_size: text-5xl(48px)
+        font_weight: font-normal
+        heading_text_width: full
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+    -
+      parent_uuid: 8732eb0b-3d2e-419c-a0e2-7e207635c8d4
+      slot: cta
+      uuid: cdd3ed32-c7dc-40b4-8803-746eb79fe1ae
+      component_id: sdc.tailpine.canvas-cta
+      inputs:
+        title: 'Click Here'
+        link: 'https://example.com'
+        button_variant: hover_arrow_move
+        color_schema: secondary
+        size: rounded-sm
+    -
+      parent_uuid: 8732eb0b-3d2e-419c-a0e2-7e207635c8d4
+      slot: content
+      uuid: ff6dbc0d-8bc6-4513-afc1-6db6c848e372
+      component_id: sdc.tailpine.canvas-team-styletwo
+      inputs:
+        imageurl:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: b1664105-143b-4ed4-8505-467b2e6bd576
+            target_type: media
+        title: 'John Doe'
+        subtitle: CEO
+        description:
+          value: '<p>Mortem quibusdam modi iudicio familias praetermittenda meminit efficiatur manu. Assentiar oblivione mererer depravate videatur maxime foedus.</p>'
+          format: canvas_html_block
+    -
+      parent_uuid: ff6dbc0d-8bc6-4513-afc1-6db6c848e372
+      slot: icons
+      uuid: 2b135367-0a4f-4c32-8762-f2432437d804
+      component_id: sdc.tailpine.canvas-tailpine_icons
+      inputs:
+        iconTitle: icon_facebook
+        iconStyle: fill
+        showLinkText: false
+        iconLink: 'https://example.com'
+        iconFillColor: primary
+        iconStrokeColor: white
+        iconSize: xl
+    -
+      parent_uuid: ff6dbc0d-8bc6-4513-afc1-6db6c848e372
+      slot: icons
+      uuid: 702f6d68-b58d-4e57-b793-7953b2b57965
+      component_id: sdc.tailpine.canvas-tailpine_icons
+      inputs:
+        iconTitle: icon_linkedin
+        iconStyle: fill
+        showLinkText: false
+        iconLink: 'https://example.com'
+        iconFillColor: primary
+        iconStrokeColor: white
+        iconSize: xl
+    -
+      parent_uuid: ff6dbc0d-8bc6-4513-afc1-6db6c848e372
+      slot: icons
+      uuid: e37279bb-3196-4306-8988-3f2066d49438
+      component_id: sdc.tailpine.canvas-tailpine_icons
+      inputs:
+        iconTitle: icon_instagram
+        iconStyle: fill
+        showLinkText: false
+        iconLink: 'https://example.com'
+        iconFillColor: primary
+        iconStrokeColor: white
+        iconSize: xl
+    -
+      parent_uuid: 8732eb0b-3d2e-419c-a0e2-7e207635c8d4
+      slot: content
+      uuid: f1785e05-d48d-4dc7-8887-63ac10fb550f
+      component_id: sdc.tailpine.canvas-team-styletwo
+      inputs:
+        imageurl:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: b4fa4cab-d6aa-4932-ac2a-869e9c3fcd51
+            target_type: media
+        title: 'John Doe'
+        subtitle: CEO
+        description:
+          value: '<p>Mortem quibusdam modi iudicio familias praetermittenda meminit efficiatur manu. Assentiar oblivione mererer depravate videatur maxime foedus.</p>'
+          format: canvas_html_block
+    -
+      parent_uuid: f1785e05-d48d-4dc7-8887-63ac10fb550f
+      slot: icons
+      uuid: e172c441-786c-4133-93ca-3a4bb20d5e2d
+      component_id: sdc.tailpine.canvas-tailpine_icons
+      inputs:
+        iconTitle: icon_facebook
+        iconStyle: roundfill
+        showLinkText: false
+        iconLink: 'https://example.com'
+        iconFillColor: primary
+        iconStrokeColor: white
+        iconSize: xl
+    -
+      parent_uuid: f1785e05-d48d-4dc7-8887-63ac10fb550f
+      slot: icons
+      uuid: d0be604e-4bdf-4268-8d7d-9187d12dfbc3
+      component_id: sdc.tailpine.canvas-tailpine_icons
+      inputs:
+        iconTitle: icon_linkedin
+        iconStyle: roundoutline
+        showLinkText: false
+        iconLink: 'https://example.com'
+        iconFillColor: white
+        iconStrokeColor: primary
+        iconSize: xl
+    -
+      parent_uuid: f1785e05-d48d-4dc7-8887-63ac10fb550f
+      slot: icons
+      uuid: 12a91b09-d41c-418f-b1fb-b2e7ab10fdb5
+      component_id: sdc.tailpine.canvas-tailpine_icons
+      inputs:
+        iconTitle: icon_instagram
+        iconStyle: fill
+        showLinkText: false
+        iconLink: 'https://example.com'
+        iconFillColor: primary
+        iconStrokeColor: white
+        iconSize: xl
+    -
+      parent_uuid: 8732eb0b-3d2e-419c-a0e2-7e207635c8d4
+      slot: content
+      uuid: a169e98e-710f-455b-9f8e-593a0c05d900
+      component_id: sdc.tailpine.canvas-team-styletwo
+      inputs:
+        imageurl:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 25479f81-ab62-4c63-91c9-ed4dbd3e5447
+            target_type: media
+        title: 'John Doe'
+        subtitle: CEO
+        description:
+          value: '<p>Mortem quibusdam modi iudicio familias praetermittenda meminit efficiatur manu. Assentiar oblivione mererer depravate videatur maxime foedus.</p>'
+          format: canvas_html_block
+    -
+      parent_uuid: a169e98e-710f-455b-9f8e-593a0c05d900
+      slot: icons
+      uuid: e46f0de5-1234-45aa-bf51-f24de10ea98e
+      component_id: sdc.tailpine.canvas-tailpine_icons
+      inputs:
+        iconTitle: icon_facebook
+        iconStyle: roundfill
+        showLinkText: false
+        iconLink: 'https://example.com'
+        iconFillColor: primary
+        iconStrokeColor: white
+        iconSize: xl
+    -
+      parent_uuid: a169e98e-710f-455b-9f8e-593a0c05d900
+      slot: icons
+      uuid: 68a5f898-f323-465c-9cdf-2f8ae0ccc687
+      component_id: sdc.tailpine.canvas-tailpine_icons
+      inputs:
+        iconTitle: icon_linkedin
+        iconStyle: outline
+        showLinkText: false
+        iconLink: 'https://example.com'
+        iconFillColor: white
+        iconStrokeColor: primary
+        iconSize: xl
+    -
+      parent_uuid: a169e98e-710f-455b-9f8e-593a0c05d900
+      slot: icons
+      uuid: ce9fde6c-ebcb-4244-b861-0205fef73b2a
+      component_id: sdc.tailpine.canvas-tailpine_icons
+      inputs:
+        iconTitle: icon_instagram
+        iconStyle: fill
+        showLinkText: false
+        iconLink: 'https://example.com'
+        iconFillColor: primary
+        iconStrokeColor: white
+        iconSize: xl
+    -
+      parent_uuid: 8732eb0b-3d2e-419c-a0e2-7e207635c8d4
+      slot: content
+      uuid: 27cf0ef4-162a-4eaa-a35e-5e540634faa2
+      component_id: sdc.tailpine.base-card
+      inputs:
+        show_image: true
+        show_heading: true
+        show_subtitle: true
+        subtitle_alignment: false
+        show_description: true
+        show_cta: true
+        show_secondary_image: false
+        background_image:
+          sourceType: default-relative-url
+          value:
+            src: card-bg.jpg
+            alt: 'Card background'
+            width: 800
+            height: 600
+          jsonSchema:
+            type: object
+            properties:
+              src:
+                type: string
+                contentMediaType: 'image/*'
+                format: uri-reference
+                x-allowed-schemes:
+                  - http
+                  - https
+              alt:
+                type: string
+              width:
+                type: integer
+              height:
+                type: integer
+            required:
+              - src
+          componentId: sdc.tailpine.base-card
+        bg_color: transparent
+        enable_overlay: false
+        overlay_color: dark
+        corner_style: md
+        card_padding_inline: '20'
+        card_padding_block: '40'
+        content_padding_inline: '20'
+        content_padding_block: '40'
+        content_alignment: 'justify-center items-center'
+        cta_alignment: self-start
+        gap: '4'
+        background_type: color
+    -
+      parent_uuid: 27cf0ef4-162a-4eaa-a35e-5e540634faa2
+      slot: image
+      uuid: b8b2607a-533e-4d75-9f1b-9b40f6e4165c
+      component_id: sdc.tailpine.image
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 97c97311-5114-4faf-a351-b1785527145b
+            target_type: media
+        url: 'https://example.com'
+        enable_hover_zoom: false
+        aspect_ratio: '1:1'
+        image_width: 33%
+        image_alignment: center
+        object_fit: cover
+        radius: full
+    -
+      parent_uuid: 27cf0ef4-162a-4eaa-a35e-5e540634faa2
+      slot: cta
+      uuid: bedcab35-63e5-42af-a37b-7b4e5fc2af31
+      component_id: sdc.tailpine.canvas-tailpine_icons
+      inputs:
+        iconTitle: icon_facebook
+        iconStyle: fill
+        showLinkText: false
+        iconLink: 'https://facebook.com'
+        iconFillColor: primary
+        iconStrokeColor: white
+        iconSize: xl
+    -
+      parent_uuid: 27cf0ef4-162a-4eaa-a35e-5e540634faa2
+      slot: cta
+      uuid: c76a3c9f-c247-4bb8-8b52-5e41a67694e1
+      component_id: sdc.tailpine.canvas-tailpine_icons
+      inputs:
+        iconTitle: icon_linkedin
+        iconStyle: fill
+        showLinkText: false
+        iconLink: 'https://example.com'
+        iconFillColor: primary
+        iconStrokeColor: white
+        iconSize: xl
+    -
+      parent_uuid: 27cf0ef4-162a-4eaa-a35e-5e540634faa2
+      slot: cta
+      uuid: 050286a8-6ded-40d4-89c0-fd8307ae5c4d
+      component_id: sdc.tailpine.canvas-tailpine_icons
+      inputs:
+        iconTitle: icon_instagram
+        iconStyle: fill
+        showLinkText: false
+        iconLink: 'https://example.com'
+        iconFillColor: primary
+        iconStrokeColor: white
+        iconSize: xl
+    -
+      parent_uuid: 27cf0ef4-162a-4eaa-a35e-5e540634faa2
+      slot: heading
+      uuid: 809996ef-0236-4c81-ad44-1f071315593c
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'ETTY FIDELE'
+        text_size: text-lg(18px)
+        font_weight: font-bold
+        heading_text_width: full
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+        level: 4
+        horizontal_align: center
+    -
+      parent_uuid: 27cf0ef4-162a-4eaa-a35e-5e540634faa2
+      slot: subtitle
+      uuid: c8866197-fc3c-4dd7-b2da-97fd91f95e3b
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        html_tag: span
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        text_size: text-base(16px)
+        text_color: dark
+        text_classes: font-semibold
+        text_content:
+          value: '<p>CEO</p>'
+          format: canvas_html_block
+    -
+      parent_uuid: 27cf0ef4-162a-4eaa-a35e-5e540634faa2
+      slot: text
+      uuid: 0b7bac62-4ee8-4882-aa82-7e6d29144122
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        html_tag: div
+        text_width: full
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        horizontal_align: center
+    -
+      parent_uuid: 27cf0ef4-162a-4eaa-a35e-5e540634faa2
+      slot: text
+      uuid: 82130c2a-f83e-47c9-a7e6-1fedb0c4bf8a
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        text_content:
+          value: '<p>Mortem quibusdam modi iudicio familias praetermittenda meminit efficiatur manu. Assentiar oblivione mererer depravate videatur maxime foedus.</p>'
+          format: canvas_html_block
+        html_tag: div
+        bg_color: transparent
+        padding_inline: '10'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '16'
+        horizontal_align: center
+        text_color: medium
+    -
+      uuid: 2c2d7848-32c4-4f48-9a09-052ed53747ac
+      component_id: sdc.tailpine.canvas-postheader
+      inputs:
+        title: 'Latest Posts'
+    -
+      parent_uuid: 2c2d7848-32c4-4f48-9a09-052ed53747ac
+      slot: content
+      uuid: f888a883-fbd3-44e2-9fbe-9b1ff312560a
+      component_id: sdc.tailpine.canvas-poststylethree
+      inputs:
+        imageurl:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: ab8bda89-4d79-4f9d-8703-0831e72b1390
+            target_type: media
+        show_heading: true
+        show_description: true
+        subtitle: 'Example subtitle'
+        description:
+          value: '<p>This is <strong>formatted</strong> description</p>'
+          format: canvas_html_block
+        date: 'June 20, 2024'
+    -
+      parent_uuid: f888a883-fbd3-44e2-9fbe-9b1ff312560a
+      slot: heading
+      uuid: 597d916f-1a68-4c3d-800b-bf8b70d17bc9
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'The Future of Digital Agencies: Trends to Watch'
+        text_size: text-4xl(36px)
+        font_weight: font-normal
+        heading_text_width: full
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+    -
+      parent_uuid: f888a883-fbd3-44e2-9fbe-9b1ff312560a
+      slot: text
+      uuid: 6cb376f8-4b06-4908-85d4-21894888711c
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        text_content:
+          value: '<p>Probaretur privamur officiis omnisque pecuniae aliena consulatu. Gloriae sensum epicuri pariter disciplinae fabulas inmensae scilicet militaris.</p>'
+          format: canvas_html_block
+        html_tag: div
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+    -
+      parent_uuid: 2c2d7848-32c4-4f48-9a09-052ed53747ac
+      slot: content
+      uuid: 79f0dbfd-1136-47b7-b7f5-1b80304cc17b
+      component_id: sdc.tailpine.canvas-poststylethree
+      inputs:
+        imageurl:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 08cc8352-d328-4462-a47b-9ef876014fed
+            target_type: media
+        show_heading: true
+        show_description: true
+        subtitle: 'Example subtitle'
+        description:
+          value: '<p>This is <strong>formatted</strong> description</p>'
+          format: canvas_html_block
+        date: 'June 20, 2024'
+    -
+      parent_uuid: 79f0dbfd-1136-47b7-b7f5-1b80304cc17b
+      slot: heading
+      uuid: 59fe3e0e-6a9f-4b9e-ab00-1df1c799b4dc
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'Significet oderit nostras distrahi movere atqui distrahi expressas'
+        text_size: text-4xl(36px)
+        font_weight: font-normal
+        heading_text_width: full
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+    -
+      parent_uuid: 79f0dbfd-1136-47b7-b7f5-1b80304cc17b
+      slot: text
+      uuid: e2995435-33cc-4b60-ba79-fca15111fc6a
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        text_content:
+          value: '<p>Probaretur privamur officiis omnisque pecuniae aliena consulatu. Gloriae sensum epicuri pariter disciplinae fabulas inmensae scilicet militaris.</p>'
+          format: canvas_html_block
+        html_tag: div
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+    -
+      parent_uuid: 2c2d7848-32c4-4f48-9a09-052ed53747ac
+      slot: content
+      uuid: d31fd46e-e75a-4a71-86fe-51ee7137c397
+      component_id: sdc.tailpine.canvas-poststylethree
+      inputs:
+        imageurl:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: a4a42e44-81a1-4732-ab5b-a8e9c12669a6
+            target_type: media
+        show_heading: true
+        show_description: true
+        subtitle: 'Example subtitle'
+        description:
+          value: '<p>This is <strong>formatted</strong> description</p>'
+          format: canvas_html_block
+        date: 'June 20, 2024'
+    -
+      parent_uuid: d31fd46e-e75a-4a71-86fe-51ee7137c397
+      slot: heading
+      uuid: 5ce36b74-bb23-4981-b440-07e62b188b15
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'Significet oderit nostras distrahi movere atqui distrahi expressas'
+        text_size: text-4xl(36px)
+        font_weight: font-normal
+        heading_text_width: full
+        underline: false
+        text_underline_width: full
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+    -
+      parent_uuid: d31fd46e-e75a-4a71-86fe-51ee7137c397
+      slot: text
+      uuid: 8f27442d-4a5e-4af1-8bfa-1787fce3a78e
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        text_content:
+          value: '<p>Probaretur privamur officiis omnisque pecuniae aliena consulatu. Gloriae sensum epicuri pariter disciplinae fabulas inmensae scilicet militaris.</p>'
+          format: canvas_html_block
+        html_tag: div
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+    -
+      parent_uuid: 2c2d7848-32c4-4f48-9a09-052ed53747ac
+      slot: cta
+      uuid: 4a854296-55ed-4ea4-8702-5f799bef3a54
+      component_id: sdc.tailpine.canvas-cta
+      inputs:
+        title: 'Click Here'
+        link: 'https://example.com'
+        button_variant: hover_arrow_move
+    -
+      uuid: c352ea40-c5e9-43ed-aa63-65b4ce5049c0
+      component_id: sdc.tailpine.canvas-section
+      inputs:
+        background_type: image
+        image_width: '50'
+        bg_color: medium
+        container_width: 100%
+        grid_layout: three_equal_columns
+        mobile_columns: cols_one
+        padding_top: '96'
+        padding_bottom: '96'
+        enable_overlay: false
+        overlay_color: dark
+        reverse_top_content: false
+        show_top_region: true
+        show_content_region: true
+        show_bottom_region: false
+        show_cta: true
+        enable_container: true
+        show_heading: true
+        padding_t: 64px
+        padding_b: 32px
+        show_description: false
+        gap: '24'
+    -
+      parent_uuid: c352ea40-c5e9-43ed-aa63-65b4ce5049c0
+      slot: heading
+      uuid: 9fb20b6a-9cdf-417e-8f07-1f68a11d263d
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'Latest Posts'
+        text_size: text-5xl(48px)
+        font_weight: font-medium
+        heading_text_width: fit
+        underline: false
+        text_underline_width: fit
+        underline_offset: base
+        underline_color: primary
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+    -
+      parent_uuid: c352ea40-c5e9-43ed-aa63-65b4ce5049c0
+      slot: cta
+      uuid: 477e043f-b12e-46c2-84a7-515fb0b1286b
+      component_id: sdc.tailpine.canvas-cta
+      inputs:
+        title: 'Click Here'
+        link: 'https://example.com'
+        button_variant: hover_arrow_move
+    -
+      parent_uuid: c352ea40-c5e9-43ed-aa63-65b4ce5049c0
+      slot: content
+      uuid: 9f45a586-503d-4313-bb8b-876d38d05a2b
+      component_id: sdc.tailpine.canvas-poststyleone
+      inputs:
+        title: 'Lorem ipsum dolor sit amet consectetur'
+        subtitle: 'By Carlos'
+        description:
+          value: '<p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur&nbsp;</p>'
+          format: canvas_html_block
+        date: 'June 20, 2024'
+        imageurl:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 95d7a0c5-7469-4577-ac22-d65e8a29aa96
+            target_type: media
+    -
+      parent_uuid: 9f45a586-503d-4313-bb8b-876d38d05a2b
+      slot: cta
+      uuid: cb64c00b-e201-420d-b38e-1bdfafe1ab0f
+      component_id: sdc.tailpine.canvas-cta
+      inputs:
+        title: 'Click Here'
+        link: 'https://example.com'
+        button_variant: solid
+        color_schema: primary
+    -
+      parent_uuid: c352ea40-c5e9-43ed-aa63-65b4ce5049c0
+      slot: content
+      uuid: d5efc2ea-8882-4c82-aca6-6f04ea338203
+      component_id: sdc.tailpine.canvas-poststyleone
+      inputs:
+        title: 'Lorem ipsum dolor sit amet consectetur'
+        subtitle: 'By Carlos'
+        description:
+          value: '<p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur&nbsp;</p>'
+          format: canvas_html_block
+        date: 'June 20, 2024'
+        imageurl:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 6a989f34-20f3-4ea2-883d-38e200ef29ef
+            target_type: media
+    -
+      parent_uuid: d5efc2ea-8882-4c82-aca6-6f04ea338203
+      slot: cta
+      uuid: 149fc384-4f36-49a0-b3b1-dc2737a65a5c
+      component_id: sdc.tailpine.canvas-cta
+      inputs:
+        title: 'Click Here'
+        link: 'https://example.com'
+        button_variant: outline
+        color_schema: primary
+    -
+      parent_uuid: c352ea40-c5e9-43ed-aa63-65b4ce5049c0
+      slot: content
+      uuid: 80a92f90-9d64-42d7-998c-ded2de83f352
+      component_id: sdc.tailpine.canvas-poststyleone
+      inputs:
+        title: 'Lorem ipsum dolor sit amet consectetur'
+        subtitle: 'By Carlos'
+        description:
+          value: '<p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur&nbsp;</p>'
+          format: canvas_html_block
+        date: 'June 20, 2024'
+        imageurl:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 5a375bef-1cf2-45f0-8f4e-0660c6b7d107
+            target_type: media
+    -
+      parent_uuid: 80a92f90-9d64-42d7-998c-ded2de83f352
+      slot: cta
+      uuid: 9bd74a09-7bf5-4d45-aa7b-57d45deea04b
+      component_id: sdc.tailpine.canvas-cta
+      inputs:
+        title: 'Click Here'
+        link: 'https://example.com'
+        button_variant: outline_with_arrow
+        color_schema: primary
+    -
+      uuid: 532d53c1-8613-4094-97f2-19f22e2e07b9
+      component_id: sdc.tailpine.canvas-accordionstyletwoheader
+      inputs:
+        title: 'Molestiae e romano conscientia augendas laboriosam isti.'
+    -
+      parent_uuid: 532d53c1-8613-4094-97f2-19f22e2e07b9
+      slot: content
+      uuid: 6d6e0758-b5b9-445f-b4d0-ca9a3b46a645
+      component_id: sdc.tailpine.canvas-accordionstyletwo
+      inputs:
+        title: 'What is Tailpine?'
+        default_open: false
+        description:
+          value: '<p>Tailpine is a modern Drupal theme framework built with Tailwind CSS and component-driven architecture. It focuses on flexibility, performance, and developer-friendly customization.</p>'
+          format: canvas_html_block
+    -
+      parent_uuid: 532d53c1-8613-4094-97f2-19f22e2e07b9
+      slot: content
+      uuid: 732f4efb-fdc9-47bd-bda1-394b0541fad8
+      component_id: sdc.tailpine.canvas-accordionstyletwo
+      inputs:
+        title: 'How do Tailpine components work?'
+        default_open: true
+        description:
+          value: '<p>Tailpine components are built using Drupal’s Single Directory Components (SDC). Each component contains its own Twig template, metadata, and styling.</p>'
+          format: canvas_html_block
+    -
+      parent_uuid: 532d53c1-8613-4094-97f2-19f22e2e07b9
+      slot: content
+      uuid: 89767eec-83f5-4dea-a56b-cbb27a204e63
+      component_id: sdc.tailpine.canvas-accordionstyletwo
+      inputs:
+        title: 'Can I customize the design easily?'
+        default_open: false
+        description:
+          value: '<p>Yes. Tailpine is designed to be highly customizable. You can adjust layouts, spacing, colors, and component behavior using configurable properties.</p>'
+          format: canvas_html_block
+    -
+      parent_uuid: 532d53c1-8613-4094-97f2-19f22e2e07b9
+      slot: text
+      uuid: 6360d4d9-d54e-479a-a0da-b31f6575e2e8
+      component_id: sdc.tailpine.canvas-text
+      inputs:
+        text_content:
+          value: '<p>Molestiae e romano conscientia augendas laboriosam isti.Molestiae e romano conscientia augendas laboriosam isti.Molestiae e romano conscientia augendas laboriosam isti.</p>'
+          format: canvas_html_block
+        bg_color: transparent
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+    -
+      uuid: 4dc5f104-c47c-46c7-8c47-b0d47fed749f
+      component_id: sdc.tailpine.canvas-section
+      inputs:
+        background_type: color
+        image_width: '50'
+        bg_color: medium
+        container_width: 100%
+        grid_layout: six-equal-columns
+        mobile_columns: cols_one
+        padding_top: '96'
+        padding_bottom: '96'
+        enable_overlay: false
+        overlay_color: dark
+        reverse_top_content: false
+        show_top_region: true
+        show_content_region: true
+        show_bottom_region: false
+        show_cta: false
+        enable_container: true
+        show_heading: true
+        padding_t: 64px
+        padding_b: 32px
+        show_description: false
+        content_alignment: center
+        gap: '8'
+    -
+      parent_uuid: 4dc5f104-c47c-46c7-8c47-b0d47fed749f
+      slot: heading
+      uuid: f3e52799-f11f-4fd2-a04e-e125eaf952a2
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: Sponsors
+        level: 4
+        text_size: text-5xl(48px)
+        font_weight: font-normal
+        heading_text_width: fit
+        underline: true
+        text_underline_width: 25%
+        underline_offset: large
+        underline_color: medium
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+        underline_alignment: center
+        horizontal_align: center
+    -
+      parent_uuid: 4dc5f104-c47c-46c7-8c47-b0d47fed749f
+      slot: content
+      uuid: 21e95dee-6f46-462d-92d1-4af4d65ff766
+      component_id: sdc.tailpine.canvas-sponserlogostyletwo
+      inputs:
+        website_url: 'https://example.com'
+        sponsor_logo:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 64c89dd0-2856-445f-ac05-eb744c410835
+            target_type: media
+    -
+      parent_uuid: 4dc5f104-c47c-46c7-8c47-b0d47fed749f
+      slot: content
+      uuid: 27e7685e-c66b-4e6a-9bc7-88c59f1cb2a2
+      component_id: sdc.tailpine.canvas-sponserlogostyletwo
+      inputs:
+        website_url: 'https://example.com'
+        sponsor_logo:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: da4571f5-cdbb-4b17-8f42-6fe334915329
+            target_type: media
+    -
+      parent_uuid: 4dc5f104-c47c-46c7-8c47-b0d47fed749f
+      slot: content
+      uuid: 9285e54c-5d47-4673-90bf-bbae21b61a1f
+      component_id: sdc.tailpine.canvas-sponserlogostyletwo
+      inputs:
+        website_url: 'https://example.com'
+        sponsor_logo:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 64c89dd0-2856-445f-ac05-eb744c410835
+            target_type: media
+    -
+      parent_uuid: 4dc5f104-c47c-46c7-8c47-b0d47fed749f
+      slot: content
+      uuid: 8abaa550-ef19-4d21-8b19-ced6f332821c
+      component_id: sdc.tailpine.canvas-sponserlogostyletwo
+      inputs:
+        website_url: 'https://example.com'
+        sponsor_logo:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 0471974a-8087-44c4-b42c-8fe5069b6d19
+            target_type: media
+    -
+      parent_uuid: 4dc5f104-c47c-46c7-8c47-b0d47fed749f
+      slot: content
+      uuid: 96488aad-8020-48aa-b139-0dbac60a8a48
+      component_id: sdc.tailpine.canvas-sponserlogostyletwo
+      inputs:
+        website_url: 'https://example.com'
+        sponsor_logo:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 4615c022-3c52-404b-8e8b-827d03167de6
+            target_type: media
+    -
+      parent_uuid: 4dc5f104-c47c-46c7-8c47-b0d47fed749f
+      slot: content
+      uuid: 13dda5dd-bd9f-4c5e-97b4-9e7e3fa08f9a
+      component_id: sdc.tailpine.canvas-sponserlogostyletwo
+      inputs:
+        website_url: 'https://example.com'
+        sponsor_logo:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 687f67cd-6a32-451f-aeac-2796caacf4a7
+            target_type: media
+    -
+      parent_uuid: 4dc5f104-c47c-46c7-8c47-b0d47fed749f
+      slot: content
+      uuid: 639ad246-9270-4823-9faf-92a74550513d
+      component_id: sdc.tailpine.canvas-sponserlogostyletwo
+      inputs:
+        website_url: 'https://example.com'
+        sponsor_logo:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 7f9349d2-0f2a-4dda-9f44-f78ea1e6e6f7
+            target_type: media
+    -
+      parent_uuid: 4dc5f104-c47c-46c7-8c47-b0d47fed749f
+      slot: content
+      uuid: 393552ba-2eee-45a3-8091-aac79915e06c
+      component_id: sdc.tailpine.canvas-sponserlogostyletwo
+      inputs:
+        website_url: 'https://example.com'
+        sponsor_logo:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: da4571f5-cdbb-4b17-8f42-6fe334915329
+            target_type: media
+    -
+      parent_uuid: 4dc5f104-c47c-46c7-8c47-b0d47fed749f
+      slot: content
+      uuid: 96d12ac5-3b40-4dcd-8b53-7c2a93ba1fca
+      component_id: sdc.tailpine.canvas-sponserlogostyletwo
+      inputs:
+        website_url: 'https://example.com'
+        sponsor_logo:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 0471974a-8087-44c4-b42c-8fe5069b6d19
+            target_type: media
+    -
+      parent_uuid: 4dc5f104-c47c-46c7-8c47-b0d47fed749f
+      slot: content
+      uuid: 66a4adaa-3077-4692-89b4-3f368fc06581
+      component_id: sdc.tailpine.canvas-sponserlogostyletwo
+      inputs:
+        website_url: 'https://example.com'
+        sponsor_logo:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 687f67cd-6a32-451f-aeac-2796caacf4a7
+            target_type: media
+    -
+      parent_uuid: 4dc5f104-c47c-46c7-8c47-b0d47fed749f
+      slot: content
+      uuid: 760d73b1-1ae7-4e13-bfdf-8caba6a40cf6
+      component_id: sdc.tailpine.canvas-sponserlogostyletwo
+      inputs:
+        website_url: 'https://example.com'
+        sponsor_logo:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 7f9349d2-0f2a-4dda-9f44-f78ea1e6e6f7
+            target_type: media
+    -
+      parent_uuid: 4dc5f104-c47c-46c7-8c47-b0d47fed749f
+      slot: content
+      uuid: 8fdc2ead-9727-48ec-b384-5e57e16286ef
+      component_id: sdc.tailpine.canvas-sponserlogostyletwo
+      inputs:
+        website_url: 'https://example.com'
+        sponsor_logo:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 4615c022-3c52-404b-8e8b-827d03167de6
+            target_type: media
+    -
+      uuid: 4548470c-44fb-4f64-b345-7582ad001958
+      component_id: sdc.tailpine.canvas-section
+      inputs:
+        image_width: '50'
+        bg_color: light
+        container_width: 100%
+        grid_layout: three_equal_columns
+        mobile_columns: cols_one
+        padding_top: '64'
+        padding_bottom: '64'
+        enable_overlay: false
+        overlay_color: dark
+        reverse_top_content: false
+        show_top_region: true
+        show_content_region: true
+        show_bottom_region: false
+        show_cta: false
+        enable_container: true
+        show_heading: true
+        padding_t: 64px
+        padding_b: 32px
+        show_description: false
+        content_alignment: center
+        gap: '24'
+        background_type: color
+    -
+      parent_uuid: 4548470c-44fb-4f64-b345-7582ad001958
+      slot: heading
+      uuid: 8613d333-4c49-4c86-9a81-83f90bea01fd
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'Briefly And Concisely Explain What'
+        level: 4
+        text_size: text-5xl(48px)
+        font_weight: font-normal
+        heading_text_width: fit
+        underline: true
+        text_underline_width: 10%
+        underline_offset: wide
+        underline_color: medium
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+        underline_alignment: center
+        horizontal_align: center
+    -
+      parent_uuid: 4548470c-44fb-4f64-b345-7582ad001958
+      slot: content
+      uuid: bb51ba56-1e03-4837-adb1-9cbf979ab13f
+      component_id: sdc.tailpine.base-testimonial
+      inputs:
+        imageurl:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: f4c0bb68-bdf9-4241-8e71-f7dcbe89c026
+            target_type: media
+        gap: '16'
+        content_gap: '16'
+        card_padding_block: 20px
+        content_padding_inline: 40px
+        content_padding_block: 32px
+        enable_border: true
+        border_color: primary
+        border_radius: md
+        bg_color: light
+        name: 'John Doe'
+        description:
+          value: '<p>Aequitatem arguerent nimium nostrum suppetet morati voluptas poenis. Dare bonae praeteritas inflammati utroque incidant suavitate.Aequitatem arguerent nimium nostrum suppetet morati voluptas poenis. Dare bonae praeteritas inflammati utroque incidant suavitate.</p>'
+          format: canvas_html_block
+        subtitle: 'CEO, Tech Company'
+        show_rating: true
+        card_padding_inline: 0px
+        design_style: style_two
+        heading_level: 6
+    -
+      parent_uuid: bb51ba56-1e03-4837-adb1-9cbf979ab13f
+      slot: rating
+      uuid: 389adaa1-c74c-4d0a-90b1-808008df7ca7
+      component_id: sdc.tailpine.rating
+      inputs:
+        rating: 4
+        max_stars: 5
+        show_text: false
+        size: lg
+    -
+      parent_uuid: 4548470c-44fb-4f64-b345-7582ad001958
+      slot: content
+      uuid: 5929b537-b4e8-46c5-b877-dff21376783f
+      component_id: sdc.tailpine.base-testimonial
+      inputs:
+        imageurl:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 7a146ac6-ece8-4e56-92bd-963f1ec0d629
+            target_type: media
+        gap: '20'
+        content_gap: '20'
+        card_padding_block: 20px
+        content_padding_inline: 40px
+        content_padding_block: 32px
+        enable_border: true
+        border_color: primary
+        border_radius: md
+        bg_color: light
+        name: 'John Doe'
+        description:
+          value: '<p>Aequitatem arguerent nimium nostrum suppetet morati voluptas poenis. Dare bonae praeteritas inflammati utroque incidant suavitate.Aequitatem arguerent nimium nostrum suppetet morati voluptas poenis. Dare bonae praeteritas inflammati utroque incidant suavitate.</p>'
+          format: canvas_html_block
+        subtitle: 'CEO, Tech Company'
+        show_rating: true
+        card_padding_inline: 0px
+        design_style: style_two
+    -
+      parent_uuid: 5929b537-b4e8-46c5-b877-dff21376783f
+      slot: rating
+      uuid: 21ba8fcd-f2ed-4251-865d-2d74936ab752
+      component_id: sdc.tailpine.rating
+      inputs:
+        rating: 4
+        max_stars: 5
+        show_text: false
+        size: lg
+    -
+      parent_uuid: 4548470c-44fb-4f64-b345-7582ad001958
+      slot: content
+      uuid: d6ba1799-4d2d-4419-8cfa-9b1e4b37228f
+      component_id: sdc.tailpine.base-testimonial
+      inputs:
+        imageurl:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: c1131686-a311-4b85-b63e-f3d82da5bf61
+            target_type: media
+        gap: '16'
+        content_gap: '16'
+        card_padding_block: 20px
+        content_padding_inline: 40px
+        content_padding_block: 32px
+        enable_border: true
+        border_color: primary
+        border_radius: md
+        bg_color: light
+        name: 'John Doe'
+        description:
+          value: '<p>Aequitatem arguerent nimium nostrum suppetet morati voluptas poenis. Dare bonae praeteritas inflammati utroque incidant suavitate.Aequitatem arguerent nimium nostrum suppetet morati voluptas poenis. Dare bonae praeteritas inflammati utroque incidant suavitate.</p>'
+          format: canvas_html_block
+        subtitle: 'CEO, Tech Company'
+        show_rating: true
+        card_padding_inline: 0px
+        design_style: style_two
+    -
+      parent_uuid: d6ba1799-4d2d-4419-8cfa-9b1e4b37228f
+      slot: rating
+      uuid: 54214804-5678-4dcb-b12c-4f6baceb6254
+      component_id: sdc.tailpine.rating
+      inputs:
+        rating: 4
+        max_stars: 5
+        show_text: false
+        size: lg
+    -
+      uuid: 57bba536-32c5-4db6-8277-60f1ba43a64c
+      component_id: sdc.tailpine.canvas-section
+      inputs:
+        background_type: image
+        image_width: '50'
+        bg_color: secondary
+        container_width: 100%
+        grid_layout: three_equal_columns
+        mobile_columns: cols_one
+        padding_top: '64'
+        padding_bottom: '64'
+        enable_overlay: false
+        overlay_color: dark
+        reverse_top_content: false
+        show_top_region: true
+        show_content_region: true
+        show_bottom_region: false
+        show_cta: false
+        enable_container: true
+        show_heading: true
+        padding_t: 32px
+        padding_b: 32px
+        show_description: false
+        content_alignment: center
+        gap: '24'
+    -
+      parent_uuid: 57bba536-32c5-4db6-8277-60f1ba43a64c
+      slot: heading
+      uuid: b77d0627-487b-41ef-8a78-80d0dbfa3394
+      component_id: sdc.tailpine.canvas-heading
+      inputs:
+        heading_text: 'Briefly And Concisely Explain What'
+        level: 4
+        text_size: text-5xl(48px)
+        font_weight: font-normal
+        heading_text_width: fit
+        underline: true
+        text_underline_width: 20%
+        underline_offset: xlarge
+        underline_color: medium
+        padding_inline: '0'
+        padding_block: '0'
+        margin_inline: '0'
+        margin_block: '0'
+        bg_color: transparent
+        underline_alignment: center
+        horizontal_align: center
+    -
+      parent_uuid: 57bba536-32c5-4db6-8277-60f1ba43a64c
+      slot: content
+      uuid: 63792b88-ef98-4fe5-967b-14c42be28f50
+      component_id: sdc.tailpine.base-testimonial
+      inputs:
+        imageurl:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: b4fa4cab-d6aa-4932-ac2a-869e9c3fcd51
+            target_type: media
+        gap: '16'
+        content_gap: '16'
+        card_padding_block: 20px
+        content_padding_inline: 32px
+        content_padding_block: 32px
+        enable_border: false
+        border_color: transparent
+        border_radius: md
+        bg_color: transparent
+        name: 'John Doe'
+        description:
+          value: '<p>Irridente maluisti nemore contentiones facio illum angusti illius. Ancillae praeterita statim vide referuntur horreat malint existimo debilitatem</p>'
+          format: canvas_html_block
+        subtitle: 'CEO, Tech Company'
+        show_rating: true
+        card_padding_inline: 0px
+    -
+      parent_uuid: 63792b88-ef98-4fe5-967b-14c42be28f50
+      slot: rating
+      uuid: 6f3b37e9-4736-45a8-b64f-c426fc8d75ba
+      component_id: sdc.tailpine.rating
+      inputs:
+        rating: 4
+        max_stars: 5
+        show_text: false
+        size: lg
+    -
+      parent_uuid: 57bba536-32c5-4db6-8277-60f1ba43a64c
+      slot: content
+      uuid: bf33a763-8359-4d3f-8dd4-ce1e47cf25d5
+      component_id: sdc.tailpine.base-testimonial
+      inputs:
+        imageurl:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 08ce250a-203e-4a62-953a-9d8661979c9e
+            target_type: media
+        gap: '16'
+        content_gap: '16'
+        card_padding_block: 20px
+        content_padding_inline: 32px
+        content_padding_block: 32px
+        enable_border: false
+        border_color: transparent
+        border_radius: md
+        bg_color: transparent
+        name: 'John Doe'
+        description:
+          value: '<p>Irridente maluisti nemore contentiones facio illum angusti illius. Ancillae praeterita statim vide referuntur horreat malint existimo debilitatem</p>'
+          format: canvas_html_block
+        subtitle: 'CEO, Tech Company'
+        show_rating: true
+        card_padding_inline: 0px
+    -
+      parent_uuid: bf33a763-8359-4d3f-8dd4-ce1e47cf25d5
+      slot: rating
+      uuid: 4f5acf47-bd08-46be-8fda-c4739fa1b83a
+      component_id: sdc.tailpine.rating
+      inputs:
+        rating: 4
+        max_stars: 5
+        show_text: false
+        size: lg
+    -
+      parent_uuid: 57bba536-32c5-4db6-8277-60f1ba43a64c
+      slot: content
+      uuid: 49558fa5-6f8c-45fa-af70-6c760f8f79d3
+      component_id: sdc.tailpine.base-testimonial
+      inputs:
+        imageurl:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 31d23973-52fc-4b08-a991-f709124ad93e
+            target_type: media
+        gap: '16'
+        content_gap: '16'
+        card_padding_block: 20px
+        content_padding_inline: 32px
+        content_padding_block: 32px
+        enable_border: false
+        border_color: transparent
+        border_radius: md
+        bg_color: transparent
+        name: 'John Doe'
+        description:
+          value: '<p>Irridente maluisti nemore contentiones facio illum angusti illius. Ancillae praeterita statim vide referuntur horreat malint existimo debilitatem</p>'
+          format: canvas_html_block
+        subtitle: 'CEO, Tech Company'
+        show_rating: true
+        card_padding_inline: 0px
+    -
+      parent_uuid: 49558fa5-6f8c-45fa-af70-6c760f8f79d3
+      slot: rating
+      uuid: 705ae37c-4da1-4043-bf15-1a50fe7d7440
+      component_id: sdc.tailpine.rating
+      inputs:
+        rating: 4
+        max_stars: 5
+        show_text: false
+        size: lg
+    -
+      uuid: 712be03b-bb2f-4cca-b8f4-7705be9d4f93
+      component_id: sdc.tailpine.canvas-error404
+      inputs:
+        title: '404'
+        subtitle: 'The page you are looking for does not exist.'
+  path:
+    -
+      alias: /showcase
+      langcode: en
+  revision_translation_affected:
+    -
+      value: true

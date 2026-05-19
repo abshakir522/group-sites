@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: c1813921-d1a8-4ea9-a0fc-0e61d08ba082
+  bundle: basic
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: copyright
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  body:
+    -
+      value: '<p>© Drupak &nbsp;2025 <a href="https://www.drupal.org/project/tailpine">Tailpine</a></p>'
+      format: basic_html
+      summary: ''

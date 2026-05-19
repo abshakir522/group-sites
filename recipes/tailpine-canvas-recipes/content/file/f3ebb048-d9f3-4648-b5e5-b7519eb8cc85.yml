@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f3ebb048-d9f3-4648-b5e5-b7519eb8cc85
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: michael-dam-mEZ3PoFGs_k-unsplash.jpg
+  uri:
+    -
+      value: 'public://2026-03/michael-dam-mEZ3PoFGs_k-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 1716739
+  status:
+    -
+      value: true

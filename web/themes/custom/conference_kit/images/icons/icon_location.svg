@@ -1,0 +1,16 @@
+<svg  
+    viewBox="0 0 100 100" 
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none" stroke="#303030" stroke-width="2">
+  
+  <!-- Centered + Scaled Group -->
+  <g transform="translate(50,50) scale(4) translate(-5,-6)">
+    <!-- Outer pin shape -->
+    <path d="M9.31993 5.04C9.31993 8.4 4.99993 11.28 4.99993 11.28C4.99993 11.28 0.679932 8.4 0.679932 5.04C0.679932 3.89427 1.13507 2.79546 1.94523 1.9853C2.75539 1.17514 3.8542 0.720001 4.99993 0.720001C6.14567 0.720001 7.24447 1.17514 8.05463 1.9853C8.86479 2.79546 9.31993 3.89427 9.31993 5.04Z" stroke="currentColor"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Inner circle -->
+    <path d="M4.99993 6.48C5.79522 6.48 6.43993 5.83529 6.43993 5.04C6.43993 4.24471 5.79522 3.6 4.99993 3.6C4.20464 3.6 3.55993 4.24471 3.55993 5.04C3.55993 5.83529 4.20464 6.48 4.99993 6.48Z" stroke="currentColor"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

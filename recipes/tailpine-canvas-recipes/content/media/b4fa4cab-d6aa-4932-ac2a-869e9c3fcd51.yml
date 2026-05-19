@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: b4fa4cab-d6aa-4932-ac2a-869e9c3fcd51
+  bundle: image
+  default_langcode: en
+  depends:
+    800000ad-69e4-4779-a21c-3f0f86a08595: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: leio-mclaren-L2dTmhQzx4Q-unsplash.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: b2
+      title: ''
+      width: 4000
+      height: 4000
+      entity: 800000ad-69e4-4779-a21c-3f0f86a08595

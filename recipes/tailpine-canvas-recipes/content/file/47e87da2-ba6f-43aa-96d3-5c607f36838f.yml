@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 47e87da2-ba6f-43aa-96d3-5c607f36838f
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: ai-generated.jpg
+  uri:
+    -
+      value: 'public://2026-03/ai-generated.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 856041
+  status:
+    -
+      value: true

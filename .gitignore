@@ -4,6 +4,7 @@
 /web/core/
 /web/modules/contrib/
 /web/themes/contrib/
+/web/themes/custom/node_modules/
 /web/profiles/contrib/
 /web/libraries/
 
@@ -28,3 +29,4 @@
 /cypress/videos/
 
 /.ddev/
+/node_modules/

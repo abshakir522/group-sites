@@ -1,0 +1,30 @@
+How to Maintain the Components Directory in Tailpine
+
+Copy Components into Your Sub-theme
+
+Navigate to web/themes/contrib/tailpine/components and copy either all components or only the ones you need.
+
+Paste them into your sub-theme under:
+
+web/themes/custom/SUBTHEME_NAME/components
+
+
+For faster and easier management, it’s highly recommended to use the Tailpine CLI
+.
+
+Update Template References
+
+After copying, make sure your sub-theme’s template files reference the sub-theme components instead of the parent Tailpine components.
+
+This ensures that your customizations won’t be overwritten when updating the parent theme.
+
+Import Required Styles
+
+In your sub-theme’s Tailwind CSS file for components from Tailpine.
+
+For reference, the block component has already been moved into the sub-theme as an example.
+
+Follow Documentation for Best Practices
+
+For detailed guidance on copying and customizing components, check the official docs:
+Tailpine Documentation – Copy & Modify a Component

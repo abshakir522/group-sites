@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c1813921-d1a8-4ea9-a0fc-0e61d08ba082'
+  module:
+    - block_content
+  theme:
+    - conference_kit 
+id: tailpine_copyright
+theme: conference_kit 
+region: footer_bottom_middle
+weight: -11
+provider: null
+plugin: 'block_content:c1813921-d1a8-4ea9-a0fc-0e61d08ba082'
+settings:
+  id: 'block_content:c1813921-d1a8-4ea9-a0fc-0e61d08ba082'
+  label: copyright
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

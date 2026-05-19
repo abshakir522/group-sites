@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9612fa37-c115-4301-b744-563e6902428d
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: flamingo.jpg
+  uri:
+    -
+      value: 'public://2026-03/flamingo.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 516543
+  status:
+    -
+      value: true

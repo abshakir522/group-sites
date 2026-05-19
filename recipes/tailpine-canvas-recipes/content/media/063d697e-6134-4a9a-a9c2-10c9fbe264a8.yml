@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 063d697e-6134-4a9a-a9c2-10c9fbe264a8
+  bundle: image
+  default_langcode: en
+  depends:
+    a180dc9c-c884-476e-87bf-5341198e47fa: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: alex-suprun-ZHvM3XIOHoE-unsplash.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: p3
+      title: ''
+      width: 3648
+      height: 3648
+      entity: a180dc9c-c884-476e-87bf-5341198e47fa

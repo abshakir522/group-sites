@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 80feddd0-b406-4445-9f61-df58b731a802
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: gearstick.jpg
+  uri:
+    -
+      value: 'public://2026-03/gearstick.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 552732
+  status:
+    -
+      value: true

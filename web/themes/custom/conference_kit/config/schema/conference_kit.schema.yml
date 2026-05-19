@@ -1,0 +1,64 @@
+# Schema for the configuration files of the conference_kit Subtheme.
+
+conference_kit.settings:
+  type: theme_settings
+  label: "conference_kit settings"
+  mapping:
+    # Colors.
+    # ----------------------------
+    conference_kit_enable_color:
+      type: boolean
+      label: "Enable color Sheme"
+    conference_kit_color_scheme:
+      type: string
+      label: "conference_kit Color Scheme"
+    conference_kit_base_primary_color:
+      type: string
+      label: "Primary base color"
+    conference_kit_base_secondary_color:
+      type: string
+      label: "Secondary base color"
+    conference_kit_base_tertiary_color:
+      type: string
+      label: "Tertiary base color"
+    conference_kit_body_color:
+      type: string
+      label: "Body color"
+    conference_kit_body_bg_color:
+      type: string
+      label: "Body Background Color"
+    conference_kit_h1_color:
+      type: string
+      label: "H1 color"
+    conference_kit_h2_color:
+      type: string
+      label: "H2 color"
+    conference_kit_h3_color:
+      type: string
+      label: "H3 color"
+    conference_kit_h4_color:
+      type: string
+      label: "H4 color"
+    conference_kit_success_color:
+      type: string
+      label: "Success Color"
+    conference_kit_warning_color:
+      type: string
+      label: "Warning Color"
+    conference_kit_error_color:
+      type: string
+      label: "Error Color"
+    # header style
+    header_class:
+      type: string
+      label: "Header style"
+    footer_class:
+      type: string
+      label: "Footer style"
+    header_fixed:
+      type: string
+      label: "Fixed Header"
+    daisyui_enable:
+      type: boolean
+      label: "Enable DaisyUI"
+

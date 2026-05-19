@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5e9259df-dfce-4afe-828e-4a8f244649eb
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: alexas_fotos-telephone-3594206_1920.jpg
+  uri:
+    -
+      value: 'public://2026-03/alexas_fotos-telephone-3594206_1920.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 370840
+  status:
+    -
+      value: true

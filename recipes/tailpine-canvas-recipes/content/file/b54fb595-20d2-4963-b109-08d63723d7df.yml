@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b54fb595-20d2-4963-b109-08d63723d7df
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: life-of-pix-home.jpg
+  uri:
+    -
+      value: 'public://2026-03/life-of-pix-home.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 491043
+  status:
+    -
+      value: true

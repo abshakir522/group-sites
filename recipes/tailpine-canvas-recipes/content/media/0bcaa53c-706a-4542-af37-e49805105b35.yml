@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 0bcaa53c-706a-4542-af37-e49805105b35
+  bundle: image
+  default_langcode: en
+  depends:
+    dca1d17e-b1f0-4199-a4f2-fdf57e5ee85c: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: geralt-book-4126483_1920.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: learn
+      title: ''
+      width: 1920
+      height: 716
+      entity: dca1d17e-b1f0-4199-a4f2-fdf57e5ee85c

@@ -1,0 +1,222 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Messenger\MessengerInterface;
+use Drupal\Core\Render\Element\StatusMessages;
+use Drupal\Core\Url;
+
+/**
+ * @file
+ * Functions to support theming.
+ */
+/**
+ * Implements hook_preprocess_image_widget().
+ */
+function conference_kit_preprocess_image_widget(array &$variables): void
+{
+  $data = &$variables['data'];
+
+  // This prevents image widget templates from rendering preview container HTML
+  // to users that do not have permission to access these previews.
+  // @todo revisit in https://drupal.org/node/953034
+  // @todo revisit in https://drupal.org/node/3114318
+  if (isset($data['preview']['#access']) && $data['preview']['#access'] === FALSE) {
+    unset($data['preview']);
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for HTML document templates.
+ *
+ * Adds body classes if certain regions have content.
+ */
+function conference_kit_preprocess_html(&$variables)
+{
+  if (!isset($variables['attributes']['class'])) {
+    $variables['attributes']['class'] = [];
+  }
+
+  // Color settings
+  if (theme_get_setting('conference_kit_enable_color')) {
+    $pc = theme_get_setting('conference_kit_base_primary_color') ?? '#10B981';
+    $sc = theme_get_setting('conference_kit_base_secondary_color') ?? '#064E3B';
+    $tc = theme_get_setting('conference_kit_base_tertiary_color') ?? '#06B6D4';
+    $bc = theme_get_setting('conference_kit_body_color') ?? '#1F2937';
+    $bgc = theme_get_setting('conference_kit_body_bg_color') ?? '#FFFFFF';
+    $h1c = theme_get_setting('conference_kit_h1_color') ?? '#1F2937';
+    $h2c = theme_get_setting('conference_kit_h2_color') ?? '#1F2937';
+    $h3c = theme_get_setting('conference_kit_h3_color') ?? '#1F2937';
+    $h4c = theme_get_setting('conference_kit_h4_color') ?? '#1F2937';
+    $suc = theme_get_setting('conference_kit_success_color') ?? '#14A44D';
+    $wc = theme_get_setting('conference_kit_warning_color') ?? '#E4A11B';
+    $ec = theme_get_setting('conference_kit_error_color') ?? '#DC4C64';
+
+    $styles = [
+      "--color-primary:$pc;",
+      "--color-secondary:$sc;",
+      "--color-tertiary:$tc;",
+      "--color-body: $bc;",
+      "--color-body_bg: $bgc;",
+      "--color-h1: $h1c;",
+      "--color-h2: $h2c;",
+      "--color-h3: $h3c;",
+      "--color-h4: $h4c;",
+      "--color-success: $suc;",
+      "--color-warning: $wc;",
+      "--color-error: $ec;",
+    ];
+    $variables['html_attributes']->setAttribute('style', implode('', $styles));
+  }
+}
+
+/**
+ * Implements hook_preprocess_menu().
+ */
+function conference_kit_preprocess_menu__main(array &$variables): void
+{
+  $items = $variables["items"];
+
+  $variables['array_for_sdc'] = processNestedArray($items);
+}
+
+
+
+function conference_kit_preprocess_page(array &$variables): void
+{
+  // Load selected header style from theme settings.
+  $header_style = theme_get_setting('header_class') ?: 'style4';
+  $variables['header_template'] = 'header--' . $header_style;
+
+  // Get the theme setting for fixed header.
+  $variables['fixed'] = theme_get_setting('header_fixed');
+
+  // Set the appropriate class based on the setting.
+  $variables['header_fixed_class'] = $variables['fixed'] ? 'fixed z-40 w-full' : '';
+
+  // Set the footer template.
+ $footer_style = theme_get_setting('footer_class') ?: 'style1';
+  $variables['footer_template'] = 'footer--' . $footer_style;
+
+  
+  if (!isset($variables['logo'])) {
+    $variables['logo'] = theme_get_setting('logo.url');
+  }
+}
+
+
+function conference_kit_preprocess_menu(array &$variables) {
+  // Get the account menu by its machine name.
+  $account_menu_name = 'account';
+  // Load the menu tree parameters (e.g., top-level only).
+  $parameters = new \Drupal\Core\Menu\MenuTreeParameters();
+  // Load the tree.
+  $menu_tree = \Drupal::menuTree()->load($account_menu_name, $parameters);
+  // Build the tree into a renderable array.
+  $manipulated = \Drupal::menuTree()->build($menu_tree);
+  // Optionally, extract only the '#items' part if needed.
+  $variables['account_menu'] = $manipulated['#items'] ?? [];
+  // Get selected header style for menu twig
+  $header_style = theme_get_setting('header_class');
+  $variables['selected__header_template'] = $header_style;
+  // Check if the user is logged in
+  $current_user = \Drupal::currentUser();
+  // If the user is logged out, remove the "My Account" link from the menu.
+  if (!$current_user->isAuthenticated()) {
+    foreach ($variables['account_menu'] as $key => $item) {
+      if (
+        isset($item['url']) &&
+        $item['url'] instanceof \Drupal\Core\Url &&
+        $item['url']->isRouted() &&
+        $item['url']->getRouteName() === 'user.page'
+      ) {
+        unset($variables['account_menu'][$key]);
+      }
+    }
+  }
+}
+
+function conference_kit_page_attachments_alter(array &$attachments)
+{
+  // Retrieve the 'daisyui_enable' setting from the theme configuration.
+  $theme = \Drupal::theme()->getActiveTheme()->getName();
+  $daisyui_enabled = \Drupal::config($theme . '.settings')->get('daisyui_enable');
+
+
+
+  // Check if the 'conference_kit/main' library is attached.
+  if (!empty($attachments['#attached']['library']) && is_array($attachments['#attached']['library'])) {
+    $libraries = &$attachments['#attached']['library'];
+
+    // If DaisyUI is enabled, remove 'conference_kit/main' and add 'conference_kit/daisyui_styles'.
+    if ($daisyui_enabled) {
+      // Remove 'conference_kit/main' if it's present.dd
+      $key = array_search('conference_kit/main', $libraries);
+      if ($key !== FALSE) {
+        unset($libraries[$key]);
+      }
+
+      // Add 'conference_kit/daisyui_styles' if it's not already attached.
+      if (!in_array('conference_kit/daisyui_styles', $libraries)) {
+        $libraries[] = 'conference_kit/daisyui_styles';
+      }
+    } else {
+      // If DaisyUI is not enabled, ensure 'conference_kit/main' is attached and 'conference_kit/daisyui_styles' is not.
+      $key = array_search('conference_kit/daisyui_styles', $libraries);
+      if ($key !== FALSE) {
+        unset($libraries[$key]);
+      }
+
+      if (!in_array('conference_kit/main', $libraries)) {
+        $libraries[] = 'conference_kit/main';
+      }
+    }
+  }
+}
+
+
+/**
+ * Implements hook_form_alter().
+ */
+function conference_kit_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  // function hook_form_FORM_ID_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) : void {
+  if ($form_id === 'user_login_form') {
+    $form['custom_title'] = [
+      '#type' => 'markup',
+      '#markup' => '<div class="mb-6 text-center"><h2 class="text-3xl font-bold text-body">Sign in Please</h2></div>',
+      '#weight' => -100, // Force it at the top.
+    ];
+    // Style the form wrapper.
+    $form['#attributes']['class'][] = 'max-w-sm md:max-w-lg lg:max-w-2xl mx-auto my-20 py-20 px-6 bg-body-bg shadow-lg shadow-primary rounded-2xl';
+
+    // Username field (name).
+    $form['name']['#attributes']['class'][] = 'w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary mb-4';
+    $form['name']['#attributes']['placeholder'] = t('Username or Email');
+
+    // Password field.
+    $form['pass']['#attributes']['class'][] = 'w-full px-4 py-3 mb-6 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary mb-4';
+    $form['pass']['#attributes']['placeholder'] = t('Password');
+
+    // Login button.
+    $form['actions']['submit']['#attributes']['class'][] = 'w-full bg-primary hover:bg-secondary text-body-bg font-semibold py-3 px-4 rounded-lg transition duration-300';
+
+    // Optional: center the form actions.
+    $form['actions']['#attributes']['class'][] = 'flex justify-center';
+  }
+}
+/**
+ * Implements hook_preprocess_HOOK() for HTML document templates.
+ *
+ * Adds 'type' to input.html.twig
+ */
+function conference_kit_preprocess_input(&$variables) {
+  // Get the input type.
+  $type = $variables['element']['#type'] ?? '';
+  $variables['type'] = $type;
+}
+
+/**
+ * Implements hook_preprocess_block__system_messages_block().
+ */
+function conference_kit_preprocess_block__system_messages_block(&$variables) {
+ $variables['content'] = StatusMessages::renderMessages();
+}

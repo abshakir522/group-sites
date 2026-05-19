@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 1dba51db-0720-411e-ac2c-0b06b1971869
+  bundle: image
+  default_langcode: en
+  depends:
+    9724b36d-de71-49ce-89e8-0820e60c9347: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: duck.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: duck
+      title: ''
+      width: 1665
+      height: 1920
+      entity: 9724b36d-de71-49ce-89e8-0820e60c9347

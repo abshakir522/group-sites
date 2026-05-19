@@ -1,0 +1,44 @@
+name: conference_kit
+type: theme
+'base theme': tailpine
+starterkit: true
+libraries:
+  - conference_kit/main
+  - conference_kit/alpine
+  - conference_kit/fixed-header
+  - conference_kit/swiper
+  - conference_kit/swiper-custom
+description: 'A modern Drupal  Theme powered by Tailwind CSS and Alpine.js, designed for flexibility, speed, and clean UI development.'
+core_version_requirement: ^11
+generator: 'tailpine_starterkit:2.0.0-rc3'
+logo: logo.svg
+favicon: favicon.svg
+regions:
+  branding: Branding
+  primary_menu: 'Primary Menu'
+  search: Search
+  top_right_actions: 'Top Right Actions'
+  header: Header
+  secondary_menu: 'Secondary Menu'
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  sidebar_first: 'Sidebar First'
+  sidebar_second: 'Sidebar Second'
+  footer: Footer
+  footer_top_first: 'Footer Top First'
+  footer_top_middle: 'Footer Top Middle'
+  footer_top_last: 'Footer Top Last'
+  footer_main_first: 'Footer Main First'
+  footer_main_second: 'Footer Main Second'
+  footer_main_third: 'Footer Main Third'
+  footer_main_fourth: 'Footer Main Fourth'
+  footer_bottom_first: 'Footer Bottom First'
+  footer_bottom_middle: 'Footer Bottom Middle'
+  footer_bottom_last: 'Footer Bottom Last'
+dependencies:
+  - 'drupal:canvas'
+version: 2.0.0-rc3
+project: tailpine
+datestamp: 1773352957

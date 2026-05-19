@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 861f70f9-e9b8-49d7-a404-c7ba475bfc21
+  bundle: image
+  default_langcode: en
+  depends:
+    e3650ead-8aa7-4de3-8938-c275aef40a32: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: dog.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: doggy
+      title: ''
+      width: 1280
+      height: 1920
+      entity: e3650ead-8aa7-4de3-8938-c275aef40a32

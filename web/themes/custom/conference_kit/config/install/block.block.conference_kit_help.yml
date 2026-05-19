@@ -1,0 +1,18 @@
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - conference_kit
+id: conference_kit_help
+theme: conference_kit
+region: help
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: "0"
+  provider: help
+visibility: {}

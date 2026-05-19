@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 8cb089dd-ffa0-491c-a040-ae96cd5f8afa
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: nilshornschuh-lynx.jpg
+  uri:
+    -
+      value: 'public://2026-03/nilshornschuh-lynx.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 555575
+  status:
+    -
+      value: true

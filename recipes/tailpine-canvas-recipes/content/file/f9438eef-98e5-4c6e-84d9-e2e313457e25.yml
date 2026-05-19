@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f9438eef-98e5-4c6e-84d9-e2e313457e25
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: stock.jpg
+  uri:
+    -
+      value: 'public://2026-03/stock.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 431197
+  status:
+    -
+      value: true

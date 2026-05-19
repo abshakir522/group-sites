@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0b6df952-6db1-4ef7-84e3-c0357b607edb
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: swan-bird.jpg
+  uri:
+    -
+      value: 'public://2026-03/swan-bird.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 539028
+  status:
+    -
+      value: true

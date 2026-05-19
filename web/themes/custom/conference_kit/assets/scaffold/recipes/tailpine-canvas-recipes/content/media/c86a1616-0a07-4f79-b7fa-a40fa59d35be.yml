@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: c86a1616-0a07-4f79-b7fa-a40fa59d35be
+  bundle: video
+  default_langcode: en
+  depends:
+    baefda1e-4eda-4a6a-9113-6aed6b7fda47: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: count_down.mp4
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_video_file:
+    -
+      display: false
+      description: ''
+      entity: baefda1e-4eda-4a6a-9113-6aed6b7fda47

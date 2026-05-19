@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 1d3f84a1-8afa-45b6-9649-817411abd8e5
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: logo6.png
+  uri:
+    -
+      value: 'public://2026-03/logo6_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 1682
+  status:
+    -
+      value: true

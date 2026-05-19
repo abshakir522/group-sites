@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ade5bfad-42ad-4036-b8b2-dc17a8ef04d8
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: christian-buehner-DItYlc26zVI-unsplash.jpg
+  uri:
+    -
+      value: 'public://2026-03/christian-buehner-DItYlc26zVI-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 2841703
+  status:
+    -
+      value: true

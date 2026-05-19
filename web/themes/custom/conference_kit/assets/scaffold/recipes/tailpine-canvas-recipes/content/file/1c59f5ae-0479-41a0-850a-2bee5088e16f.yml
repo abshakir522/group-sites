@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 1c59f5ae-0479-41a0-850a-2bee5088e16f
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: raccoon.jpg
+  uri:
+    -
+      value: 'public://2026-03/raccoon.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 509079
+  status:
+    -
+      value: true

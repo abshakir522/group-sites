@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b7e392d2-b6c4-4baa-823c-49653d8e03f4
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: news3.png
+  uri:
+    -
+      value: 'public://2026-03/news3.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 72942
+  status:
+    -
+      value: true

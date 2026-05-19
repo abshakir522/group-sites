@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:contact_us_footer:878d8e77-a5eb-4c6c-bfc7-e574f1db3d45'
+  module:
+    - block_content
+  theme:
+    - conference_kit
+id: tailpine_contactusfooter
+theme: conference_kit
+region: footer_main_third
+weight: 0
+provider: null
+plugin: 'block_content:878d8e77-a5eb-4c6c-bfc7-e574f1db3d45'
+settings:
+  id: 'block_content:878d8e77-a5eb-4c6c-bfc7-e574f1db3d45'
+  label: 'CONTACT US'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility: {  }

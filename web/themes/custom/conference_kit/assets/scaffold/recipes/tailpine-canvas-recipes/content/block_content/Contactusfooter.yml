@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 878d8e77-a5eb-4c6c-bfc7-e574f1db3d45
+  bundle: contact_us_footer
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Contact Us footer'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_email:
+    -
+      value: '<p><a href="mailto:info@gmail.com">info@gmail.com</a></p>'
+      format: full_html
+  field_location:
+    -
+      value: 'City Trade Center, New City Phase 2 Wah Cantt'
+      format: basic_html
+  field_social_media:
+    -
+      uri: 'internal:/facebook.com'
+      title: Facebook
+      options: {  }
+    -
+      uri: 'internal:/nstagram.com'
+      title: Instagram
+      options: {  }
+    -
+      uri: 'internal:/linkedIn'
+      title: Linkedin
+      options: {  }
+    -
+      uri: 'internal:/x.com'
+      title: X
+      options: {  }

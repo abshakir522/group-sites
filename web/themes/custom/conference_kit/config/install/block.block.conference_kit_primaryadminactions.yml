@@ -1,0 +1,16 @@
+status: true
+dependencies:
+  theme:
+    - conference_kit
+id: conference_kit_primaryadminactions
+theme: conference_kit
+region: highlighted
+weight: 0
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: "Primary admin actions"
+  label_display: "0"
+  provider: core
+visibility: {}

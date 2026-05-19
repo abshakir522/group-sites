@@ -1,0 +1,21 @@
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - conference_kit
+id: conference_kit_sitebranding
+theme: conference_kit
+region: branding
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: "Site branding"
+  label_display: ""
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {}

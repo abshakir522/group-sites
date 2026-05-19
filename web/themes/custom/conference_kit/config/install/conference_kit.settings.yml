@@ -1,0 +1,20 @@
+# # Colors
+# # ----------------------------
+conference_kit_enable_color: true
+conference_kit_color_scheme: default
+conference_kit_base_primary_color: '#10B981'
+conference_kit_base_secondary_color: '#064E3B'
+conference_kit_base_tertiary_color: '#06B6D4'
+conference_kit_body_color: '#1F2937'
+conference_kit_body_bg_color: '#FFFFFF'
+conference_kit_h1_color: '#1F2937'
+conference_kit_h2_color: '#1F2937'
+conference_kit_h3_color: '#1F2937'
+conference_kit_h4_color: '#1F2937'
+conference_kit_success_color: '#14A44D'
+conference_kit_warning_color: '#E4A11B'
+conference_kit_error_color: '#DC4C64'
+header_class: style4
+footer_class: style1
+header_fixed: '0'
+daisyui_enable: false

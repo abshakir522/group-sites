@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 88493e7a-93e0-46e9-8fdd-923cd10e01cc
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: aiony-haust-3TLl_97HNJo-unsplash.jpg
+  uri:
+    -
+      value: 'public://2026-03/aiony-haust-3TLl_97HNJo-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 1749527
+  status:
+    -
+      value: true

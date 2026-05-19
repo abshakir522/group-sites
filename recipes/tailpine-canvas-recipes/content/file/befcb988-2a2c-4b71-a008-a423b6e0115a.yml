@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: befcb988-2a2c-4b71-a008-a423b6e0115a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: photo-graphe-horse-1804425_1920.jpg
+  uri:
+    -
+      value: 'public://2026-03/photo-graphe-horse-1804425_1920.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 494979
+  status:
+    -
+      value: true

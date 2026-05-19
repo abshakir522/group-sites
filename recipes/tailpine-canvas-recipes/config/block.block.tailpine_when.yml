@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:49c7d6b1-caf8-4eda-b951-cbef1dc6a948'
+  module:
+    - block_content
+  theme:
+    - conference_kit 
+id: tailpine_when
+theme: conference_kit 
+region: footer_top_last
+weight: -11
+provider: null
+plugin: 'block_content:49c7d6b1-caf8-4eda-b951-cbef1dc6a948'
+settings:
+  id: 'block_content:49c7d6b1-caf8-4eda-b951-cbef1dc6a948'
+  label: When
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

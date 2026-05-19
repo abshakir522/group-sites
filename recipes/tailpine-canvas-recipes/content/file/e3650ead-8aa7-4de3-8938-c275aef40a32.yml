@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: e3650ead-8aa7-4de3-8938-c275aef40a32
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: dog.jpg
+  uri:
+    -
+      value: 'public://2026-03/dog.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 483440
+  status:
+    -
+      value: true

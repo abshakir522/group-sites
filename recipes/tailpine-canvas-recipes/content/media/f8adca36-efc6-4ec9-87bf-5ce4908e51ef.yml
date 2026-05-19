@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: f8adca36-efc6-4ec9-87bf-5ce4908e51ef
+  bundle: image
+  default_langcode: en
+  depends:
+    88493e7a-93e0-46e9-8fdd-923cd10e01cc: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: aiony-haust-3TLl_97HNJo-unsplash.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: p1
+      title: ''
+      width: 3276
+      height: 4096
+      entity: 88493e7a-93e0-46e9-8fdd-923cd10e01cc

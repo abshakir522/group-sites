@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: be395b2e-8e2d-45b6-b883-ee5b4020e5c5
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: marjonhorn-bird.jpg
+  uri:
+    -
+      value: 'public://2026-03/marjonhorn-bird.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 405494
+  status:
+    -
+      value: true

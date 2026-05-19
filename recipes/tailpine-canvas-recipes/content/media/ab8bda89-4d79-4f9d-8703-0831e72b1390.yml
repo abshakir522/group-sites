@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: ab8bda89-4d79-4f9d-8703-0831e72b1390
+  bundle: image
+  default_langcode: en
+  depends:
+    0346d801-7eb1-4c09-81cd-c03dd16fa191: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: freephotocc-laptop-1478822_1920.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: work
+      title: ''
+      width: 1920
+      height: 1280
+      entity: 0346d801-7eb1-4c09-81cd-c03dd16fa191

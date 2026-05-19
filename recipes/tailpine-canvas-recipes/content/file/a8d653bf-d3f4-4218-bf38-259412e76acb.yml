@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a8d653bf-d3f4-4218-bf38-259412e76acb
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: joshuaworoniecki-laptop.jpg
+  uri:
+    -
+      value: 'public://2026-03/joshuaworoniecki-laptop.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 384135
+  status:
+    -
+      value: true

@@ -1,0 +1,18 @@
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - conference_kit
+id: conference_kit_breadcrumbs
+theme: conference_kit
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: "0"
+  provider: system
+visibility: {}

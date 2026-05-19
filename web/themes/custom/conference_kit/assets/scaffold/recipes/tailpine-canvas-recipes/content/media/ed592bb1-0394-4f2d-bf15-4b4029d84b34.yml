@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: ed592bb1-0394-4f2d-bf15-4b4029d84b34
+  bundle: image
+  default_langcode: en
+  depends:
+    9612fa37-c115-4301-b744-563e6902428d: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: flamingo.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: bird2
+      title: ''
+      width: 1920
+      height: 1280
+      entity: 9612fa37-c115-4301-b744-563e6902428d

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9724b36d-de71-49ce-89e8-0820e60c9347
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: duck.jpg
+  uri:
+    -
+      value: 'public://2026-03/duck.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 620068
+  status:
+    -
+      value: true

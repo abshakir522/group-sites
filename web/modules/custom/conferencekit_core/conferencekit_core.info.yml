@@ -1,0 +1,10 @@
+name: 'Conference Kit Core'
+type: module
+description: 'Core customizations for Conference Kit microsites.'
+package: 'Conference Kit'
+core_version_requirement: ^11
+dependencies:
+  - canvas:canvas
+  - domain:domain
+  - group:group
+  - group_context_domain:group_context_domain

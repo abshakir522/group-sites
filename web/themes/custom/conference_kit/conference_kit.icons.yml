@@ -1,0 +1,23 @@
+tailpine_icons:
+  label: "My Theme SVG Icons"
+  extractor: svg
+  config:
+    sources:
+    - images/icons/*.svg
+  settings:
+    size:
+      title: "Size"
+      type: integer
+      default: 30
+  template: >-
+    <svg xmlns="http://www.w3.org/2000/svg"
+         class="icon text-icon-{{ icon_id|clean_class }} {{ attributes.class }}""
+         width="{{ size|default(30) }}"
+         height="{{ size|default(30) }}"
+         viewBox="0 0 100 100"
+         fill="none"
+         stroke = "none"
+         stroke-width= "2"
+         aria-hidden="true">
+      {{ content }}
+    </svg>

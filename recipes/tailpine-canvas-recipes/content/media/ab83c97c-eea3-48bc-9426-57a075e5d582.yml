@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: ab83c97c-eea3-48bc-9426-57a075e5d582
+  bundle: image
+  default_langcode: en
+  depends:
+    f3ebb048-d9f3-4648-b5e5-b7519eb8cc85: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: michael-dam-mEZ3PoFGs_k-unsplash.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: p10
+      title: ''
+      width: 3744
+      height: 5616
+      entity: f3ebb048-d9f3-4648-b5e5-b7519eb8cc85

@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 7e5cdbe2-31dd-46d8-aa7f-8233f23ee568
+  bundle: image
+  default_langcode: en
+  depends:
+    57153882-289a-4d19-8192-927b24adf4fc: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: bergadder-discus-fish.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: orangefish
+      title: ''
+      width: 1920
+      height: 1280
+      entity: 57153882-289a-4d19-8192-927b24adf4fc

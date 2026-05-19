@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 725ab667-640e-4757-a385-111f2c4cee85
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: sasint-tiger.jpg
+  uri:
+    -
+      value: 'public://2026-03/sasint-tiger.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 1072184
+  status:
+    -
+      value: true

@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 5a375bef-1cf2-45f0-8f4e-0660c6b7d107
+  bundle: image
+  default_langcode: en
+  depends:
+    d53bba3e-83b0-42e9-9b6e-d4064446ca2e: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: al3xanderd-windmill.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: power
+      title: ''
+      width: 1920
+      height: 1080
+      entity: d53bba3e-83b0-42e9-9b6e-d4064446ca2e

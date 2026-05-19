@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 31d23973-52fc-4b08-a991-f709124ad93e
+  bundle: image
+  default_langcode: en
+  depends:
+    aa9dfb49-387f-4654-b777-a7b86d1d8539: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: jurica-koletic-7YVZYZeITc8-unsplash.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: p8
+      title: ''
+      width: 3000
+      height: 4499
+      entity: aa9dfb49-387f-4654-b777-a7b86d1d8539

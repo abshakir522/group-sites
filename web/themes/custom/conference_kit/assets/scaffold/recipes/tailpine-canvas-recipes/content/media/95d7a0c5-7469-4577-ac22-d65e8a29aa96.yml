@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 95d7a0c5-7469-4577-ac22-d65e8a29aa96
+  bundle: image
+  default_langcode: en
+  depends:
+    d45781de-13b4-47de-9fca-893b26893dc0: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: stubaileyphoto-plane-6511877_1920.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: plane
+      title: ''
+      width: 1920
+      height: 1280
+      entity: d45781de-13b4-47de-9fca-893b26893dc0

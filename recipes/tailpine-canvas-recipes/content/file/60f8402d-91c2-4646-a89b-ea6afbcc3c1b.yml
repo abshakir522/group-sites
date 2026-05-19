@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 60f8402d-91c2-4646-a89b-ea6afbcc3c1b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: poststyleimage2.png
+  uri:
+    -
+      value: 'public://2026-03/poststyleimage2.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 73413
+  status:
+    -
+      value: true

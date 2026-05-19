@@ -1,0 +1,13 @@
+uuid: 870f0f14-facf-4810-bf61-a78f4dec8798
+langcode: en
+status: true
+dependencies: {  }
+id: info
+label: INFO
+description: ''
+locked: false
+
+# Information added by Drupal.org packaging script on 2026-03-12
+version: '2.0.0-rc3'
+project: 'tailpine'
+datestamp: 1773352957

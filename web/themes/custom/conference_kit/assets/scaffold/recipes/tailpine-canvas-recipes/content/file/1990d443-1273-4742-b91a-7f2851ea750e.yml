@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 1990d443-1273-4742-b91a-7f2851ea750e
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: heladodementa-technology-1587673_1920.jpg
+  uri:
+    -
+      value: 'public://2026-03/heladodementa-technology-1587673_1920.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 780233
+  status:
+    -
+      value: true

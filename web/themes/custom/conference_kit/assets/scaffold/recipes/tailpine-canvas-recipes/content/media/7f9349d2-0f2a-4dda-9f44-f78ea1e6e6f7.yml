@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 7f9349d2-0f2a-4dda-9f44-f78ea1e6e6f7
+  bundle: image
+  default_langcode: en
+  depends:
+    3daf00b8-06a7-4549-bf20-1c9ff84cbb73: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: logo3.png
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: l3
+      title: ''
+      width: 129
+      height: 32
+      entity: 3daf00b8-06a7-4549-bf20-1c9ff84cbb73

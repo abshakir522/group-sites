@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: e53d8da3-461e-4692-bd4e-4b4f87de33c3
+  bundle: image
+  default_langcode: en
+  depends:
+    84f4084a-4c72-45f2-91d2-94c25d833b71: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: jake-nackos-IF9TK5Uy-KI-unsplash.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: p7
+      title: ''
+      width: 3974
+      height: 5000
+      entity: 84f4084a-4c72-45f2-91d2-94c25d833b71

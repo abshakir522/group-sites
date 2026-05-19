@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ea911821-6b97-4f4c-9731-df7f37133cb8
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: team3.png
+  uri:
+    -
+      value: 'public://2026-03/team3.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 29083
+  status:
+    -
+      value: true

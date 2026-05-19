@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a180dc9c-c884-476e-87bf-5341198e47fa
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: alex-suprun-ZHvM3XIOHoE-unsplash.jpg
+  uri:
+    -
+      value: 'public://2026-03/alex-suprun-ZHvM3XIOHoE-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 2806529
+  status:
+    -
+      value: true

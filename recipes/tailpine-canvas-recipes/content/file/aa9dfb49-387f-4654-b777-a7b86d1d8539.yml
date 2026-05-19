@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: aa9dfb49-387f-4654-b777-a7b86d1d8539
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: jurica-koletic-7YVZYZeITc8-unsplash.jpg
+  uri:
+    -
+      value: 'public://2026-03/jurica-koletic-7YVZYZeITc8-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 4204148
+  status:
+    -
+      value: true

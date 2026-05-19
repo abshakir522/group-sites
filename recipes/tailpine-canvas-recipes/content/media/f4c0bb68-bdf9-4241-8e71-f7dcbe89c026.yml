@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: f4c0bb68-bdf9-4241-8e71-f7dcbe89c026
+  bundle: image
+  default_langcode: en
+  depends:
+    37612f36-57f6-4223-a6a9-e4b02eb2113d: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: andrey-zvyagintsev-x0c6vTO5ibA-unsplash.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: g1
+      title: ''
+      width: 4000
+      height: 6001
+      entity: 37612f36-57f6-4223-a6a9-e4b02eb2113d

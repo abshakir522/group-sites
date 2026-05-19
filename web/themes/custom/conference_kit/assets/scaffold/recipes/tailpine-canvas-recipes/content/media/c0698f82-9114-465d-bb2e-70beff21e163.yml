@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: c0698f82-9114-465d-bb2e-70beff21e163
+  bundle: image
+  default_langcode: en
+  depends:
+    b54fb595-20d2-4963-b109-08d63723d7df: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: life-of-pix-home.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: home
+      title: ''
+      width: 1920
+      height: 1280
+      entity: b54fb595-20d2-4963-b109-08d63723d7df

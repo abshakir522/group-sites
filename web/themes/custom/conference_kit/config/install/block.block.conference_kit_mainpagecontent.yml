@@ -1,0 +1,18 @@
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - conference_kit
+id: conference_kit_mainpagecontent
+theme: conference_kit
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: "Main page content"
+  label_display: "0"
+  provider: system
+visibility: {}

@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 43138d90-151e-4110-8f92-721131122a96
+  bundle: image
+  default_langcode: en
+  depends:
+    1c59f5ae-0479-41a0-850a-2bee5088e16f: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: raccoon.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: rocon
+      title: ''
+      width: 1920
+      height: 1365
+      entity: 1c59f5ae-0479-41a0-850a-2bee5088e16f

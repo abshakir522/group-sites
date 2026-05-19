@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: b1664105-143b-4ed4-8505-467b2e6bd576
+  bundle: image
+  default_langcode: en
+  depends:
+    5b4b2ac7-6295-49ad-83e6-d5436f459f6e: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: oguz-yagiz-kara-MZf0mI14RI0-unsplash.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: b3
+      title: ''
+      width: 3315
+      height: 4144
+      entity: 5b4b2ac7-6295-49ad-83e6-d5436f459f6e
