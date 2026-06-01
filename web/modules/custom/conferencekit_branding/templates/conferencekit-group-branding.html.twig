@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Theme implementation for Conference Kit group branding.
+ *
+ * Each branding element variable is only available if enabled in the block
+ * configuration and available on the group resolved from the current domain.
+ *
+ * Available variables:
+ * - site_logo: Logo URL for the current domain group.
+ * - site_logo_alt: Alt text for the group logo.
+ * - site_name: Site title for the current domain group.
+ */
+#}
+<div class="site-branding conferencekit-group-branding">
+  <div class="site-branding__inner">
+    {% if site_logo %}
+      <a href="{{ path('<front>') }}" rel="home" class="site-branding__logo conferencekit-group-branding__logo">
+        <img src="{{ site_logo }}" alt="{{ site_logo_alt|default('Home'|t) }}" fetchpriority="high" class="conferencekit-group-branding__logo-image" />
+      </a>
+    {% endif %}
+    {% if site_name %}
+      <div class="site-branding__text conferencekit-group-branding__text">
+        <div class="site-branding__name conferencekit-group-branding__name">
+          <a href="{{ path('<front>') }}" rel="home" title="{{ 'Home'|t }}">{{ site_name }}</a>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</div>

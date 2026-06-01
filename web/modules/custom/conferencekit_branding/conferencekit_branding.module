@@ -1,0 +1,172 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Hooks for the Conference Kit Branding module.
+ */
+
+use Drupal\group\Entity\GroupInterface;
+
+/**
+ * Implements hook_theme().
+ */
+function conferencekit_branding_theme(): array {
+  return [
+    'conferencekit_group_branding' => [
+      'variables' => [
+        'site_logo' => NULL,
+        'site_logo_alt' => NULL,
+        'site_name' => NULL,
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for HTML document templates.
+ */
+function conferencekit_branding_preprocess_html(array &$variables): void {
+  $color_settings = conferencekit_branding_get_active_color_settings();
+  if ($color_settings) {
+    $styles = conferencekit_branding_build_color_styles($color_settings);
+    $variables['html_attributes']->setAttribute('style', implode('', $styles));
+  }
+
+  $variables['#cache']['contexts'][] = 'url.site.group';
+  if ($group = conferencekit_branding_get_group_from_active_domain()) {
+    $variables['#cache']['tags'] = \Drupal\Core\Cache\Cache::mergeTags(
+      $variables['#cache']['tags'] ?? [],
+      $group->getCacheTags(),
+    );
+  }
+}
+
+/**
+ * Gets active color settings, preferring the current domain group.
+ */
+function conferencekit_branding_get_active_color_settings(): array {
+  $field_map = conferencekit_branding_group_color_field_map();
+  $group = conferencekit_branding_get_group_from_active_domain();
+
+  if ($group instanceof GroupInterface && conferencekit_branding_group_color_enabled($group)) {
+    $settings = [];
+    foreach ($field_map as $theme_key => $field_name) {
+      $settings[$theme_key] = conferencekit_branding_group_color_value($group, $field_name, theme_get_setting($theme_key));
+    }
+    return $settings;
+  }
+
+  if (!theme_get_setting('conference_kit_enable_color')) {
+    return [];
+  }
+
+  $settings = [];
+  foreach ($field_map as $theme_key => $field_name) {
+    $settings[$theme_key] = theme_get_setting($theme_key);
+  }
+  return $settings;
+}
+
+/**
+ * Builds CSS custom property styles from color settings.
+ */
+function conferencekit_branding_build_color_styles(array $settings): array {
+  $defaults = [
+    'conference_kit_base_primary_color' => '#10B981',
+    'conference_kit_base_secondary_color' => '#064E3B',
+    'conference_kit_base_tertiary_color' => '#06B6D4',
+    'conference_kit_body_color' => '#1F2937',
+    'conference_kit_body_bg_color' => '#FFFFFF',
+    'conference_kit_h1_color' => '#1F2937',
+    'conference_kit_h2_color' => '#1F2937',
+    'conference_kit_h3_color' => '#1F2937',
+    'conference_kit_h4_color' => '#1F2937',
+    'conference_kit_success_color' => '#14A44D',
+    'conference_kit_warning_color' => '#E4A11B',
+    'conference_kit_error_color' => '#DC4C64',
+  ];
+
+  $settings += $defaults;
+
+  return [
+    "--color-primary:{$settings['conference_kit_base_primary_color']};",
+    "--color-secondary:{$settings['conference_kit_base_secondary_color']};",
+    "--color-tertiary:{$settings['conference_kit_base_tertiary_color']};",
+    "--color-body:{$settings['conference_kit_body_color']};",
+    "--color-body-bg:{$settings['conference_kit_body_bg_color']};",
+    "--color-h1:{$settings['conference_kit_h1_color']};",
+    "--color-h2:{$settings['conference_kit_h2_color']};",
+    "--color-h3:{$settings['conference_kit_h3_color']};",
+    "--color-h4:{$settings['conference_kit_h4_color']};",
+    "--color-success:{$settings['conference_kit_success_color']};",
+    "--color-warning:{$settings['conference_kit_warning_color']};",
+    "--color-error:{$settings['conference_kit_error_color']};",
+  ];
+}
+
+/**
+ * Maps theme color setting keys to group field names.
+ */
+function conferencekit_branding_group_color_field_map(): array {
+  return [
+    'conference_kit_base_primary_color' => 'field_ck_base_primary_color',
+    'conference_kit_base_secondary_color' => 'field_ck_base_secondary_color',
+    'conference_kit_base_tertiary_color' => 'field_ck_base_tertiary_color',
+    'conference_kit_body_color' => 'field_ck_body_color',
+    'conference_kit_body_bg_color' => 'field_ck_body_bg_color',
+    'conference_kit_h1_color' => 'field_ck_h1_color',
+    'conference_kit_h2_color' => 'field_ck_h2_color',
+    'conference_kit_h3_color' => 'field_ck_h3_color',
+    'conference_kit_h4_color' => 'field_ck_h4_color',
+    'conference_kit_success_color' => 'field_ck_success_color',
+    'conference_kit_warning_color' => 'field_ck_warning_color',
+    'conference_kit_error_color' => 'field_ck_error_color',
+  ];
+}
+
+/**
+ * Checks whether group-level colors are enabled.
+ */
+function conferencekit_branding_group_color_enabled(GroupInterface $group): bool {
+  return $group->hasField('field_ck_enable_color')
+    && !$group->get('field_ck_enable_color')->isEmpty()
+    && (bool) $group->get('field_ck_enable_color')->value;
+}
+
+/**
+ * Gets a color value from a group field with fallback.
+ */
+function conferencekit_branding_group_color_value(GroupInterface $group, string $field_name, mixed $fallback): string {
+  if ($group->hasField($field_name) && !$group->get($field_name)->isEmpty()) {
+    $value = trim((string) $group->get($field_name)->value);
+    if (preg_match('/^#?([0-9a-fA-F]{3}){1,2}$/', $value)) {
+      return str_starts_with($value, '#') ? $value : '#' . $value;
+    }
+  }
+
+  return (string) ($fallback ?: '#000000');
+}
+
+/**
+ * Gets the group assigned to the active domain.
+ */
+function conferencekit_branding_get_group_from_active_domain(): ?GroupInterface {
+  if (!\Drupal::hasService('domain.negotiator')) {
+    return NULL;
+  }
+
+  $domain = \Drupal::service('domain.negotiator')->getActiveDomain();
+  if (!$domain) {
+    return NULL;
+  }
+
+  $group_uuid = $domain->getThirdPartySetting('group_context_domain', 'group_uuid');
+  if (!$group_uuid) {
+    return NULL;
+  }
+
+  $group = \Drupal::service('entity.repository')->loadEntityByUuid('group', $group_uuid);
+  return $group instanceof GroupInterface ? $group : NULL;
+}

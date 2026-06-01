@@ -1,0 +1,51 @@
+
+{% set color_class = color_schema|default('secondary') %}
+{% set border_radius = size|striptags %}
+
+{% set base_classes = "flex justify-center gap-2.5 items-center py-3 px-5 xl:px-8 text-sm xl:text-base rounded-full xl:py-4 relative overflow-hidden after:content[''] after:absolute z-10 after:-z-10 after:transition-all after:duration-500" %}
+
+{% set button_style_values = button_variant|striptags %}
+
+
+{# Determine variant classes dynamically #}
+{% set variant_classes = {
+  'solid': 'h-fit bg-linear-to-l from-secondary to-tertiary after:left-0 after:right-full after:top-0 after:bottom-0 after:bg-body-title hover:text-primary hover:after:right-0 transition-all duration-500 group',
+  'outline': 'text-center bg-transparent hover:bg-transparent border border-secondary after:inset-0 after:bg-linear-to-l after:from-secondary after:to-tertiary after:rounded-full after:w-0 hover:after:w-full hover:shadow-secondary/80',
+  'gradient': 'bg-gradient-to-r  from-primary to-secondary text-white hover:opacity-90 focus:ring-purple-500'~ ' ' ~ border_radius,
+  'with_arrow': 'h-fit bg-linear-to-l from-secondary to-tertiary after:left-0 after:right-full after:top-0 after:bottom-0 after:bg-body-title hover:text-primary hover:after:right-0 transition-all duration-500 group',
+  'outline_with_arrow': 'border border-primary  text-'  ~ color_class ~   ' hover:' ~ color_class ~ ' hover:bg-' ~ color_class ~ ' hover:text-white focus:ring-' ~ color_class ~ ' flex items-center gap-2' ~ ' ' ~ border_radius,
+  'hover_arrow_move': 'bg-' ~ color_class ~ ' relative z-10 border-[1px] border-primary hover:bg-secondary hover:border-[1px] hover:border-primary  overflow-hidden  group before:absolute before:w-full before:transition-all before:duration-300 before:-left-full before:hover:left-0 before:rounded-full before:hover:bg-secondary before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-300 text-body-bg hover:text-body-bg' ~ ' ' ~ border_radius,
+
+} %}
+
+{% set button_style = variant_classes[button_style_values|default('hover_arrow_move')] %}
+
+
+{# CTA Button #}
+<a
+  href="{{ link }}"
+  role="button"
+  aria-label="{{ title }}"
+  title="{{ title }}"
+  {{ attributes.addClass(' ' ~ base_classes ~ ' ' ~ button_style) }}
+>
+  {{ title }}
+
+  {# Optional Arrow Icon for 'with_arrow' variant #}
+  {% if button_style_values == 'with_arrow' or button_style_values == 'outline_with_arrow' %}
+    <svg class="w-4 h-4   transition-transform duration-500 group-hover:translate-x-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/>
+    </svg>
+  {% endif %}
+  {% if button_style_values == 'hover_arrow_move' %}
+    <svg class="w-6 h-6 bg-secondary justify-end group-hover:rotate-90 group-hover:bg-primary group-hover:border-primary text-body-bg ease-linear duration-300 rounded-full border border-gray-700 group-hover:border-none p-2 rotate-45"
+      viewBox="0 0 16 19"
+      stroke="currentColor"
+      xmlns="http://www.w3.org/2000/svg">
+    <path d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+        class="fill-secondary group-hover:fill-primary"></path>
+  </svg>
+  {% endif %}
+
+</a>
+

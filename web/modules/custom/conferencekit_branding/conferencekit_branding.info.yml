@@ -1,0 +1,11 @@
+name: 'Conference Kit Branding'
+type: module
+description: 'Group-aware branding and microsite color settings for Conference Kit.'
+package: 'Conference Kit'
+core_version_requirement: ^11
+dependencies:
+  - conferencekit_core:conferencekit_core
+  - domain:domain
+  - group:group
+  - group_context_domain:group_context_domain
+  - image:image

@@ -7,6 +7,7 @@
   --color-tertiary: #f9fafb;
   --color-body: #000000;
   --color-body-bg: #ffffff;
+  --color-body-title: #ffffff;
   --color-h1: #1f2937;
   --color-h2: #1f2937;
   --color-h3: #1f2937;
@@ -130,6 +131,34 @@
   --animation-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   --animation-bounce: bounce 1s infinite;
 }
+
+.container-px {
+  padding-left: clamp(20px, 6vw, 120px);
+  padding-right: clamp(20px, 6vw, 120px);
+}
+
+.load {
+  animation: load 0.5s cubic-bezier(0, .7, .77, 1) forwards;
+}
+
+@media (min-width: 1280px) {
+  .load {
+    animation: none;
+  }
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 header .search-icon form {
   @apply flex flex-row justify-around w-[300px] sm:w-[400px] items-center bg-white shadow px-4 py-2;
 

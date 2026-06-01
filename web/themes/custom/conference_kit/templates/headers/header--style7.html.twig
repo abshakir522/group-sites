@@ -1,0 +1,39 @@
+{{ attach_library('conference_kit/menu-toggle') }}
+<nav class="fixed top-0 left-0 w-full z-100 container-px py-[clamp(10px,3vw,24px)]">
+  <div class="relative flex justify-between rounded-full bg-body-title/5 backdrop-blur-xl px-5 py-3">
+    <!-- Logo -->
+    <div class="flex items-center gap-3">
+        {{ page.branding }}
+    </div>
+
+    <!-- Nav Options -->
+    <div class="flex items-center">
+        <!-- Hamburger -->
+        <div onclick="openMenu(this)"
+            class="xl:hidden cursor-pointer h-9 w-9 grid place-items-center rounded-full bg-linear-to-l from-secondary to-tertiary">
+            <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.3333 1.16667C16.3333 0.857247 16.2103 0.560501 15.9915 0.341709C15.7728 0.122917 15.476 0 15.1666 0H1.16658C0.857164 0 0.560418 0.122917 0.341625 0.341709C0.122833 0.560501 -8.2016e-05 0.857247 -8.2016e-05 1.16667C-8.2016e-05 1.47609 0.122833 1.77283 0.341625 1.99162C0.560418 2.21042 0.857164 2.33333 1.16658 2.33333H15.1666C15.476 2.33333 15.7728 2.21042 15.9915 1.99162C16.2103 1.77283 16.3333 1.47609 16.3333 1.16667ZM16.3333 7C16.3333 6.69058 16.2103 6.39383 15.9915 6.17504C15.7728 5.95625 15.476 5.83333 15.1666 5.83333H1.16658C0.857164 5.83333 0.560419 5.95625 0.341626 6.17504C0.122833 6.39383 -8.2016e-05 6.69058 -8.2016e-05 7C-8.2016e-05 7.30942 0.122833 7.60616 0.341626 7.82496C0.560419 8.04375 0.857164 8.16667 1.16658 8.16667H15.1666C15.476 8.16667 15.7728 8.04375 15.9915 7.82496C16.2103 7.60616 16.3333 7.30942 16.3333 7ZM16.3333 12.8333C16.3333 12.5239 16.2103 12.2272 15.9915 12.0084C15.7728 11.7896 15.476 11.6667 15.1666 11.6667H1.16658C0.857164 11.6667 0.560418 11.7896 0.341625 12.0084C0.122833 12.2272 -8.2016e-05 12.5239 -8.2016e-05 12.8333C-8.2016e-05 13.1428 0.122833 13.4395 0.341625 13.6583C0.560418 13.8771 0.857164 14 1.16658 14H15.1666C15.476 14 15.7728 13.8771 15.9915 13.6583C16.2103 13.4395 16.3333 13.1428 16.3333 12.8333Z"
+                    fill="white" fill-opacity="0.8" />
+            </svg>
+        </div>
+
+        <!-- Links -->
+        <div
+            class="nav__option--links uppercase load hidden flex flex-col justify-between xl:h-fit min-h-100 h-[calc(100vh-190px)] max-h-142.5 border-2 rounded-2xl border-secondary bg-body-bg top-full mt-2.5 xl:mt-0 absolute right-0 left-0 shadow-2xl px-6 py-8 xl:static xl:flex xl:flex-row xl:min-h-full xl:border-0 xl:shadow-none xl:gap-[clamp(28px,2.2vw,40px)] xl:bg-transparent xl:p-0 xl:items-center">
+            {{ page.primary_menu }}
+            <div class="xl:hidden flex flex-col gap-5">
+                {% if page.top_right_actions %}
+                    {{ page.top_right_actions }}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div class="hidden xl:flex gap-5 items-center">
+        {% if page.top_right_actions %}
+          {{ page.top_right_actions }}
+        {% endif %}
+    </div>
+  </div>
+</nav>

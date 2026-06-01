@@ -1,0 +1,10 @@
+block.settings.conferencekit_group_branding_block:
+  type: block_settings
+  label: 'Conference Kit group branding block'
+  mapping:
+    use_site_logo:
+      type: boolean
+      label: 'Use group logo'
+    use_site_name:
+      type: boolean
+      label: 'Use group site title'

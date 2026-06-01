@@ -1,0 +1,71 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
+
+name: CTA Button (Canvas)
+status: stable
+description: "CTA buttons are used to display call-to-action links."
+
+variants:
+  primary:
+    title: Primary
+  secondary:
+    title: Secondary
+  tertiary:
+    title: Tertiary
+  body:
+    title: Body
+  success:
+    title: Success
+  warning:
+    title: Warning
+  error:
+    title: Error
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: "CTA Title."
+      examples: ['Click Here']
+    link:
+      type: string
+      title: Link
+      description: "URL for the CTA."
+      examples: ['https://example.com']
+    color_schema:
+      type: string
+      title: Color Schema
+      description: "Choose a color schema for the component."
+      default: secondary
+      enum:
+        - primary
+        - secondary
+        - tertiary
+        - info
+        - success
+        - error
+    size:
+      type: string
+      title: Size
+      description: "Choose the size (border radius) for the component."
+      enum:
+        - rounded-sm
+        - rounded-md
+        - rounded-lg
+        - rounded-xl
+        - rounded-full
+      default: rounded-md
+    button_variant:
+      type: string
+      title: Button Variant
+      description: "Choose the variant for the component."
+      enum:
+        - solid
+        - outline
+        - with_arrow
+        - gradient
+        - outline_with_arrow
+        - hover_arrow_move
+      default: hover_arrow_move
+

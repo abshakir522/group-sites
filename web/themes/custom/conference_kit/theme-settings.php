@@ -350,6 +350,7 @@ function conference_kit_form_system_theme_settings_alter(&$form, FormStateInterf
       'style4' => t('Style 4: Branding left, Menu Center, Actions right'),
       'style5' => t('Style 5: Branding and Menu left, Search right'),
       'style6' => t('Style 6: Branding and Menu left, Actions right'),
+      'style7' => t('Style 7: Fixed glass header with menu and actions'),
     ],
   ];
   $form['footer_settings']['footer_settings_container']['footer_class'] = [
@@ -393,4 +394,3 @@ function conference_kit_colorCallback($form, FormStateInterface $form_state)
 {
   return $form['colors']['scheme']['color_container'];
 }
-

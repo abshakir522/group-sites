@@ -36,8 +36,8 @@ function conference_kit_preprocess_html(&$variables)
     $variables['attributes']['class'] = [];
   }
 
-  // Color settings
-  if (theme_get_setting('conference_kit_enable_color')) {
+  // Color settings. Group-aware colors are owned by conferencekit_branding.
+  if (!function_exists('conferencekit_branding_get_active_color_settings') && theme_get_setting('conference_kit_enable_color')) {
     $pc = theme_get_setting('conference_kit_base_primary_color') ?? '#10B981';
     $sc = theme_get_setting('conference_kit_base_secondary_color') ?? '#064E3B';
     $tc = theme_get_setting('conference_kit_base_tertiary_color') ?? '#06B6D4';
@@ -56,7 +56,7 @@ function conference_kit_preprocess_html(&$variables)
       "--color-secondary:$sc;",
       "--color-tertiary:$tc;",
       "--color-body: $bc;",
-      "--color-body_bg: $bgc;",
+      "--color-body-bg: $bgc;",
       "--color-h1: $h1c;",
       "--color-h2: $h2c;",
       "--color-h3: $h3c;",

@@ -8,6 +8,12 @@ libraries:
   - conference_kit/fixed-header
   - conference_kit/swiper
   - conference_kit/swiper-custom
+libraries-override:
+  # Replace an asset with another.
+  system/base:
+    css:
+      component:
+        css/components/hidden.module.css: css/hidden.css
 description: 'A modern Drupal  Theme powered by Tailwind CSS and Alpine.js, designed for flexibility, speed, and clean UI development.'
 core_version_requirement: ^11
 generator: 'tailpine_starterkit:2.0.0-rc3'

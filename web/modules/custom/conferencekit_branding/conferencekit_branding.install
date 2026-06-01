@@ -1,0 +1,162 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Install and update hooks for Conference Kit Branding.
+ */
+
+use Drupal\Core\Entity\Entity\EntityFormDisplay;
+use Drupal\field\Entity\FieldConfig;
+use Drupal\field\Entity\FieldStorageConfig;
+
+/**
+ * Adds microsite color fields when the module is installed.
+ */
+function conferencekit_branding_install(): void {
+  _conferencekit_branding_ensure_group_color_fields();
+}
+
+/**
+ * Adds microsite color fields to existing installs.
+ */
+function conferencekit_branding_update_10001(): void {
+  _conferencekit_branding_ensure_group_color_fields();
+}
+
+/**
+ * Ensures the conference group bundle has microsite color fields.
+ */
+function _conferencekit_branding_ensure_group_color_fields(): void {
+  $bundle = 'conference';
+
+  $fields = [
+    'field_ck_enable_color' => [
+      'type' => 'boolean',
+      'label' => 'Enable color scheme',
+      'default_value' => [['value' => 0]],
+      'widget' => 'boolean_checkbox',
+      'widget_settings' => ['display_label' => TRUE],
+    ],
+    'field_ck_base_primary_color' => [
+      'type' => 'string',
+      'label' => 'Primary base color',
+      'default_value' => [['value' => '#10B981']],
+      'widget' => 'string_textfield',
+      'widget_settings' => ['size' => 10, 'placeholder' => '#10B981'],
+    ],
+    'field_ck_base_secondary_color' => [
+      'type' => 'string',
+      'label' => 'Secondary base color',
+      'default_value' => [['value' => '#064E3B']],
+      'widget' => 'string_textfield',
+      'widget_settings' => ['size' => 10, 'placeholder' => '#064E3B'],
+    ],
+    'field_ck_base_tertiary_color' => [
+      'type' => 'string',
+      'label' => 'Tertiary base color',
+      'default_value' => [['value' => '#06B6D4']],
+      'widget' => 'string_textfield',
+      'widget_settings' => ['size' => 10, 'placeholder' => '#06B6D4'],
+    ],
+    'field_ck_body_color' => [
+      'type' => 'string',
+      'label' => 'Body color',
+      'default_value' => [['value' => '#1F2937']],
+      'widget' => 'string_textfield',
+      'widget_settings' => ['size' => 10, 'placeholder' => '#1F2937'],
+    ],
+    'field_ck_body_bg_color' => [
+      'type' => 'string',
+      'label' => 'Body background color',
+      'default_value' => [['value' => '#FFFFFF']],
+      'widget' => 'string_textfield',
+      'widget_settings' => ['size' => 10, 'placeholder' => '#FFFFFF'],
+    ],
+    'field_ck_h1_color' => [
+      'type' => 'string',
+      'label' => 'H1 color',
+      'default_value' => [['value' => '#1F2937']],
+      'widget' => 'string_textfield',
+      'widget_settings' => ['size' => 10, 'placeholder' => '#1F2937'],
+    ],
+    'field_ck_h2_color' => [
+      'type' => 'string',
+      'label' => 'H2 color',
+      'default_value' => [['value' => '#1F2937']],
+      'widget' => 'string_textfield',
+      'widget_settings' => ['size' => 10, 'placeholder' => '#1F2937'],
+    ],
+    'field_ck_h3_color' => [
+      'type' => 'string',
+      'label' => 'H3 color',
+      'default_value' => [['value' => '#1F2937']],
+      'widget' => 'string_textfield',
+      'widget_settings' => ['size' => 10, 'placeholder' => '#1F2937'],
+    ],
+    'field_ck_h4_color' => [
+      'type' => 'string',
+      'label' => 'H4 color',
+      'default_value' => [['value' => '#1F2937']],
+      'widget' => 'string_textfield',
+      'widget_settings' => ['size' => 10, 'placeholder' => '#1F2937'],
+    ],
+    'field_ck_success_color' => [
+      'type' => 'string',
+      'label' => 'Success color',
+      'default_value' => [['value' => '#14A44D']],
+      'widget' => 'string_textfield',
+      'widget_settings' => ['size' => 10, 'placeholder' => '#14A44D'],
+    ],
+    'field_ck_warning_color' => [
+      'type' => 'string',
+      'label' => 'Warning color',
+      'default_value' => [['value' => '#E4A11B']],
+      'widget' => 'string_textfield',
+      'widget_settings' => ['size' => 10, 'placeholder' => '#E4A11B'],
+    ],
+    'field_ck_error_color' => [
+      'type' => 'string',
+      'label' => 'Error color',
+      'default_value' => [['value' => '#DC4C64']],
+      'widget' => 'string_textfield',
+      'widget_settings' => ['size' => 10, 'placeholder' => '#DC4C64'],
+    ],
+  ];
+
+  $weight = 3;
+  foreach ($fields as $field_name => $definition) {
+    if (!FieldStorageConfig::loadByName('group', $field_name)) {
+      FieldStorageConfig::create([
+        'field_name' => $field_name,
+        'entity_type' => 'group',
+        'type' => $definition['type'],
+        'cardinality' => 1,
+      ])->save();
+    }
+
+    if (!FieldConfig::loadByName('group', $bundle, $field_name)) {
+      FieldConfig::create([
+        'field_name' => $field_name,
+        'entity_type' => 'group',
+        'bundle' => $bundle,
+        'label' => $definition['label'],
+        'required' => FALSE,
+        'default_value' => $definition['default_value'],
+      ])->save();
+    }
+
+    $form_display = EntityFormDisplay::load("group.$bundle.default");
+    if ($form_display) {
+      $form_display
+        ->setComponent($field_name, [
+          'type' => $definition['widget'],
+          'weight' => $weight++,
+          'region' => 'content',
+          'settings' => $definition['widget_settings'],
+        ])
+        ->save();
+    }
+  }
+}

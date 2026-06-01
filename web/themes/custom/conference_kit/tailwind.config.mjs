@@ -5,9 +5,11 @@ const enableDaisy = process.env.DAISY === 'true'
 
 module.exports = {
   content: [
-     "./components/**/*.twig",
-      "./templates/**/*.html.twig",
-      "./templates/*.html.twig",
+    "./components/**/*.twig",
+    "./templates/**/*.twig",
+    "./templates/*.twig",
+    "./templates/**/*.html.twig",
+    "./templates/*.html.twig",
       "./components/**/*.stories.json",
       "./components/**/*.stories.yml",
       "./assets/scaffold/recipes/tailpine_content/content/node/*.yml"

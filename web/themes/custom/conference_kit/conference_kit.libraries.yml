@@ -115,7 +115,7 @@ main:
   css:
     theme:
       dist/main.css:
-        weight: -10
+        weight: -9
 
 daisyui_styles:
   version: 1.x
@@ -149,6 +149,11 @@ fixed-header:
   dependencies:
     - core/drupal
     - core/jquery
+    
+menu-toggle:
+  header: true
+  js:
+    js/menu.js: {}
 
 swiper:
   css:
@@ -170,5 +175,4 @@ swiper-custom:
     - core/drupal
     - core/once
     - tailpine/swiper
-
 
