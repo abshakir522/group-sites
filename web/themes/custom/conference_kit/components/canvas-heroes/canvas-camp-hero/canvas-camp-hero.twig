@@ -1,0 +1,105 @@
+{#
+/**
+ * @file
+ * DrupalCamp-style hero for Conference Kit microsites.
+ */
+#}
+
+{% set hero_heading_level = heading_level|default(1) %}
+{% set background_src = background_image.src|default(background_image|default('')) %}
+{% set social_links = social_links|default([
+  {
+    title: social_one_title|default(''),
+    url: social_one_url|default(''),
+    icon: social_one_icon|default({}),
+  },
+  {
+    title: social_two_title|default(''),
+    url: social_two_url|default(''),
+    icon: social_two_icon|default({}),
+  },
+  {
+    title: social_three_title|default(''),
+    url: social_three_url|default(''),
+    icon: social_three_icon|default({}),
+  },
+  {
+    title: social_four_title|default(''),
+    url: social_four_url|default(''),
+    icon: social_four_icon|default({}),
+  },
+]) %}
+
+<section
+  {% if background_src %}
+    style="background-image: url('{{ background_src }}'); background-repeat: no-repeat; background-size: cover; background-position: center;"
+  {% endif %}
+  {{ attributes.addClass('relative pb-[clamp(60px,12vw,260px)] after:content-[\'\'] after:absolute after:inset-0 after:bg-linear-to-t after:from-primary after:to-primary/40 z-0 after:-z-10') }}
+>
+  <div class="max-w-480 container-pt container-px mx-auto flex flex-col gap-[clamp(32px,5vw,60px)]">
+    <div class="flex flex-col gap-[clamp(20px,5vw,40px)]">
+      <h{{ hero_heading_level }} class="camp-hero-title max-w-258">
+        {{ title }}
+      </h{{ hero_heading_level }}>
+
+      {% if description %}
+        <div class="max-w-150 leading-[26px] md:text-lg md:leading-[30px] xl:text-xl xl:leading-8 text-body-title/80">
+          {{ description }}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="flex flex-col xl:flex-row justify-between gap-[clamp(32px,5vw,60px)]">
+      {% if primary_cta_title or secondary_cta_title %}
+        <div class="flex flex-col gap-4 md:flex-row md:gap-5 rounded-full">
+          {% if primary_cta_title %}
+            {{ include('conference_kit:canvas-cta', {
+              title: primary_cta_title,
+              link: primary_cta_url|default('#'),
+              color_schema: 'secondary',
+              size: 'rounded-full',
+              button_variant: 'solid',
+              attributes: create_attribute(),
+            }, with_context = false) }}
+          {% endif %}
+
+          {% if secondary_cta_title %}
+            {{ include('conference_kit:canvas-cta', {
+              title: secondary_cta_title,
+              link: secondary_cta_url|default('#'),
+              color_schema: 'secondary',
+              size: 'rounded-full',
+              button_variant: 'outline',
+              attributes: create_attribute(),
+            }, with_context = false) }}
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if social_links %}
+        <div class="flex gap-4">
+          {% for social_link in social_links %}
+            {% set social_url = social_link.url|default('#') %}
+            {% set social_title = social_link.title|default('Social link'|t) %}
+            {% set social_icon = social_link.icon.src|default(social_link.icon|default('')) %}
+
+            {% if social_url or social_icon %}
+              <a
+                href="{{ social_url ?: '#' }}"
+                aria-label="{{ social_title }}"
+                title="{{ social_title }}"
+                class="h-10 w-10 flex items-center justify-center border border-body-title rounded-full relative z-10 after:-z-10 after:content-[''] after:absolute after:inset-0 overflow-hidden after:opacity-0 hover:after:opacity-100 after:bg-linear-to-l after:from-secondary after:to-tertiary after:transition-all after:duration-500"
+              >
+                {% if social_icon %}
+                  <img src="{{ social_icon }}" alt="" aria-hidden="true">
+                {% else %}
+                  <span class="sr-only">{{ social_title }}</span>
+                {% endif %}
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

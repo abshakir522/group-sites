@@ -1,0 +1,141 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
+name: DrupalCamp Hero
+status: stable
+description: 'A DrupalCamp-style hero with background image, heading, summary, CTAs, and social links.'
+group: Heros
+category: Hero
+props:
+  type: object
+  properties:
+    background_image:
+      $ref: json-schema-definitions://canvas.module/image
+      type: object
+      title: Background image
+      description: Hero background image.
+      examples:
+        - src: 'navImage.jpg'
+          alt: 'Conference audience'
+          width: 1920
+          height: 1080
+    title:
+      title: Title
+      type: string
+      description: Hero heading.
+      examples:
+        - 'The Largest Drupal Conference in the Middle East'
+    heading_level:
+      title: Heading level
+      type: integer
+      description: HTML heading level for the hero title.
+      enum:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+      default: 1
+    description:
+      title: Description
+      type: string
+      description: Hero summary text.
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - "The Middle East's Premier Drupal Conference Learn, connect, and build with the global Drupal community in Dubai."
+    primary_cta_title:
+      title: Primary CTA title
+      type: string
+      examples:
+        - 'REGISTER NOW'
+    primary_cta_url:
+      title: Primary CTA URL
+      type: string
+      examples:
+        - '/registration'
+    secondary_cta_title:
+      title: Secondary CTA title
+      type: string
+      examples:
+        - 'VIEW SCHEDULE'
+    secondary_cta_url:
+      title: Secondary CTA URL
+      type: string
+      examples:
+        - '/sessions'
+    social_one_title:
+      title: Social one title
+      type: string
+      examples:
+        - 'Facebook'
+    social_one_url:
+      title: Social one URL
+      type: string
+      examples:
+        - '#'
+    social_one_icon:
+      title: Social one icon
+      type: object
+      $ref: json-schema-definitions://canvas.module/image
+      examples:
+        - src: 'facebook.svg'
+          alt: ''
+          width: 24
+          height: 24
+    social_two_title:
+      title: Social two title
+      type: string
+      examples:
+        - 'Twitter'
+    social_two_url:
+      title: Social two URL
+      type: string
+      examples:
+        - '#'
+    social_two_icon:
+      title: Social two icon
+      type: object
+      $ref: json-schema-definitions://canvas.module/image
+      examples:
+        - src: 'twitter.svg'
+          alt: ''
+          width: 24
+          height: 24
+    social_three_title:
+      title: Social three title
+      type: string
+      examples:
+        - 'LinkedIn'
+    social_three_url:
+      title: Social three URL
+      type: string
+      examples:
+        - '#'
+    social_three_icon:
+      title: Social three icon
+      type: object
+      $ref: json-schema-definitions://canvas.module/image
+      examples:
+        - src: 'linkedin.svg'
+          alt: ''
+          width: 24
+          height: 24
+    social_four_title:
+      title: Social four title
+      type: string
+      examples:
+        - 'Instagram'
+    social_four_url:
+      title: Social four URL
+      type: string
+      examples:
+        - '#'
+    social_four_icon:
+      title: Social four icon
+      type: object
+      $ref: json-schema-definitions://canvas.module/image
+      examples:
+        - src: 'instagram.svg'
+          alt: ''
+          width: 24
+          height: 24
