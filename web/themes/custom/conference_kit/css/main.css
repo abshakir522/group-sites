@@ -148,6 +148,34 @@
   line-height: 1.08;
 }
 
+.camp-section-eyebrow {
+  color: var(--color-body-title);
+  font-size: clamp(24px, 2.4vw, 32px);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.camp-section-title {
+  font-size: clamp(26px, 3.6vw, 48px);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.camp-card-title {
+  color: var(--color-body-title);
+  font-size: clamp(20px, 2.2vw, 28px);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.camp-stat-number {
+  color: transparent;
+  font-size: clamp(42px, 7vw, 96px);
+  font-weight: 700;
+  line-height: 1.08;
+  -webkit-text-stroke: 2px var(--color-secondary);
+}
+
 .load {
   animation: load 0.5s cubic-bezier(0, .7, .77, 1) forwards;
 }

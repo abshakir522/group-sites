@@ -1,0 +1,83 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
+name: DrupalCamp Venue Stats
+status: stable
+description: 'A DrupalCamp-style venue section with image, location details, date, and event statistics.'
+group: Content
+category: Venue
+props:
+  type: object
+  properties:
+    image:
+      title: Venue image
+      type: object
+      $ref: json-schema-definitions://canvas.module/image
+      examples:
+        - src: 'sharjahUni.png'
+          alt: 'American University of Sharjah'
+          width: 1280
+          height: 720
+    eyebrow:
+      title: Eyebrow
+      type: string
+      examples:
+        - 'THE VENUE'
+    venue_name_line_one:
+      title: Venue name line one
+      type: string
+      examples:
+        - 'American University'
+    venue_name_line_two:
+      title: Venue name line two
+      type: string
+      examples:
+        - 'of Sharjah'
+    address:
+      title: Address
+      type: string
+      examples:
+        - 'University City - Sharjah - United Arab Emirates'
+    date_text:
+      title: Date text
+      type: string
+      examples:
+        - '29-31 December, 2026'
+    stat_one_value:
+      title: Stat one value
+      type: string
+      examples:
+        - '12+'
+    stat_one_label:
+      title: Stat one label
+      type: string
+      examples:
+        - 'Expert Speaker'
+    stat_two_value:
+      title: Stat two value
+      type: string
+      examples:
+        - '100'
+    stat_two_label:
+      title: Stat two label
+      type: string
+      examples:
+        - 'Attendees'
+    stat_three_value:
+      title: Stat three value
+      type: string
+      examples:
+        - '15'
+    stat_three_label:
+      title: Stat three label
+      type: string
+      examples:
+        - 'Sessions'
+    stat_four_value:
+      title: Stat four value
+      type: string
+      examples:
+        - '10+'
+    stat_four_label:
+      title: Stat four label
+      type: string
+      examples:
+        - 'Sponsors'

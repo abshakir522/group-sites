@@ -1,0 +1,64 @@
+{#
+/**
+ * @file
+ * DrupalCamp-style reasons-to-attend section for Conference Kit microsites.
+ */
+#}
+
+{% set items = items|default([
+  {
+    title: item_one_title|default(''),
+    description: item_one_description|default(''),
+  },
+  {
+    title: item_two_title|default(''),
+    description: item_two_description|default(''),
+  },
+  {
+    title: item_three_title|default(''),
+    description: item_three_description|default(''),
+  },
+  {
+    title: item_four_title|default(''),
+    description: item_four_description|default(''),
+  },
+]) %}
+
+<section {{ attributes.addClass('relative', 'overflow-x-hidden') }}>
+  <div class="absolute -right-[15.625rem] -top-[6.25rem] z-30 h-[clamp(406px,40vw,918px)] w-[clamp(406px,40vw,918px)] bg-secondary/50 pointer-events-none rounded-full blur-[300px] overflow-visible"></div>
+
+  <div class="container-px relative z-40 max-w-480 mx-auto xl:pt-10 pb-[clamp(60px,11vw,160px)]">
+    {% if heading_prefix or heading_highlight or heading_suffix %}
+      <h3 class="camp-section-title uppercase">
+        {{ heading_prefix }}
+        {% if heading_highlight %}
+          <span class="text-secondary">{{ heading_highlight }}</span>
+        {% endif %}
+        {% if heading_suffix %}
+          <br class="hidden md:block">
+          {{ heading_suffix }}
+        {% endif %}
+      </h3>
+    {% endif %}
+
+    <div class="grid grid-cols-1 gap-6 md:gap-4 md:grid-cols-2 xl:grid-cols-4 xl:gap-0 pt-[clamp(40px,5vw,90px)] text-body-title/80">
+      {% for item in items %}
+        {% if item.title or item.description %}
+          <div class="py-[0.625rem] px-5 border-l border-secondary flex flex-col justify-between">
+            {% if item.title %}
+              <h5 class="camp-card-title capitalize">
+                {{ item.title }}
+              </h5>
+            {% endif %}
+
+            {% if item.description %}
+              <div class="leading-[26px] xl:text-lg xl:leading-[30px] pt-[clamp(8px,3vw,24px)]">
+                {{ item.description }}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

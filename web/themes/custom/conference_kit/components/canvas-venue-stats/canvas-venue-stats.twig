@@ -1,0 +1,95 @@
+{#
+/**
+ * @file
+ * DrupalCamp-style venue and statistics section for Conference Kit microsites.
+ */
+#}
+
+{% set image_src = image.src|default(image|default('')) %}
+{% set image_alt = image.alt|default('') %}
+{% set stats = [
+  {
+    value: stat_one_value|default(''),
+    label: stat_one_label|default(''),
+  },
+  {
+    value: stat_two_value|default(''),
+    label: stat_two_label|default(''),
+  },
+  {
+    value: stat_three_value|default(''),
+    label: stat_three_label|default(''),
+  },
+  {
+    value: stat_four_value|default(''),
+    label: stat_four_label|default(''),
+  },
+] %}
+
+<section {{ attributes.addClass('relative text-body-title/80 overflow-visible') }}>
+  <div class="absolute -left-[15.625rem] -top-[15.625rem] z-30 h-[clamp(406px,40vw,918px)] w-[clamp(406px,40vw,918px)] bg-secondary/50 pointer-events-none rounded-full blur-[300px] overflow-visible"></div>
+
+  <div class="container-px relative z-40 max-w-480 mx-auto pb-[clamp(60px,12vw,140px)]">
+    <div class="relative">
+      {% if image_src %}
+        <img
+          class="w-full xl:w-2/3 relative -z-10 rounded-xl aspect-[7/5] xl:aspect-[11/6] object-cover"
+          src="{{ image_src }}"
+          alt="{{ image_alt }}"
+        >
+      {% endif %}
+
+      <div class="p-[clamp(24px,3.2vw,80px)] rounded-2xl bg-body-bg -mt-5 mx-3 xl:mx-0 xl:absolute right-0 bottom-0">
+        {% if eyebrow %}
+          <h4 class="camp-section-eyebrow uppercase">{{ eyebrow }}</h4>
+        {% endif %}
+
+        {% if venue_name_line_one or venue_name_line_two %}
+          <h3 class="camp-section-title text-secondary uppercase pt-[clamp(24px,3vw,40px)]">
+            {{ venue_name_line_one }}
+            {% if venue_name_line_two %}
+              <br class="hidden xl:block">
+              {{ venue_name_line_two }}
+            {% endif %}
+          </h3>
+        {% endif %}
+
+        <div>
+          {% if address %}
+            <div class="flex gap-4 pt-8">
+              <svg class="mt-1 shrink-0 text-secondary" width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M14.2857 7.85714C14.2857 6.15218 13.6084 4.51705 12.4028 3.31146C11.1972 2.10587 9.56211 1.42857 7.85714 1.42857C6.15218 1.42857 4.51705 2.10587 3.31146 3.31146C2.10587 4.51705 1.42857 6.15218 1.42857 7.85714C1.42857 10.4933 3.53795 13.9308 7.85714 18.0491C12.1763 13.9286 14.2857 10.4911 14.2857 7.85714ZM7.85714 20C2.61905 15.2381 0 11.1905 0 7.85714C0 5.7733 0.827804 3.7748 2.3013 2.3013C3.7748 0.827804 5.7733 0 7.85714 0C9.94099 0 11.9395 0.827804 13.413 2.3013C14.8865 3.7748 15.7143 5.7733 15.7143 7.85714C15.7143 11.1905 13.0952 15.2381 7.85714 20Z" fill="currentColor" />
+                <path d="M7.85714 10C8.42546 10 8.97051 9.77424 9.37237 9.37237C9.77424 8.97051 10 8.42546 10 7.85714C10 7.28882 9.77424 6.74378 9.37237 6.34191C8.97051 5.94005 8.42546 5.71429 7.85714 5.71429C7.28882 5.71429 6.74378 5.94005 6.34191 6.34191C5.94005 6.74378 5.71429 7.28882 5.71429 7.85714C5.71429 8.42546 5.94005 8.97051 6.34191 9.37237C6.74378 9.77424 7.28882 10 7.85714 10ZM7.85714 11.4286C6.90994 11.4286 6.00153 11.0523 5.33176 10.3825C4.66199 9.71275 4.28571 8.80435 4.28571 7.85714C4.28571 6.90994 4.66199 6.00153 5.33176 5.33176C6.00153 4.66199 6.90994 4.28571 7.85714 4.28571C8.80435 4.28571 9.71275 4.66199 10.3825 5.33176C11.0523 6.00153 11.4286 6.90994 11.4286 7.85714C11.4286 8.80435 11.0523 9.71275 10.3825 10.3825C9.71275 11.0523 8.80435 11.4286 7.85714 11.4286Z" fill="currentColor" />
+              </svg>
+              <p class="text-sm leading-[22px] font-normal xl:text-lg xl:leading-[30px]">{{ address }}</p>
+            </div>
+          {% endif %}
+
+          {% if date_text %}
+            <div class="flex gap-4 pt-3 xl:pt-6">
+              <svg class="mt-1 shrink-0 text-secondary" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M14.45 1.7H12.75V0.85C12.75 0.624566 12.6604 0.408365 12.501 0.248959C12.3416 0.0895533 12.1254 0 11.9 0C11.6746 0 11.4584 0.0895533 11.299 0.248959C11.1396 0.408365 11.05 0.624566 11.05 0.85V1.7H5.95V0.85C5.95 0.624566 5.86045 0.408365 5.70104 0.248959C5.54164 0.0895533 5.32543 0 5.1 0C4.87457 0 4.65837 0.0895533 4.49896 0.248959C4.33955 0.408365 4.25 0.624566 4.25 0.85V1.7H2.55C1.8737 1.7 1.2251 1.96866 0.746878 2.44688C0.26866 2.9251 0 3.5737 0 4.25V14.45C0 15.1263 0.26866 15.7749 0.746878 16.2531C1.2251 16.7313 1.8737 17 2.55 17H14.45C15.1263 17 15.7749 16.7313 16.2531 16.2531C16.7313 15.7749 17 15.1263 17 14.45V4.25C17 3.5737 16.7313 2.9251 16.2531 2.44688C15.7749 1.96866 15.1263 1.7 14.45 1.7ZM15.3 14.45C15.3 14.6754 15.2104 14.8916 15.051 15.051C14.8916 15.2104 14.6754 15.3 14.45 15.3H2.55C2.32457 15.3 2.10837 15.2104 1.94896 15.051C1.78955 14.8916 1.7 14.6754 1.7 14.45V8.5H15.3V14.45ZM15.3 6.8H1.7V4.25C1.7 4.02457 1.78955 3.80837 1.94896 3.64896C2.10837 3.48955 2.32457 3.4 2.55 3.4H4.25V4.25C4.25 4.47543 4.33955 4.69163 4.49896 4.85104C4.65837 5.01045 4.87457 5.1 5.1 5.1C5.32543 5.1 5.54164 5.01045 5.70104 4.85104C5.86045 4.69163 5.95 4.47543 5.95 4.25V3.4H11.05V4.25C11.05 4.47543 11.1396 4.69163 11.299 4.85104C11.4584 5.01045 11.6746 5.1 11.9 5.1C12.1254 5.1 12.3416 5.01045 12.501 4.85104C12.6604 4.69163 12.75 4.47543 12.75 4.25V3.4H14.45C14.6754 3.4 14.8916 3.48955 15.051 3.64896C15.2104 3.80837 15.3 4.02457 15.3 4.25V6.8Z" fill="currentColor" />
+              </svg>
+              <p class="text-sm leading-[22px] font-normal xl:text-lg xl:leading-[30px]">{{ date_text }}</p>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 md:gap-0 mx-3 xl:mx-0 md:justify-between md:flex xl:w-1/2 mt-10 xl:mt-[3.125rem]">
+        {% for stat in stats %}
+          {% if stat.value or stat.label %}
+            <div class="w-fit {{ loop.index is even ? 'justify-self-end md:justify-normal' }}">
+              {% if stat.value %}
+                <h3 class="camp-stat-number text-transparent">{{ stat.value }}</h3>
+              {% endif %}
+              {% if stat.label %}
+                <p class="uppercase text-center text-sm leading-[22px] xl:text-base xl:leading-[26px] pt-1">{{ stat.label }}</p>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

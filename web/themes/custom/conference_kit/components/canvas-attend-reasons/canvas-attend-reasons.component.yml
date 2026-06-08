@@ -1,0 +1,72 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
+name: DrupalCamp Attend Reasons
+status: stable
+description: 'A DrupalCamp-style section for highlighting four reasons to attend.'
+group: Content
+category: Cards
+props:
+  type: object
+  properties:
+    heading_prefix:
+      title: Heading prefix
+      type: string
+      examples:
+        - 'Why Attend'
+    heading_highlight:
+      title: Heading highlight
+      type: string
+      examples:
+        - 'DrupalCamp'
+    heading_suffix:
+      title: Heading suffix
+      type: string
+      examples:
+        - 'Middle East 2026'
+    item_one_title:
+      title: Item one title
+      type: string
+      examples:
+        - 'global drupal community'
+    item_one_description:
+      title: Item one description
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - 'Connect with the global Drupal community shaping the future of open-source innovation.'
+    item_two_title:
+      title: Item two title
+      type: string
+      examples:
+        - 'Unmatched Networking'
+    item_two_description:
+      title: Item two description
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - 'Discover how organizations use Drupal to build powerful enterprise-scale digital experiences.'
+    item_three_title:
+      title: Item three title
+      type: string
+      examples:
+        - 'Expert-Led Sessions'
+    item_three_description:
+      title: Item three description
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - 'Learn from industry experts sharing the latest insights, best practices, and real-world experiences with Drupal.'
+    item_four_title:
+      title: Item four title
+      type: string
+      examples:
+        - 'Enterprise Insights'
+    item_four_description:
+      title: Item four description
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - 'Learn how organizations leverage Drupal to deliver scalable enterprise digital experiences.'
