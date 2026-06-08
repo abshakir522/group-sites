@@ -1,0 +1,24 @@
+{#
+/**
+ * @file
+ * DrupalCamp-style full-width CTA link for Conference Kit microsites.
+ */
+#}
+
+{% set background_src = background_image.src|default(background_image|default('')) %}
+
+<a
+  href="{{ link|default('#') }}"
+  {% if background_src %}
+    style="background-image: url('{{ background_src }}'); background-size: cover;"
+  {% endif %}
+  {{ attributes.addClass('py-5 relative z-30 container-px md:py-10 2xl:py-[3.75rem] flex justify-between xl:justify-center items-center xl:gap-[1.875rem] group border-[0.5px] border-x-0 border-secondary/50 text-secondary') }}
+>
+  {% if title %}
+    <h4 class="camp-section-eyebrow uppercase text-secondary font-semibold">{{ title }}</h4>
+  {% endif %}
+
+  <svg class="group-hover:translate-x-1 transition-all duration-300 w-5 h-5 md:w-7 md:h-7 text-secondary shrink-0" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M20.2844 14.9817H0.5V11.7317H20.2844L11.1844 2.63169L13.5 0.356689L26.5 13.3567L13.5 26.3567L11.1844 24.0817L20.2844 14.9817Z" fill="currentColor" stroke="currentColor" stroke-linejoin="bevel" />
+  </svg>
+</a>

@@ -1,0 +1,28 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
+name: DrupalCamp Full Width CTA
+status: stable
+description: 'A DrupalCamp-style full-width call-to-action link with background image and arrow.'
+group: Content
+category: CTA
+props:
+  type: object
+  properties:
+    title:
+      title: Title
+      type: string
+      examples:
+        - 'Apply to speaker'
+    link:
+      title: Link
+      type: string
+      examples:
+        - '/speakers'
+    background_image:
+      title: Background image
+      type: object
+      $ref: json-schema-definitions://canvas.module/image
+      examples:
+        - src: 'Background.svg'
+          alt: ''
+          width: 1920
+          height: 160

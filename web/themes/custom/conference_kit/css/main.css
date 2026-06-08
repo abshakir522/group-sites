@@ -149,7 +149,6 @@
 }
 
 .camp-section-eyebrow {
-  color: var(--color-body-title);
   font-size: clamp(24px, 2.4vw, 32px);
   font-weight: 600;
   line-height: 1.25;
