@@ -16,6 +16,7 @@ use Drupal\field\Entity\FieldStorageConfig;
  */
 function conferencekit_branding_install(): void {
   _conferencekit_branding_ensure_group_color_fields();
+  _conferencekit_branding_ensure_group_header_fields();
 }
 
 /**
@@ -23,6 +24,13 @@ function conferencekit_branding_install(): void {
  */
 function conferencekit_branding_update_10001(): void {
   _conferencekit_branding_ensure_group_color_fields();
+}
+
+/**
+ * Adds microsite header fields to existing installs.
+ */
+function conferencekit_branding_update_10002(): void {
+  _conferencekit_branding_ensure_group_header_fields();
 }
 
 /**
@@ -158,5 +166,56 @@ function _conferencekit_branding_ensure_group_color_fields(): void {
         ])
         ->save();
     }
+  }
+}
+
+/**
+ * Ensures the conference group bundle has microsite header settings fields.
+ */
+function _conferencekit_branding_ensure_group_header_fields(): void {
+  $bundle = 'conference';
+  $field_name = 'field_ck_header_style';
+
+  if (!FieldStorageConfig::loadByName('group', $field_name)) {
+    FieldStorageConfig::create([
+      'field_name' => $field_name,
+      'entity_type' => 'group',
+      'type' => 'list_string',
+      'cardinality' => 1,
+      'settings' => [
+        'allowed_values' => [
+          'style1' => 'Style 1: Branding left, Menu and Search right',
+          'style2' => 'Style 2: Branding left, Menu and Actions right',
+          'style3' => 'Style 3: Branding Left, Menu Center, Search right',
+          'style4' => 'Style 4: Branding left, Menu Center, Actions right',
+          'style5' => 'Style 5: Branding and Menu left, Search right',
+          'style6' => 'Style 6: Branding and Menu left, Actions right',
+          'style7' => 'Style 7: Fixed glass header with menu and actions',
+        ],
+      ],
+    ])->save();
+  }
+
+  if (!FieldConfig::loadByName('group', $bundle, $field_name)) {
+    FieldConfig::create([
+      'field_name' => $field_name,
+      'entity_type' => 'group',
+      'bundle' => $bundle,
+      'label' => 'Header style',
+      'description' => 'Choose the header style for this microsite. Leave empty to use the global theme setting.',
+      'required' => FALSE,
+    ])->save();
+  }
+
+  $form_display = EntityFormDisplay::load("group.$bundle.default");
+  if ($form_display) {
+    $form_display
+      ->setComponent($field_name, [
+        'type' => 'options_select',
+        'weight' => 2,
+        'region' => 'content',
+        'settings' => [],
+      ])
+      ->save();
   }
 }

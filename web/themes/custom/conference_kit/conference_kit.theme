@@ -84,7 +84,9 @@ function conference_kit_preprocess_menu__main(array &$variables): void
 function conference_kit_preprocess_page(array &$variables): void
 {
   // Load selected header style from theme settings.
-  $header_style = theme_get_setting('header_class') ?: 'style4';
+  $header_style = function_exists('conferencekit_branding_get_active_header_style')
+    ? conferencekit_branding_get_active_header_style('style4')
+    : (theme_get_setting('header_class') ?: 'style4');
   $variables['header_template'] = 'header--' . $header_style;
 
   // Get the theme setting for fixed header.
@@ -116,7 +118,9 @@ function conference_kit_preprocess_menu(array &$variables) {
   // Optionally, extract only the '#items' part if needed.
   $variables['account_menu'] = $manipulated['#items'] ?? [];
   // Get selected header style for menu twig
-  $header_style = theme_get_setting('header_class');
+  $header_style = function_exists('conferencekit_branding_get_active_header_style')
+    ? conferencekit_branding_get_active_header_style('style4')
+    : theme_get_setting('header_class');
   $variables['selected__header_template'] = $header_style;
   // Check if the user is logged in
   $current_user = \Drupal::currentUser();

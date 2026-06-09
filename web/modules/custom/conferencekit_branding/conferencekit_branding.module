@@ -44,6 +44,13 @@ function conferencekit_branding_preprocess_html(array &$variables): void {
 }
 
 /**
+ * Implements hook_preprocess_HOOK() for page templates.
+ */
+function conferencekit_branding_preprocess_page(array &$variables): void {
+  conferencekit_branding_add_active_group_cacheability($variables);
+}
+
+/**
  * Gets active color settings, preferring the current domain group.
  */
 function conferencekit_branding_get_active_color_settings(): array {
@@ -67,6 +74,43 @@ function conferencekit_branding_get_active_color_settings(): array {
     $settings[$theme_key] = theme_get_setting($theme_key);
   }
   return $settings;
+}
+
+/**
+ * Gets the active header style, preferring the current domain group.
+ */
+function conferencekit_branding_get_active_header_style(?string $fallback = NULL): string {
+  $allowed = array_keys(conferencekit_branding_header_style_options());
+  $fallback = theme_get_setting('header_class') ?: $fallback ?: 'style4';
+  $fallback = in_array($fallback, $allowed, TRUE) ? $fallback : 'style4';
+
+  $group = conferencekit_branding_get_group_from_active_domain();
+  if ($group instanceof GroupInterface
+    && $group->hasField('field_ck_header_style')
+    && !$group->get('field_ck_header_style')->isEmpty()
+  ) {
+    $value = (string) $group->get('field_ck_header_style')->value;
+    if (in_array($value, $allowed, TRUE)) {
+      return $value;
+    }
+  }
+
+  return $fallback;
+}
+
+/**
+ * Gets the supported header style options.
+ */
+function conferencekit_branding_header_style_options(): array {
+  return [
+    'style1' => 'Style 1: Branding left, Menu and Search right',
+    'style2' => 'Style 2: Branding left, Menu and Actions right',
+    'style3' => 'Style 3: Branding Left, Menu Center, Search right',
+    'style4' => 'Style 4: Branding left, Menu Center, Actions right',
+    'style5' => 'Style 5: Branding and Menu left, Search right',
+    'style6' => 'Style 6: Branding and Menu left, Actions right',
+    'style7' => 'Style 7: Fixed glass header with menu and actions',
+  ];
 }
 
 /**
@@ -169,4 +213,17 @@ function conferencekit_branding_get_group_from_active_domain(): ?GroupInterface 
 
   $group = \Drupal::service('entity.repository')->loadEntityByUuid('group', $group_uuid);
   return $group instanceof GroupInterface ? $group : NULL;
+}
+
+/**
+ * Adds cacheability for render arrays that vary by the active domain group.
+ */
+function conferencekit_branding_add_active_group_cacheability(array &$variables): void {
+  $variables['#cache']['contexts'][] = 'url.site.group';
+  if ($group = conferencekit_branding_get_group_from_active_domain()) {
+    $variables['#cache']['tags'] = \Drupal\Core\Cache\Cache::mergeTags(
+      $variables['#cache']['tags'] ?? [],
+      $group->getCacheTags(),
+    );
+  }
 }
