@@ -1,0 +1,61 @@
+{#
+/**
+ * @file
+ * DrupalCamp-style speakers section with four Canvas slots.
+ */
+#}
+
+<section {{ attributes.addClass('relative py-[clamp(60px,11vw,160px)]') }}>
+  <div class="absolute -left-[15.625rem] -top-[6.25rem] z-30 h-[clamp(406px,40vw,918px)] w-[clamp(406px,40vw,918px)] bg-secondary/50 pointer-events-none rounded-full blur-[300px] overflow-visible"></div>
+
+  <div class="container-px max-w-480 mx-auto h-fit">
+    <div aria-hidden="true" role="group" class="flex flex-col xl:flex-row justify-between gap-6 items-start">
+      {% if heading_prefix or heading_highlight %}
+        <h3 class="camp-section-title uppercase xl:w-1/2">
+          {{ heading_prefix }}
+          {% if heading_highlight %}
+            <span class="text-secondary">
+              <br class="hidden md:block">
+              {{ heading_highlight }}
+            </span>
+          {% endif %}
+        </h3>
+      {% endif %}
+
+      {% if cta_title %}
+        <a
+          class="py-[clamp(12px,2vw,16px)] px-[clamp(24px,2vw,32px)] xl:px-8 text-center text-[clamp(14px,2vw,16px)] font-semibold text-body-title/80 uppercase xl:text-base rounded-full xl:py-4 bg-transparent hover:bg-transparent relative border border-secondary overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-linear-to-l after:from-secondary after:to-tertiary after:rounded-full z-10 after:-z-10 after:w-0 hover:after:w-full after:transition-all after:duration-500"
+          href="{{ cta_url|default('#') }}"
+        >
+          {{ cta_title }}
+        </a>
+      {% endif %}
+    </div>
+
+    <div role="grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-y-10 gap-x-[clamp(16px,2vw,24px)] xl:gap-[clamp(24px,4.5vw,100px)] mt-[clamp(48px,calc(4vw+10px),100px)]">
+      <div role="gridcell" class="flex flex-col gap-[clamp(24px,2vw,32px)] z-50">
+        {% block speaker_one %}
+          {{ speaker_one }}
+        {% endblock %}
+      </div>
+
+      <div role="gridcell" class="flex flex-col gap-[clamp(24px,2vw,32px)] z-50">
+        {% block speaker_two %}
+          {{ speaker_two }}
+        {% endblock %}
+      </div>
+
+      <div role="gridcell" class="flex flex-col gap-[clamp(24px,2vw,32px)] z-50">
+        {% block speaker_three %}
+          {{ speaker_three }}
+        {% endblock %}
+      </div>
+
+      <div role="gridcell" class="flex flex-col gap-[clamp(24px,2vw,32px)] z-50">
+        {% block speaker_four %}
+          {{ speaker_four }}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+</section>

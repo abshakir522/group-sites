@@ -1,0 +1,42 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
+name: DrupalCamp Speakers Section
+status: stable
+description: 'A DrupalCamp-style speakers section with four Canvas slots for speaker cards or blocks.'
+group: Content
+category: Speakers
+props:
+  type: object
+  properties:
+    heading_prefix:
+      title: Heading prefix
+      type: string
+      examples:
+        - 'Learn from Our'
+    heading_highlight:
+      title: Heading highlight
+      type: string
+      examples:
+        - 'Speakers'
+    cta_title:
+      title: CTA title
+      type: string
+      examples:
+        - 'See All Speakers'
+    cta_url:
+      title: CTA URL
+      type: string
+      examples:
+        - '/speakers'
+slots:
+  speaker_one:
+    title: Speaker one
+    description: 'First speaker card or block.'
+  speaker_two:
+    title: Speaker two
+    description: 'Second speaker card or block.'
+  speaker_three:
+    title: Speaker three
+    description: 'Third speaker card or block.'
+  speaker_four:
+    title: Speaker four
+    description: 'Fourth speaker card or block.'

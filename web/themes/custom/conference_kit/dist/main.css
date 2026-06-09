@@ -73,6 +73,7 @@
     --z-index-10: 10;
     --z-index-30: 30;
     --z-index-40: 40;
+    --z-index-50: 50;
   }
 }
 @layer base {
@@ -289,6 +290,9 @@
   .z-40 {
     z-index: var(--z-index-40);
   }
+  .z-50 {
+    z-index: var(--z-index-50);
+  }
   .z-100 {
     z-index: 100;
   }
@@ -345,6 +349,9 @@
   }
   .mt-10 {
     margin-top: var(--spacing-10);
+  }
+  .mt-\[clamp\(48px\,calc\(4vw\+10px\)\,100px\)\] {
+    margin-top: clamp(48px, calc(4vw + 10px), 100px);
   }
   .mb-4 {
     margin-bottom: var(--spacing-4);
@@ -517,8 +524,17 @@
   .gap-\[clamp\(20px\,5vw\,40px\)\] {
     gap: clamp(20px, 5vw, 40px);
   }
+  .gap-\[clamp\(24px\,2vw\,32px\)\] {
+    gap: clamp(24px, 2vw, 32px);
+  }
   .gap-\[clamp\(32px\,5vw\,60px\)\] {
     gap: clamp(32px, 5vw, 60px);
+  }
+  .gap-x-\[clamp\(16px\,2vw\,24px\)\] {
+    column-gap: clamp(16px, 2vw, 24px);
+  }
+  .gap-y-10 {
+    row-gap: var(--spacing-10);
   }
   .self-start {
     align-self: flex-start;
@@ -670,6 +686,9 @@
   .px-6 {
     padding-inline: var(--spacing-6);
   }
+  .px-\[clamp\(24px\,2vw\,32px\)\] {
+    padding-inline: clamp(24px, 2vw, 32px);
+  }
   .py-3 {
     padding-block: var(--spacing-3);
   }
@@ -687,6 +706,12 @@
   }
   .py-\[clamp\(10px\,3vw\,24px\)\] {
     padding-block: clamp(10px, 3vw, 24px);
+  }
+  .py-\[clamp\(12px\,2vw\,16px\)\] {
+    padding-block: clamp(12px, 2vw, 16px);
+  }
+  .py-\[clamp\(60px\,11vw\,160px\)\] {
+    padding-block: clamp(60px, 11vw, 160px);
   }
   .pt-1 {
     padding-top: var(--spacing-1);
@@ -728,6 +753,9 @@
   }
   .text-\[30px\] {
     font-size: 30px;
+  }
+  .text-\[clamp\(14px\,2vw\,16px\)\] {
+    font-size: clamp(14px, 2vw, 16px);
   }
   .leading-10 {
     --tw-leading: var(--spacing-10);
@@ -1511,6 +1539,11 @@
   .xl\:gap-\[1\.875rem\] {
     @media (width >= 80rem) {
       gap: 1.875rem;
+    }
+  }
+  .xl\:gap-\[clamp\(24px\,4\.5vw\,100px\)\] {
+    @media (width >= 80rem) {
+      gap: clamp(24px, 4.5vw, 100px);
     }
   }
   .xl\:gap-\[clamp\(28px\,2\.2vw\,40px\)\] {
