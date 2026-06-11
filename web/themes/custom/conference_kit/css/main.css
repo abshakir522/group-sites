@@ -148,6 +148,12 @@
   line-height: 1.08;
 }
 
+.camp-page-title {
+  font-size: clamp(42px, 7vw, 96px);
+  font-weight: 700;
+  line-height: 1.08;
+}
+
 .camp-section-eyebrow {
   font-size: clamp(24px, 2.4vw, 32px);
   font-weight: 600;

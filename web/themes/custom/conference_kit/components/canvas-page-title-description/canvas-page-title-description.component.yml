@@ -1,0 +1,23 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
+name: DrupalCamp Page Title Description
+status: stable
+description: 'A DrupalCamp-style page title block with a short description.'
+group: Content
+category: Page title
+props:
+  type: object
+  properties:
+    title:
+      title: Title
+      type: string
+      description: Page title.
+      examples:
+        - 'Speakers'
+    description:
+      title: Description
+      type: string
+      description: Page intro description.
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - 'DrupalCamp Middle East brings together passionate Drupal experts, contributors, and community leaders.'

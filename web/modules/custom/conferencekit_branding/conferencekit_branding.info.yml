@@ -9,3 +9,4 @@ dependencies:
   - group:group
   - group_context_domain:group_context_domain
   - image:image
+  - views:views

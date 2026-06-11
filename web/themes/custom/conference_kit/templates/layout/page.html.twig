@@ -44,7 +44,11 @@
 #}
 
 {{ attach_library('conference_kit/fixed-header') }}
-<div class="layout-container min-h-screen flex flex-col">
+<div class="layout-container min-h-screen flex flex-col overflow-x-clip relative">
+  {% if not is_front %}
+    <div aria-hidden="true" class="absolute -right-62.5 -top-62.5 z-30 h-[clamp(406px,40vw,918px)] w-[clamp(406px,40vw,918px)] bg-secondary/50 pointer-events-none rounded-full blur-[300px] overflow-visible"></div>
+  {% endif %}
+
   <!-- :small_blue_diamond: Header -->
   <header role="banner">
     {# <div class="flex items-center w-full flex-col justify-start "> #}
@@ -60,6 +64,7 @@
       </div>
     {% endif %}
   </header>
+
   <!-- :small_blue_diamond: Main Content Area -->
   <main role="main" class="flex-1">
     <div class="w-full mx-auto ">
@@ -102,12 +107,8 @@
       </div>
     </div>
   </main>
+  
   <!-- :small_blue_diamond: Footer -->
-        {# {% if use_footer %} #}
-          {% include '@tailpine/templates/footer-styles/' ~ footer_template ~ '.html.twig' %}
-        {# {% else %}
-        <footer>  
-          {{ page.footer }}
-          </footer>
-      {% endif %} #}
+  {% include '@tailpine/templates/footer-styles/' ~ footer_template ~ '.html.twig' %}
+        
 </div>

@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * DrupalCamp-style card with grayscale image hover treatment.
+ */
+#}
+
+{% set image_src = image.src|default(image|default('')) %}
+{% set image_alt = image.alt|default('') %}
+
+<div {{ attributes.addClass('flex flex-col gap-[clamp(24px,2vw,32px)] z-50') }}>
+  {% if image_src %}
+    <div class="overflow-clip">
+      <img
+        src="{{ image_src }}"
+        class="w-full h-full aspect-[69/74] object-top object-cover grayscale hover:grayscale-0 hover:scale-105 duration-500 ease-in-out"
+        alt="{{ image_alt }}"
+      >
+    </div>
+  {% endif %}
+
+  {% if title or description %}
+    <div class="space-y-[clamp(12px,2vw,16px)]">
+      {% if title %}
+        <h4 class="camp-card-title text-secondary capitalize">{{ title }}</h4>
+      {% endif %}
+
+      {% if description %}
+        <div class="text-body-title/80 capitalize text-[clamp(14px,2vw,16px)] leading-[26px]">
+          {{ description }}
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>

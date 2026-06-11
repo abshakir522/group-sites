@@ -8,3 +8,10 @@ block.settings.conferencekit_group_branding_block:
     use_site_name:
       type: boolean
       label: 'Use group site title'
+
+views.argument_default.conferencekit_group_id_from_domain:
+  type: sequence
+  label: 'Group ID from active domain'
+  sequence:
+    type: string
+    label: 'Group ID'

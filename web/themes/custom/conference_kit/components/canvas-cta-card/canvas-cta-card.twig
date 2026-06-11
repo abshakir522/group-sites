@@ -1,0 +1,43 @@
+{#
+/**
+ * @file
+ * DrupalCamp-style CTA card for Conference Kit microsites.
+ */
+#}
+
+{% set background_src = background_image.src|default(background_image|default('')) %}
+
+<section {{ attributes.addClass('pt-[clamp(80px,calc(80px+(160-80)*((100vw-768px)/512)),160px)] container-px mx-auto max-w-480') }}>
+  <div
+    role="group"
+    {% if background_src %}
+      style="background-image: url('{{ background_src }}'); background-size: cover;"
+    {% endif %}
+    class="rounded-4xl py-[1.875rem] px-4 md:py-10 md:px-8 2xl:p-[3.75rem] flex flex-col xl:flex-row gap-6 justify-between border-[0.5px] border-secondary/50"
+  >
+    {% if title %}
+      <h3 class="camp-section-title text-body-title/80 max-w-150">
+        {{ title }}
+      </h3>
+    {% endif %}
+
+    <div aria-hidden="true" class="flex flex-col gap-[clamp(32px,calc(2vw+10px),48px)] justify-between">
+      {% if description %}
+        <div class="text-body-title/80 text-sm leading-[22px] md:text-base md:leading-[26px] xl:text-lg xl:leading-[30px] max-w-[475px]">
+          {{ description }}
+        </div>
+      {% endif %}
+
+      {% if cta_title %}
+        {{ include('conference_kit:canvas-cta', {
+          title: cta_title,
+          link: cta_url|default('#'),
+          color_schema: 'secondary',
+          size: 'rounded-full',
+          button_variant: 'solid',
+          attributes: create_attribute().addClass('w-fit uppercase'),
+        }, with_context = false) }}
+      {% endif %}
+    </div>
+  </div>
+</section>

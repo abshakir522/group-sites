@@ -1,0 +1,45 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
+name: CTA Card
+status: stable
+description: 'A DrupalCamp-style CTA card with background image, text, and a button.'
+group: Content
+category: CTA
+props:
+  type: object
+  properties:
+    background_image:
+      title: Background image
+      type: object
+      $ref: json-schema-definitions://canvas.module/image
+      description: Card background image.
+      examples:
+        - src: 'Background.svg'
+          alt: ''
+          width: 1920
+          height: 480
+    title:
+      title: Title
+      type: string
+      description: CTA card title.
+      examples:
+        - 'Want to support the community?'
+    description:
+      title: Description
+      type: string
+      description: CTA card description.
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - 'Partner with us and showcase your brand at the largest Drupal gathering in the Middle East.'
+    cta_title:
+      title: CTA title
+      type: string
+      description: Button text.
+      examples:
+        - 'Become a Sponsor'
+    cta_url:
+      title: CTA URL
+      type: string
+      description: Button link.
+      examples:
+        - '/sponsors'

@@ -1,0 +1,33 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
+name: Card Style Three
+status: stable
+description: 'A DrupalCamp-style card with a portrait image, title, and description.'
+group: Cards & Posts
+category: Card
+props:
+  type: object
+  properties:
+    image:
+      title: Image
+      type: object
+      $ref: json-schema-definitions://canvas.module/image
+      description: Card image.
+      examples:
+        - src: 'speaker1.png'
+          alt: 'Speaker portrait'
+          width: 690
+          height: 740
+    title:
+      title: Title
+      type: string
+      description: Card title.
+      examples:
+        - 'Dries Buytaert'
+    description:
+      title: Description
+      type: string
+      description: Card description.
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - 'Founder of Drupal and Co-founder/Executive Chairman of Acquia.'

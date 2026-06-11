@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * DrupalCamp-style page title with description for Conference Kit microsites.
+ */
+#}
+
+<div {{ attributes.addClass('relative z-30 flex flex-col xl:flex-row xl:items-center xl:justify-between gap-4 pt-[clamp(140px,calc(180px+(180-40)*((100vw-768px)/512)),250px)] container-px max-w-480 mx-auto') }}>
+  {% if title %}
+    <h1 class="camp-page-title text-body-title/80">{{ title }}</h1>
+  {% endif %}
+
+  {% if description %}
+    <div class="text-body-title/80 capitalize xl:w-[48%] 2xl:w-2/5 font-normal text-[clamp(14px,calc(3vw+2px),20px)] leading-[26px]">
+      {{ description }}
+    </div>
+  {% endif %}
+</div>
