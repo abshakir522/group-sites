@@ -1,0 +1,32 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
+name: Sponsor Logo Style Three
+status: stable
+description: 'A DrupalCamp-style sponsor logo card for teaser displays and sponsor grids.'
+group: Cards & Posts
+category: Card
+props:
+  type: object
+  properties:
+    logo:
+      title: Logo
+      type: object
+      $ref: json-schema-definitions://canvas.module/image
+      description: Sponsor logo image.
+      examples:
+        - src: 'sponsor.svg'
+          alt: 'Sponsor logo'
+          width: 240
+          height: 120
+    url:
+      title: URL
+      type: string
+      format: uri-reference
+      description: Sponsor link URL.
+      examples:
+        - '/'
+    label:
+      title: Accessible label
+      type: string
+      description: Accessible text for the sponsor link.
+      examples:
+        - 'View sponsor'

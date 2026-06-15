@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * DrupalCamp-style sponsors section with a Canvas content slot.
+ */
+#}
+
+<section {{ attributes.addClass('py-[clamp(60px,11vw,160px)] relative container-px') }}>
+  <div class="absolute -right-[15.625rem] -top-[15.625rem] z-30 h-[clamp(406px,40vw,918px)] w-[clamp(406px,40vw,918px)] bg-secondary/50 pointer-events-none rounded-full blur-[300px] overflow-visible"></div>
+
+  <div class="w-full relative z-40 flex flex-col text-center gap-[clamp(40px,calc(2vw+10px),60px)] max-w-330 mx-auto">
+    {% if heading_prefix or heading_highlight %}
+      <h3 class="camp-section-title uppercase text-center">
+        {{ heading_prefix }}
+        {% if heading_highlight %}
+          <span class="text-secondary">
+            <br class="hidden xl:block">
+            {{ heading_highlight }}
+          </span>
+        {% endif %}
+      </h3>
+    {% endif %}
+
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  </div>
+</section>

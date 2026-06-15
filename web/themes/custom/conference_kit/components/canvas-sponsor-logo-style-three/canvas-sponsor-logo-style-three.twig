@@ -1,0 +1,24 @@
+{#
+/**
+ * @file
+ * DrupalCamp-style sponsor logo card.
+ */
+#}
+
+{% set logo_src = logo.src|default(logo|default('')) %}
+{% set logo_alt = logo.alt|default(label|default('Sponsor logo')) %}
+{% set sponsor_url = url.uri|default(url.url|default(url|default('/'))) %}
+{% set link_label = label|default(logo_alt) %}
+
+<a
+  {{ attributes
+    .setAttribute('href', sponsor_url)
+    .setAttribute('role', 'group')
+    .setAttribute('aria-label', link_label)
+    .addClass('sponsor-logo-card border-[0.5px] rounded-lg border-secondary/50 h-20 xl:h-28 flex justify-center items-center px-[clamp(30px,2vw,25px)] transition-all duration-500 hover:shadow-[0_0_20px] shadow-secondary/50')
+  }}
+>
+  {% if logo_src %}
+    <img src="{{ logo_src }}" class="w-8/10 h-8/10 object-contain" alt="{{ logo_alt }}">
+  {% endif %}
+</a>

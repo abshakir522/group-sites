@@ -1,0 +1,23 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
+name: DrupalCamp Sponsors Section
+status: stable
+description: 'A DrupalCamp-style sponsors section with a slot for sponsor logos or a Views block.'
+group: Content
+category: Sponsors
+props:
+  type: object
+  properties:
+    heading_prefix:
+      title: Heading prefix
+      type: string
+      examples:
+        - "They've Attended As"
+    heading_highlight:
+      title: Heading highlight
+      type: string
+      examples:
+        - 'Sponsors'
+slots:
+  content:
+    title: Content
+    description: 'Sponsor logos, cards, or a Views block.'
