@@ -802,8 +802,8 @@
   .pt-\[clamp\(40px\,5vw\,90px\)\] {
     padding-top: clamp(40px, 5vw, 90px);
   }
-  .pt-\[clamp\(80px\,calc\(80px\+\(160-80\)\*\(\(100vw-768px\)\/512\)\)\,160px\)\] {
-    padding-top: clamp(80px, calc(80px + (160 - 80) * ((100vw - 768px) / 512)), 160px);
+  .pt-\[clamp\(40px\,8vw\,100px\)\] {
+    padding-top: clamp(40px, 8vw, 100px);
   }
   .pt-\[clamp\(140px\,calc\(180px\+\(180-40\)\*\(\(100vw-768px\)\/512\)\)\,250px\)\] {
     padding-top: clamp(140px, calc(180px + (180 - 40) * ((100vw - 768px) / 512)), 250px);

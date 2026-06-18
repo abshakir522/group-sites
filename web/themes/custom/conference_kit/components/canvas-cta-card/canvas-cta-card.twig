@@ -7,7 +7,7 @@
 
 {% set background_src = background_image.src|default(background_image|default('')) %}
 
-<section {{ attributes.addClass('pt-[clamp(80px,calc(80px+(160-80)*((100vw-768px)/512)),160px)] container-px mx-auto max-w-480') }}>
+<section {{ attributes.addClass('container-px mx-auto max-w-480') }}>
   <div
     role="group"
     {% if background_src %}
