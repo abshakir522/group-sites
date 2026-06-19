@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^2.3",
         "drupal/admin_toolbar": "^3.6",
+        "drupal/better_exposed_filters": "^7.1",
         "drupal/canvas": "^1.4",
         "drupal/core-composer-scaffold": "^11.3",
         "drupal/core-project-message": "^11.3",
@@ -29,6 +30,7 @@
         "drupal/group_content_menu": "^3.0",
         "drupal/group_context_domain": "^1.0",
         "drupal/group_sites": "^1.1",
+        "drupal/smart_date": "^4.2",
         "drupal/svg_image": "^3.2",
         "drupal/tailpine": "^2.0@RC",
         "drush/drush": "^13.7"

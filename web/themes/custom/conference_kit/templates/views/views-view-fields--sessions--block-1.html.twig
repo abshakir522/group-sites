@@ -1,0 +1,15 @@
+{# views-view-fields--sessions--block-1.html.twig #}
+
+<div class="relative flex flex-col gap-[clamp(12px,3vw,50px)] xl:flex-row cursor-pointer">
+  <h6 class="px-6.5 2xl:px-11 py-3 min-w-fit w-fit h-fit rounded-full border border-secondary/50">
+    {{ fields.field_date_1.content }}
+  </h6>
+
+  {{ include('conference_kit:canvas-accordion-style-three', {
+    title: fields.title.content|render|striptags|trim,
+    location: fields.field_text_plain.content|render|striptags|trim,
+    description: fields.body.content,
+    speaker: fields.field_speaker.content,
+    default_open: false
+  }, with_context = false) }}
+</div>

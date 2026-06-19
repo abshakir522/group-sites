@@ -1,0 +1,40 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
+name: Accordion Style Three
+status: stable
+description: 'A DrupalCamp-style accordion item for session details.'
+props:
+  type: object
+  properties:
+    title:
+      title: Title
+      type: string
+      description: Accordion title.
+      examples:
+        - 'Lorem ipsum dolor sit amet consectetur'
+    location:
+      title: Location
+      type: string
+      description: Session location.
+      examples:
+        - 'American University of Sharjah'
+    description:
+      title: Description
+      type: string
+      description: Accordion body content.
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit habitasse penatibus nisl.</p>'
+    speaker:
+      title: Speaker
+      type: string
+      description: Speaker name.
+      examples:
+        - 'Speaker Name'
+    default_open:
+      title: Open by default
+      type: boolean
+      description: Whether the accordion is expanded on initial load.
+      default: false
+      examples:
+        - false

@@ -1,0 +1,104 @@
+{#
+/**
+ * @file
+ * Theme override for a main view template.
+ *
+ * Available variables:
+ * - attributes: Remaining HTML attributes for the element.
+ * - css_name: A CSS-safe version of the view name.
+ * - css_class: The user-specified classes names, if any.
+ * - header: The optional header.
+ * - footer: The optional footer.
+ * - rows: The results of the view query, if any.
+ * - empty: The content to display if there are no rows.
+ * - pager: The optional pager next/prev links to display.
+ * - exposed: Exposed widget form/info to display.
+ * - feed_icons: Optional feed icons to display.
+ * - more: An optional link to the next page of results.
+ * - title: Title of the view, only used when displaying in the admin preview.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the view title.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the view title.
+ * - attachment_before: An optional attachment view to be displayed before the
+ *   view content.
+ * - attachment_after: An optional attachment view to be displayed after the
+ *   view content.
+ * - dom_id: Unique id for every view being printed to give unique class for
+ *   JavaScript.
+ *
+ * @see template_preprocess_views_view()
+ */
+#}
+{%
+  set classes = [
+    'view',
+    'view-' ~ id|clean_class,
+    'view-id-' ~ id,
+    'view-display-id-' ~ display_id,
+    dom_id ? 'js-view-dom-id-' ~ dom_id,
+    'container-px max-w-480 mx-auto relative z-30 pt-[clamp(40px,8vw,100px)]'
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if title %}
+    {{ title }}
+  {% endif %}
+  {{ title_suffix }}
+  <div class="flex flex-col gap-6 md:flex-row md:justify-between md:items-center border-b border-secondary/50 pb-7.5 md:pb-10">
+    {% if header %}
+      <div class="view-header">
+        {{ header }}
+      </div>
+    {% endif %}
+    {% if exposed %}
+      <div class="view-filters">
+        {{ exposed }}
+      </div>
+    {% endif %}
+  </div>
+  {% if attachment_before %}
+    <div class="attachment attachment-before">
+      {{ attachment_before }}
+    </div>
+  {% endif %}
+
+  <div class="view-content pt-[clamp(40px,5vw,80px)] flex flex-col xl:flex-row xl:gap-6 2xl:gap-12.5">
+    <div class="flex flex-col gap-[clamp(32px,3vw,60px)]">
+      {% if rows %}
+          {{ rows }}
+        </div>
+      {% elseif empty %}
+        <div class="view-empty">
+          {{ empty }}
+        </div>
+      {% endif %}
+    </div>
+    <div class="pt-12.5 flex flex-col md:flex-row gap-10 xl:flex-col min-w-fit w-full 2xl:max-w-100 xl:max-w-68.5 xl:pt-0">
+      {% if footer %}
+        <div class="view-footer">
+          {{ footer }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if pager %}
+    {{ pager }}
+  {% endif %}
+  {% if attachment_after %}
+    <div class="attachment attachment-after">
+      {{ attachment_after }}
+    </div>
+  {% endif %}
+  {% if more %}
+    {{ more }}
+  {% endif %}
+  
+  {% if feed_icons %}
+    <div class="feed-icons">
+      {{ feed_icons }}
+    </div>
+  {% endif %}
+</div>

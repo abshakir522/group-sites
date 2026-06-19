@@ -8,3 +8,5 @@ dependencies:
   - domain:domain
   - group:group
   - group_context_domain:group_context_domain
+  - smart_date:smart_date
+  - views:views

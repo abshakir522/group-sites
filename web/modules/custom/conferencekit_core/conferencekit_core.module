@@ -4,3 +4,46 @@
  * @file
  * Hooks for the Conference Kit Core module.
  */
+
+use Drupal\group\Entity\GroupInterface;
+
+/**
+ * Implements hook_views_data_alter().
+ */
+function conferencekit_core_views_data_alter(array &$data): void {
+  if (!isset($data['node_field_data'])) {
+    return;
+  }
+
+  $data['node_field_data']['conferencekit_session_day'] = [
+    'title' => t('Session day'),
+    'help' => t('Filters sessions by day, derived from the current domain group conference start date and the session Smart Date start value.'),
+    'filter' => [
+      'id' => 'conferencekit_session_day',
+      'title' => t('Session day'),
+      'field' => 'conferencekit_session_day',
+    ],
+  ];
+}
+
+/**
+ * Gets the group assigned to the active domain.
+ */
+function conferencekit_core_get_group_from_active_domain(): ?GroupInterface {
+  if (!\Drupal::hasService('domain.negotiator')) {
+    return NULL;
+  }
+
+  $domain = \Drupal::service('domain.negotiator')->getActiveDomain();
+  if (!$domain) {
+    return NULL;
+  }
+
+  $group_uuid = $domain->getThirdPartySetting('group_context_domain', 'group_uuid');
+  if (!$group_uuid) {
+    return NULL;
+  }
+
+  $group = \Drupal::service('entity.repository')->loadEntityByUuid('group', $group_uuid);
+  return $group instanceof GroupInterface ? $group : NULL;
+}

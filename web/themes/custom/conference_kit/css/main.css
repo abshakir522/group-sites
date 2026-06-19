@@ -353,3 +353,13 @@ header .search-icon form {
     @apply bg-primary text-white cursor-pointer sm:w-[100px];
   }
 }
+
+.view-display-id-block_1 .bef-links > ul {
+  @apply flex gap-5;
+}
+.view-display-id-block_1 .bef-links .bef-link {
+  @apply py-3 px-6 font-medium h-fit xl:px-8 text-sm xl:text-base rounded-full xl:py-4 bg-transparent border border-secondary;
+}
+.view-display-id-block_1 .bef-links .bef-link.bef-link--selected {
+  @apply active:border-transparent bg-linear-to-l from-secondary to-tertiary;
+}

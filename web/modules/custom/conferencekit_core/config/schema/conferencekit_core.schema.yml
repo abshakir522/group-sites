@@ -1,0 +1,3 @@
+views.filter.conferencekit_session_day:
+  type: views.filter.in_operator
+  label: 'Conference Kit session day filter'
