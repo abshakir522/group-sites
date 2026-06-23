@@ -64,11 +64,10 @@
     </div>
   {% endif %}
 
-  <div class="view-content pt-[clamp(40px,5vw,80px)] flex flex-col xl:flex-row xl:gap-6 2xl:gap-12.5">
+  <div class="view-content pt-[clamp(40px,5vw,80px)] flex flex-col xl:flex-row xl:gap-6 2xl:gap-12.5 justify-between">
     <div class="flex flex-col gap-[clamp(32px,3vw,60px)]">
       {% if rows %}
-          {{ rows }}
-        </div>
+        {{ rows }}
       {% elseif empty %}
         <div class="view-empty">
           {{ empty }}
@@ -76,22 +75,22 @@
       {% endif %}
     </div>
     <div class="pt-12.5 flex flex-col md:flex-row gap-10 xl:flex-col min-w-fit w-full 2xl:max-w-100 xl:max-w-68.5 xl:pt-0">
-      {% if footer %}
-        <div class="view-footer">
-          {{ footer }}
-        </div>
+      {% if attachment_after %}
+        {{ attachment_after }}
       {% endif %}
     </div>
   </div>
 
+  {% if footer %}
+    <div class="view-footer">
+      {{ footer }}
+    </div>
+  {% endif %}
+
   {% if pager %}
     {{ pager }}
   {% endif %}
-  {% if attachment_after %}
-    <div class="attachment attachment-after">
-      {{ attachment_after }}
-    </div>
-  {% endif %}
+  
   {% if more %}
     {{ more }}
   {% endif %}

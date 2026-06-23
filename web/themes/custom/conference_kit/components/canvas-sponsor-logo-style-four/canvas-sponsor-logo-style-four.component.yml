@@ -1,7 +1,7 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
-name: Sponsor Logo Style Three
+name: Sponsor Logo Style Four
 status: stable
-description: 'A DrupalCamp-style sponsor logo card for teaser displays and sponsor grids.'
+description: 'A DrupalCamp-style sponsor logo tile for sponsor teaser displays.'
 group: Sponsors / Logos
 props:
   type: object
@@ -10,22 +10,15 @@ props:
       title: Logo
       type: object
       $ref: json-schema-definitions://canvas.module/image
-      description: Sponsor logo image.
+      description: Optional sponsor logo image. If omitted, the default inline logo is shown.
       examples:
         - src: 'sponsor.svg'
           alt: 'Sponsor logo'
           width: 240
           height: 120
-    url:
-      title: URL
-      type: string
-      format: uri-reference
-      description: Sponsor link URL.
-      examples:
-        - '/'
     label:
       title: Accessible label
       type: string
-      description: Accessible text for the sponsor link.
+      description: Accessible text for the sponsor logo.
       examples:
-        - 'View sponsor'
+        - 'Sponsor logo'

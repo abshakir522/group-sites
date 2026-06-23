@@ -363,3 +363,10 @@ header .search-icon form {
 .view-display-id-block_1 .bef-links .bef-link.bef-link--selected {
   @apply active:border-transparent bg-linear-to-l from-secondary to-tertiary;
 }
+.sponsors-stacked {
+  @apply w-full h-fit p-6 border border-secondary/50 bg-body-bg rounded-2xl;
+  .view-content {
+    @apply grid grid-cols-1 gap-6 pt-6;
+  }
+
+}
