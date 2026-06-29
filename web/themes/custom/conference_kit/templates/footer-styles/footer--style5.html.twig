@@ -1,0 +1,129 @@
+{#
+/**
+ * @file
+ * Conference Kit footer style 5.
+ *
+ * Maps the event footer layout onto Tailpine's footer regions.
+ */
+#}
+
+{% set footer_regions = [
+  page.footer_top_first,
+  page.footer_top_middle,
+  page.footer_top_last,
+  page.footer_main_first,
+  page.footer_main_second,
+  page.footer_main_third,
+  page.footer_main_fourth,
+  page.footer_bottom_first,
+  page.footer_bottom_middle,
+  page.footer_bottom_last
+] %}
+
+{% set footer_item_count = 0 %}
+{% for region in footer_regions %}
+  {% if region %}
+    {% set footer_item_count = footer_item_count + 1 %}
+  {% endif %}
+{% endfor %}
+
+{% set main_regions = [
+  page.footer_main_first,
+  page.footer_main_second,
+  page.footer_main_third,
+  page.footer_main_fourth
+] %}
+
+{% set main_count = 0 %}
+{% for region in main_regions %}
+  {% if region %}
+    {% set main_count = main_count + 1 %}
+  {% endif %}
+{% endfor %}
+
+{% set main_grid = 'grid-cols-1' %}
+{% if main_count == 2 %}
+  {% set main_grid = 'md:grid-cols-2' %}
+{% elseif main_count == 3 %}
+  {% set main_grid = 'md:grid-cols-3' %}
+{% elseif main_count >= 4 %}
+  {% set main_grid = 'md:grid-cols-2 xl:grid-cols-4' %}
+{% endif %}
+
+{% if footer_item_count > 0 %}
+  <footer class="relative overflow-y-hidden text-body-title font-roboto">
+    <div class="absolute -left-62.5 -bottom-62.5 2xl:-bottom-120 z-30 h-[clamp(406px,40vw,918px)] w-[clamp(406px,40vw,918px)] bg-secondary/50 pointer-events-none rounded-full blur-[250px] overflow-visible"></div>
+
+    <div class="mx-auto relative z-40 space-y-[clamp(30px,calc(4vw+20px),100px)] pt-[clamp(80px,calc(10vw+32px),200px)] container-px pb-[clamp(40px,calc(10vw-68px),80px)]">
+      <div role="group" class="grid grid-cols-1 md:grid-cols-3 justify-between gap-y-10 md:gap-x-4">
+        {% if page.footer_top_first %}
+          <div class="footer-top-first flex flex-col gap-10 xl:gap-15">
+            {{ page.footer_top_first }}
+          </div>
+        {% endif %}
+
+        {% if page.footer_top_middle %}
+          <div class="footer-top-middle flex flex-col gap-[clamp(20px,calc(4vw+10px),70px)] md:col-span-2 xl:col-span-1">
+            {{ page.footer_top_middle }}
+          </div>
+        {% endif %}
+
+        {% if page.footer_top_last %}
+          <div class="footer-top-last">
+            {{ page.footer_top_last }}
+          </div>
+        {% endif %}
+      </div>
+
+      {% if main_count > 0 %}
+        <div class="footer-main grid {{ main_grid }} gap-8">
+          {% if page.footer_main_first %}
+            <div class="footer-main-first">
+              {{ page.footer_main_first }}
+            </div>
+          {% endif %}
+
+          {% if page.footer_main_second %}
+            <div class="footer-main-second">
+              {{ page.footer_main_second }}
+            </div>
+          {% endif %}
+
+          {% if page.footer_main_third %}
+            <div class="footer-main-third">
+              {{ page.footer_main_third }}
+            </div>
+          {% endif %}
+
+          {% if page.footer_main_fourth %}
+            <div class="footer-main-fourth">
+              {{ page.footer_main_fourth }}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if page.footer_bottom_first or page.footer_bottom_middle or page.footer_bottom_last %}
+        <div class="footer-bottom border-t-[0.5px] border-tertiary/90 pt-[clamp(30px,50px,60px)] flex flex-col gap-4 md:flex-row justify-between">
+          {% if page.footer_bottom_first %}
+            <div class="footer-bottom-first uppercase text-sm xl:text-base text-body-title/80">
+              {{ page.footer_bottom_first }}
+            </div>
+          {% endif %}
+
+          {% if page.footer_bottom_middle %}
+            <div class="footer-bottom-middle uppercase text-sm xl:text-base text-body-title/80 md:text-center">
+              {{ page.footer_bottom_middle }}
+            </div>
+          {% endif %}
+
+          {% if page.footer_bottom_last %}
+            <div class="footer-bottom-last flex gap-4 justify-between uppercase text-sm xl:text-base text-body-title/80">
+              {{ page.footer_bottom_last }}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+  </footer>
+{% endif %}

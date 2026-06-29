@@ -1,0 +1,50 @@
+{#
+/**
+ * @file
+ * Circular social links using Conference Kit's SVG sprite icon pack.
+ */
+#}
+
+{% set social_links = links|default([
+  {
+    title: social_one_title|default('Facebook'),
+    url: social_one_url|default(''),
+    icon: social_one_icon|default('facebook'),
+  },
+  {
+    title: social_two_title|default('X'),
+    url: social_two_url|default(''),
+    icon: social_two_icon|default('x'),
+  },
+  {
+    title: social_three_title|default('LinkedIn'),
+    url: social_three_url|default(''),
+    icon: social_three_icon|default('linkedin'),
+  },
+  {
+    title: social_four_title|default('Instagram'),
+    url: social_four_url|default(''),
+    icon: social_four_icon|default('instagram'),
+  },
+]) %}
+
+{% if social_links %}
+  <div {{ attributes.addClass('flex', 'gap-4') }}>
+    {% for social_link in social_links %}
+      {% set social_icon = social_link.icon|default('') %}
+      {% set social_url = social_link.url|default('') %}
+      {% set social_title = social_link.title|default(social_icon|capitalize) %}
+
+      {% if social_icon and (social_url or social_title) %}
+        <a
+          href="{{ social_url ?: '#' }}"
+          aria-label="{{ social_title }}"
+          title="{{ social_title }}"
+          class="h-10 w-10 flex items-center justify-center border border-body-title rounded-full relative z-10 after:-z-10 after:content-[''] after:absolute after:inset-0 overflow-hidden after:opacity-0 hover:after:opacity-100 after:bg-linear-to-l after:from-secondary after:to-tertiary after:transition-all after:duration-500"
+        >
+          {{ icon('conference_kit_social', social_icon, { size: icon_size|default(14) }) }}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}

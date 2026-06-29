@@ -1,0 +1,122 @@
+{#
+/**
+ * @file
+ * Theme override for an 'input' #type form element.
+ *
+ * Available variables:
+ * - attributes: A list of HTML attributes for the input element.
+ * - children: Optional additional rendered elements.
+ * - type: Input type attribute.
+ *
+ * Theme Variables Used:
+ * - bg-primary: Primary background color
+ * - bg-secondary: Secondary background color  
+ * - text-body: Body text color
+ * - border-gray-300: Border colors
+ * - focus:ring-primary: Focus ring colors
+ *
+ * @see template_preprocess_input()
+ */
+#}
+{% set classes = [] %}
+
+{% if type == 'file' %}
+  {% set classes = classes|merge([
+    'block',
+    'w-full',
+    'text-base',
+    'text-gray-900',
+    'border',
+    'border-gray-300',
+    'cursor-pointer',
+    '!bg-white',
+    'focus:outline-none',
+    'focus:ring-2',
+    'focus:ring-primary',
+    'transition-all',
+    'px-4',
+    'py-3',
+    'hover:border-gray-400',
+  ]) %}
+{% elseif type == 'number' %}
+  {% set classes = classes|merge([
+    '!bg-white',
+    'border',
+    'border-gray-300',
+    'text-gray-900',
+    'text-base',
+    'focus:ring-2',
+    'focus:ring-primary',
+    'focus:border-primary',
+    'block',
+    'w-full',
+    'px-4',
+    'py-3',
+    'transition-all',
+    'hover:border-gray-400',
+  ]) %}
+{% elseif type == 'checkbox' %}
+  {% set classes = classes|merge([
+    'w-5',
+    'h-5',
+    'text-primary',
+    '!bg-white',
+    'border',
+    'border-gray-300',
+    'focus:ring-2',
+    'focus:ring-primary',
+    'transition-all',
+    'cursor-pointer',
+    'hover:border-gray-400',
+  ]) %}
+{% elseif type == 'radio' %}
+  {% set classes = classes|merge([
+    'w-5',
+    'h-5',
+    'text-primary',
+    '!bg-white',
+    'border',
+    'border-gray-300',
+    'focus:ring-2',
+    'focus:ring-primary',
+    'transition-all',
+    'cursor-pointer',
+    'hover:border-gray-400',
+  ]) %}
+{% elseif type == 'submit' %}
+  {% set classes = classes|merge([
+    'bg-primary',
+    'text-white',
+    'hover:opacity-90',
+    'focus:ring-2',
+    'focus:ring-primary',
+    'focus:ring-offset-2',
+    'font-semibold',
+    'text-base',
+    'px-8',
+    'py-3',
+    'transition-all',
+    'cursor-pointer',
+    'inline-flex',
+    'items-center',
+    'justify-center',
+    'shadow-sm',
+    'hover:shadow-md',
+  ]) %}
+{% else %}
+  {% set classes = classes|merge([
+    'w-full',
+    'border',
+    'w-auto',
+    'md:flex-1',
+    'border-body-title/40',
+    'py-4',
+    'px-6',
+    'rounded-full'
+  ]) %}
+{% endif %}
+
+<input{{ attributes|default(create_attribute()).addClass(classes) }} />
+{% block children %}
+  {{ children }}
+{% endblock %}

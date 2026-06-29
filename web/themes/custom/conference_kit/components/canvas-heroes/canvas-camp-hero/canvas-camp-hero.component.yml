@@ -1,7 +1,7 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
 name: DrupalCamp Hero
 status: stable
-description: 'A DrupalCamp-style hero with background image, heading, summary, CTAs, and social links.'
+description: 'A DrupalCamp-style hero with background image, heading, summary, CTAs, and a social links slot.'
 group: Heros
 category: Hero
 props:
@@ -63,79 +63,7 @@ props:
       type: string
       examples:
         - '/sessions'
-    social_one_title:
-      title: Social one title
-      type: string
-      examples:
-        - 'Facebook'
-    social_one_url:
-      title: Social one URL
-      type: string
-      examples:
-        - '#'
-    social_one_icon:
-      title: Social one icon
-      type: object
-      $ref: json-schema-definitions://canvas.module/image
-      examples:
-        - src: 'facebook.svg'
-          alt: ''
-          width: 24
-          height: 24
-    social_two_title:
-      title: Social two title
-      type: string
-      examples:
-        - 'Twitter'
-    social_two_url:
-      title: Social two URL
-      type: string
-      examples:
-        - '#'
-    social_two_icon:
-      title: Social two icon
-      type: object
-      $ref: json-schema-definitions://canvas.module/image
-      examples:
-        - src: 'twitter.svg'
-          alt: ''
-          width: 24
-          height: 24
-    social_three_title:
-      title: Social three title
-      type: string
-      examples:
-        - 'LinkedIn'
-    social_three_url:
-      title: Social three URL
-      type: string
-      examples:
-        - '#'
-    social_three_icon:
-      title: Social three icon
-      type: object
-      $ref: json-schema-definitions://canvas.module/image
-      examples:
-        - src: 'linkedin.svg'
-          alt: ''
-          width: 24
-          height: 24
-    social_four_title:
-      title: Social four title
-      type: string
-      examples:
-        - 'Instagram'
-    social_four_url:
-      title: Social four URL
-      type: string
-      examples:
-        - '#'
-    social_four_icon:
-      title: Social four icon
-      type: object
-      $ref: json-schema-definitions://canvas.module/image
-      examples:
-        - src: 'instagram.svg'
-          alt: ''
-          width: 24
-          height: 24
+slots:
+  social_links:
+    title: Social links
+    description: 'Insert the Social Links component or another social/link block.'

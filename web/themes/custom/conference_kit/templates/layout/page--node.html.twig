@@ -104,7 +104,10 @@
   </main>
   <!-- :small_blue_diamond: Footer -->
         {# {% if use_footer %} #}
-          {% include '@tailpine/templates/footer-styles/' ~ footer_template ~ '.html.twig' %}
+          {% include [
+            '@conference_kit/templates/footer-styles/' ~ footer_template ~ '.html.twig',
+            '@tailpine/templates/footer-styles/' ~ footer_template ~ '.html.twig'
+          ] %}
         {# {% else %}
         <footer>  
           {{ page.footer }}

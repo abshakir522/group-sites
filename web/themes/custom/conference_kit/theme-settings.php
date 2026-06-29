@@ -362,6 +362,7 @@ function conference_kit_form_system_theme_settings_alter(&$form, FormStateInterf
       'style2' => t('Style 2: Style Two'),
       'style3' => t('Style 3: Style Three'),
       'style4' => t('Style 4: Footer style of Daisy UI'),
+      'style5' => t('Style 5: Event footer with glow'),
     ],
   ];
   $form['header_settings']['header_settings_container']['header_fixed'] = [

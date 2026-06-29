@@ -99,6 +99,28 @@ function conferencekit_branding_get_active_header_style(?string $fallback = NULL
 }
 
 /**
+ * Gets the active footer style, preferring the current domain group.
+ */
+function conferencekit_branding_get_active_footer_style(?string $fallback = NULL): string {
+  $allowed = array_keys(conferencekit_branding_footer_style_options());
+  $fallback = theme_get_setting('footer_class') ?: $fallback ?: 'style1';
+  $fallback = in_array($fallback, $allowed, TRUE) ? $fallback : 'style1';
+
+  $group = conferencekit_branding_get_group_from_active_domain();
+  if ($group instanceof GroupInterface
+    && $group->hasField('field_ck_footer_style')
+    && !$group->get('field_ck_footer_style')->isEmpty()
+  ) {
+    $value = (string) $group->get('field_ck_footer_style')->value;
+    if (in_array($value, $allowed, TRUE)) {
+      return $value;
+    }
+  }
+
+  return $fallback;
+}
+
+/**
  * Gets the supported header style options.
  */
 function conferencekit_branding_header_style_options(): array {
@@ -110,6 +132,19 @@ function conferencekit_branding_header_style_options(): array {
     'style5' => 'Style 5: Branding and Menu left, Search right',
     'style6' => 'Style 6: Branding and Menu left, Actions right',
     'style7' => 'Style 7: Fixed glass header with menu and actions',
+  ];
+}
+
+/**
+ * Gets the supported footer style options.
+ */
+function conferencekit_branding_footer_style_options(): array {
+  return [
+    'style1' => 'Style 1: Style One',
+    'style2' => 'Style 2: Style Two',
+    'style3' => 'Style 3: Style Three',
+    'style4' => 'Style 4: Footer style of Daisy UI',
+    'style5' => 'Style 5: Event footer with glow',
   ];
 }
 

@@ -21,3 +21,27 @@ tailpine_icons:
          aria-hidden="true">
       {{ content }}
     </svg>
+
+conference_kit_social:
+  label: "Conference Kit social icons"
+  extractor: svg_sprite
+  config:
+    sources:
+      - images/icons/social.svg
+  settings:
+    size:
+      title: "Size"
+      type: integer
+      default: 14
+  template: >-
+    <svg xmlns="http://www.w3.org/2000/svg"
+      {{ attributes
+        .addClass('icon', 'icon-' ~ icon_id|clean_class, 'transition-colors', 'duration-300', 'group-hover:text-body-title')
+        .setAttribute('width', size|default(14))
+        .setAttribute('height', size|default(14))
+        .setAttribute('fill', 'currentColor')
+        .setAttribute('stroke', 'currentColor')
+        .setAttribute('aria-hidden', 'true')
+      }}>
+      <use href="{{ source }}#{{ icon_id }}" fill="currentColor" stroke="currentColor"></use>
+    </svg>

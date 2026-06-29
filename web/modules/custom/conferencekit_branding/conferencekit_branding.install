@@ -17,6 +17,7 @@ use Drupal\field\Entity\FieldStorageConfig;
 function conferencekit_branding_install(): void {
   _conferencekit_branding_ensure_group_color_fields();
   _conferencekit_branding_ensure_group_header_fields();
+  _conferencekit_branding_ensure_group_footer_fields();
 }
 
 /**
@@ -31,6 +32,13 @@ function conferencekit_branding_update_10001(): void {
  */
 function conferencekit_branding_update_10002(): void {
   _conferencekit_branding_ensure_group_header_fields();
+}
+
+/**
+ * Adds microsite footer fields to existing installs.
+ */
+function conferencekit_branding_update_10003(): void {
+  _conferencekit_branding_ensure_group_footer_fields();
 }
 
 /**
@@ -213,6 +221,55 @@ function _conferencekit_branding_ensure_group_header_fields(): void {
       ->setComponent($field_name, [
         'type' => 'options_select',
         'weight' => 2,
+        'region' => 'content',
+        'settings' => [],
+      ])
+      ->save();
+  }
+}
+
+/**
+ * Ensures the conference group bundle has microsite footer settings fields.
+ */
+function _conferencekit_branding_ensure_group_footer_fields(): void {
+  $bundle = 'conference';
+  $field_name = 'field_ck_footer_style';
+
+  if (!FieldStorageConfig::loadByName('group', $field_name)) {
+    FieldStorageConfig::create([
+      'field_name' => $field_name,
+      'entity_type' => 'group',
+      'type' => 'list_string',
+      'cardinality' => 1,
+      'settings' => [
+        'allowed_values' => [
+          'style1' => 'Style 1: Style One',
+          'style2' => 'Style 2: Style Two',
+          'style3' => 'Style 3: Style Three',
+          'style4' => 'Style 4: Footer style of Daisy UI',
+          'style5' => 'Style 5: Event footer with glow',
+        ],
+      ],
+    ])->save();
+  }
+
+  if (!FieldConfig::loadByName('group', $bundle, $field_name)) {
+    FieldConfig::create([
+      'field_name' => $field_name,
+      'entity_type' => 'group',
+      'bundle' => $bundle,
+      'label' => 'Footer style',
+      'description' => 'Choose the footer style for this microsite. Leave empty to use the global theme setting.',
+      'required' => FALSE,
+    ])->save();
+  }
+
+  $form_display = EntityFormDisplay::load("group.$bundle.default");
+  if ($form_display) {
+    $form_display
+      ->setComponent($field_name, [
+        'type' => 'options_select',
+        'weight' => 3,
         'region' => 'content',
         'settings' => [],
       ])

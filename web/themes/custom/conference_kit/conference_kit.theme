@@ -95,8 +95,10 @@ function conference_kit_preprocess_page(array &$variables): void
   // Set the appropriate class based on the setting.
   $variables['header_fixed_class'] = $variables['fixed'] ? 'fixed z-40 w-full' : '';
 
-  // Set the footer template.
- $footer_style = theme_get_setting('footer_class') ?: 'style1';
+  // Load selected footer style from theme settings.
+  $footer_style = function_exists('conferencekit_branding_get_active_footer_style')
+    ? conferencekit_branding_get_active_footer_style('style1')
+    : (theme_get_setting('footer_class') ?: 'style1');
   $variables['footer_template'] = 'footer--' . $footer_style;
 
   

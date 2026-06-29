@@ -109,6 +109,9 @@
   </main>
   
   <!-- :small_blue_diamond: Footer -->
-  {% include '@tailpine/templates/footer-styles/' ~ footer_template ~ '.html.twig' %}
+  {% include [
+    '@conference_kit/templates/footer-styles/' ~ footer_template ~ '.html.twig',
+    '@tailpine/templates/footer-styles/' ~ footer_template ~ '.html.twig'
+  ] %}
         
 </div>

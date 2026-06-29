@@ -7,28 +7,6 @@
 
 {% set hero_heading_level = heading_level|default(1) %}
 {% set background_src = background_image.src|default(background_image|default('')) %}
-{% set social_links = social_links|default([
-  {
-    title: social_one_title|default(''),
-    url: social_one_url|default(''),
-    icon: social_one_icon|default({}),
-  },
-  {
-    title: social_two_title|default(''),
-    url: social_two_url|default(''),
-    icon: social_two_icon|default({}),
-  },
-  {
-    title: social_three_title|default(''),
-    url: social_three_url|default(''),
-    icon: social_three_icon|default({}),
-  },
-  {
-    title: social_four_title|default(''),
-    url: social_four_url|default(''),
-    icon: social_four_icon|default({}),
-  },
-]) %}
 
 <section
   {% if background_src %}
@@ -76,30 +54,9 @@
         </div>
       {% endif %}
 
-      {% if social_links %}
-        <div class="flex gap-4">
-          {% for social_link in social_links %}
-            {% set social_url = social_link.url|default('#') %}
-            {% set social_title = social_link.title|default('Social link'|t) %}
-            {% set social_icon = social_link.icon.src|default(social_link.icon|default('')) %}
-
-            {% if social_url or social_icon %}
-              <a
-                href="{{ social_url ?: '#' }}"
-                aria-label="{{ social_title }}"
-                title="{{ social_title }}"
-                class="h-10 w-10 flex items-center justify-center border border-body-title rounded-full relative z-10 after:-z-10 after:content-[''] after:absolute after:inset-0 overflow-hidden after:opacity-0 hover:after:opacity-100 after:bg-linear-to-l after:from-secondary after:to-tertiary after:transition-all after:duration-500"
-              >
-                {% if social_icon %}
-                  <img src="{{ social_icon }}" alt="" aria-hidden="true">
-                {% else %}
-                  <span class="sr-only">{{ social_title }}</span>
-                {% endif %}
-              </a>
-            {% endif %}
-          {% endfor %}
-        </div>
-      {% endif %}
+      {% block social_links %}
+        {{ social_links }}
+      {% endblock %}
     </div>
   </div>
 </section>

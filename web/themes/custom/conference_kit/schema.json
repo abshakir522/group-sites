@@ -1,0 +1,20 @@
+{
+  "$defs": {
+    "social-icon": {
+      "title": "Social icon",
+      "type": "string",
+      "enum": [
+        "facebook",
+        "x",
+        "linkedin",
+        "instagram"
+      ],
+      "meta:enum": {
+        "facebook": "Facebook",
+        "x": "X",
+        "linkedin": "LinkedIn",
+        "instagram": "Instagram"
+      }
+    }
+  }
+}

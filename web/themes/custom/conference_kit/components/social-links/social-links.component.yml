@@ -1,0 +1,72 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
+name: Social Links
+status: stable
+description: "Circular social links rendered from the Conference Kit icon sprite."
+group: Navigation
+props:
+  type: object
+  properties:
+    social_one_title:
+      title: Social one title
+      type: string
+      examples:
+        - Facebook
+    social_one_url:
+      title: Social one URL
+      type: string
+      examples:
+        - '#'
+    social_one_icon:
+      title: Social one icon
+      type: string
+      $ref: json-schema-definitions://conference_kit.theme/social-icon
+      default: facebook
+    social_two_title:
+      title: Social two title
+      type: string
+      examples:
+        - X
+    social_two_url:
+      title: Social two URL
+      type: string
+      examples:
+        - '#'
+    social_two_icon:
+      title: Social two icon
+      type: string
+      $ref: json-schema-definitions://conference_kit.theme/social-icon
+      default: x
+    social_three_title:
+      title: Social three title
+      type: string
+      examples:
+        - LinkedIn
+    social_three_url:
+      title: Social three URL
+      type: string
+      examples:
+        - '#'
+    social_three_icon:
+      title: Social three icon
+      type: string
+      $ref: json-schema-definitions://conference_kit.theme/social-icon
+      default: linkedin
+    social_four_title:
+      title: Social four title
+      type: string
+      examples:
+        - Instagram
+    social_four_url:
+      title: Social four URL
+      type: string
+      examples:
+        - '#'
+    social_four_icon:
+      title: Social four icon
+      type: string
+      $ref: json-schema-definitions://conference_kit.theme/social-icon
+      default: instagram
+    icon_size:
+      title: Icon size
+      type: integer
+      default: 14
