@@ -1,0 +1,34 @@
+uuid: 43087eb7-e2ce-47fd-b221-c6fba90bdef2
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - webform.webform.subscribe
+  module:
+    - group
+    - webform
+  theme:
+    - conference_kit
+id: conference_kit_webform
+theme: conference_kit
+region: footer_top_middle
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Stay updated on speakers, sessions & early tickets'
+  label_display: visible
+  provider: webform
+  webform_id: subscribe
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    negate: false
+    context_mapping:
+      group: '@group_context_domain.group_from_domain_context:group'
+    bundles:
+      conference: conference

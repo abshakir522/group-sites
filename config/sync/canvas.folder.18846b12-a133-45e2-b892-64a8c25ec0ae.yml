@@ -1,0 +1,10 @@
+uuid: 18846b12-a133-45e2-b892-64a8c25ec0ae
+langcode: en-gb
+status: true
+dependencies: {  }
+name: Blocks
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.tailpine.canvas-localaction
+  - sdc.tailpine.localaction

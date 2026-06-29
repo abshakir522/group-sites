@@ -1,0 +1,21 @@
+uuid: 305a7199-0697-4445-b15f-d5af7460b8f5
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - group_content_menu.group_content_menu_type.top_actions
+id: group_content_menu.top_actions.default
+targetEntityType: group_content_menu
+bundle: top_actions
+mode: default
+content:
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -5
+    region: content
+hidden:
+  langcode: true

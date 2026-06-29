@@ -1,0 +1,62 @@
+uuid: d0f409b3-8683-4949-a04c-2c9bc041e4e2
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - tailpine
+active_version: 1c43e00ebbf6dea8
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        style:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: line
+          expression: ℹ︎list_string␟value
+        show_label:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: false
+          expression: ℹ︎boolean␟value
+        label:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: OR
+          expression: ℹ︎string␟value
+        color:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: border
+          expression: ℹ︎list_string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Divider (Canvas)'
+id: sdc.tailpine.canvas-divider
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-divider'

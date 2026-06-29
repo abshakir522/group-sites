@@ -1,0 +1,26 @@
+uuid: b6d0b6bf-1e06-4571-9d8e-7142beb73de3
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - views.view.sessions
+  module:
+    - views
+active_version: 3259f07a92f6fafe
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:sessions-block_1'
+        label: Sessions
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+label: Sessions
+id: block.views_block.sessions-block_1
+provider: views
+source: block
+source_local_id: 'views_block:sessions-block_1'

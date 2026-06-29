@@ -1,0 +1,46 @@
+uuid: 165aed75-1381-4d2d-b254-c98b80189d5b
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - tailpine
+active_version: 091d826c06f94bf6
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        expand:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+        bg_color:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions:
+        brand:
+          title: Brand
+          description: 'Navbar brand/logo.'
+        navigation:
+          title: Navigation
+          description: 'Navigation links.'
+        actions:
+          title: Actions
+          description: 'Action buttons/links.'
+label: Navbar
+id: sdc.tailpine.navbar
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:navbar'

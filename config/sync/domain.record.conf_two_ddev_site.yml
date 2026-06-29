@@ -1,0 +1,16 @@
+uuid: 62000db8-c228-4dec-a8d7-0286c6d98b4a
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - group_context_domain
+third_party_settings:
+  group_context_domain:
+    group_uuid: bdce8481-ae20-4d31-8ee0-9ad735431597
+id: conf_two_ddev_site
+domain_id: 3817341
+hostname: conf-two.ddev.site
+name: 'Conference Two'
+scheme: https
+weight: 3
+is_default: false

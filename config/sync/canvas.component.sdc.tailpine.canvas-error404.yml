@@ -1,0 +1,38 @@
+uuid: fa2ee3e9-99f9-4c68-bc80-e0eef46b2769
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: 81b778c27b8d036a
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        title:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: '404'
+          expression: ℹ︎string␟value
+        subtitle:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'The page you are looking for does not exist.'
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Error 404 (Canvas)'
+id: sdc.tailpine.canvas-error404
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-error404'

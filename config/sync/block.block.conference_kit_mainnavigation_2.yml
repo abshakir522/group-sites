@@ -1,0 +1,37 @@
+uuid: d6ad8282-e475-4576-95f7-e0f70b3d9621
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - group_content_menu.group_content_menu_type.main_navigation
+  module:
+    - group
+    - group_content_menu
+  theme:
+    - conference_kit
+id: conference_kit_mainnavigation_2
+theme: conference_kit
+region: footer_top_last
+weight: 0
+provider: null
+plugin: 'group_content_menu:main_navigation'
+settings:
+  id: 'group_content_menu:main_navigation'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: group_content_menu
+  context_mapping:
+    group: '@group_context_domain.group_from_domain_context:group'
+  level: 1
+  depth: 0
+  expand_all_items: false
+  relative_visibility: false
+  theme_hook_suggestion: ''
+visibility:
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    negate: false
+    context_mapping:
+      group: '@group_context_domain.group_from_domain_context:group'
+    bundles:
+      conference: conference

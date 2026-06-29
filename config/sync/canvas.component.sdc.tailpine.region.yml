@@ -1,0 +1,29 @@
+uuid: c57ec86a-c7de-43cb-bb18-3b47ff50aa11
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: c8317dab4520b63f
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        region_name:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: Content
+          description: 'Region content (blocks).'
+label: Region
+id: sdc.tailpine.region
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:region'

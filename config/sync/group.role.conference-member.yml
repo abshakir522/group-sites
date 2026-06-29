@@ -1,0 +1,15 @@
+uuid: 17945819-0ad9-4e36-830d-cc1470f34d4a
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - group.type.conference
+    - user.role.authenticated
+id: conference-member
+label: Member
+weight: -100
+admin: false
+scope: insider
+global_role: authenticated
+group_type: conference
+permissions: {  }

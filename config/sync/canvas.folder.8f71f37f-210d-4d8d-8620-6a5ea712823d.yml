@@ -1,0 +1,20 @@
+uuid: 8f71f37f-210d-4d8d-8620-6a5ea712823d
+langcode: en-gb
+status: true
+dependencies: {  }
+name: 'Teams & Testimonials'
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.tailpine.base-testimonial
+  - sdc.tailpine.canvas-team-styletwo
+  - sdc.tailpine.canvas-teamheader
+  - sdc.tailpine.canvas-teamstyleone
+  - sdc.tailpine.canvas-teamstyletwoheader
+  - sdc.tailpine.canvas-testimonialheader
+  - sdc.tailpine.canvas-testimonialstyleone
+  - sdc.tailpine.canvas-testimonialstyletwo
+  - sdc.tailpine.team_styletwo
+  - sdc.tailpine.teamheader
+  - sdc.tailpine.teamstyleone
+  - sdc.tailpine.teamstyletwoheader

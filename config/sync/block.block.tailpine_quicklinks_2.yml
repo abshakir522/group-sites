@@ -1,0 +1,35 @@
+uuid: 7d6e1d26-e1c1-48f6-bbc8-96f4a0642911
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.quick-links
+  module:
+    - group
+    - system
+  theme:
+    - conference_kit
+_core:
+  default_config_hash: BGWWXM4i2J3Z7dSXjORr_rvKjswZo6mE6w6muosPzE4
+id: tailpine_quicklinks_2
+theme: conference_kit
+region: footer_main_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:quick-links'
+settings:
+  id: 'system_menu_block:quick-links'
+  label: 'Quick links'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility:
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    negate: true
+    context_mapping:
+      group: '@group_context_domain.group_from_domain_context:group'
+    bundles:
+      conference: conference

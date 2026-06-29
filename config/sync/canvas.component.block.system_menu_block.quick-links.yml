@@ -1,0 +1,27 @@
+uuid: c422df59-f32e-4ddd-b1b3-7b392be5a081
+langcode: en-gb
+status: false
+dependencies:
+  config:
+    - system.menu.quick-links
+  module:
+    - system
+active_version: 669b36c934c8eabd
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'system_menu_block:quick-links'
+        label: 'Quick links'
+        label_display: '0'
+        provider: system
+        level: 1
+        depth: null
+        expand_all_items: false
+    fallback_metadata:
+      slot_definitions: null
+label: 'Quick links'
+id: block.system_menu_block.quick-links
+provider: system
+source: block
+source_local_id: 'system_menu_block:quick-links'

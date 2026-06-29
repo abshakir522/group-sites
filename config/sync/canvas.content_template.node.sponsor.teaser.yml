@@ -1,0 +1,35 @@
+uuid: 8b511203-fc6a-4679-b68c-f6a7a1036078
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.conference_kit.canvas-sponsor-logo-style-three
+    - core.entity_view_mode.node.teaser
+    - field.field.media.image.field_media_image
+    - field.field.node.sponsor.field_external_link
+    - field.field.node.sponsor.field_media_image
+    - image.style.canvas_parametrized_width
+    - media.type.image
+    - node.type.sponsor
+  module:
+    - file
+    - media
+    - node
+id: node.sponsor.teaser
+content_entity_type_id: node
+content_entity_type_bundle: sponsor
+content_entity_type_view_mode: teaser
+component_tree:
+  '0:d6f95a26-089c-453a-ac18-11e558112166':
+    uuid: d6f95a26-089c-453a-ac18-11e558112166
+    component_id: sdc.conference_kit.canvas-sponsor-logo-style-three
+    component_version: ba27cf7fd38621d8
+    inputs:
+      logo:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:sponsor␝field_media_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}'
+      url:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:sponsor␝field_external_link␞␟url'
+      label: 'View sponsor'
+exposed_slots: {  }

@@ -1,0 +1,19 @@
+uuid: 13ff0d23-fd21-4228-ba71-aba924f1687e
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - group.type.conference
+    - group_content_menu.group_content_menu_type.top_actions
+  module:
+    - group_content_menu
+id: conference-93cba8aac4dbb4bc5b358
+group_type: conference
+content_plugin: 'group_content_menu:top_actions'
+plugin_config:
+  group_cardinality: 1
+  entity_cardinality: 1
+  use_creation_wizard: false
+  auto_create_group_menu: true
+  auto_create_home_link: false
+  auto_create_home_link_title: Home

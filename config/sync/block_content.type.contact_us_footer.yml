@@ -1,0 +1,10 @@
+uuid: 5c203f9e-bab0-45f6-88a3-8b6b16ba14ad
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5slq5z7Q6rq3Lk87h14Yco7ENppi8mwwLYEMWU7m2aU
+id: contact_us_footer
+label: 'Contact Us Footer'
+revision: false
+description: null

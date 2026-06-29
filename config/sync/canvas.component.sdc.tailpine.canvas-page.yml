@@ -1,0 +1,33 @@
+uuid: 398ca924-b0e8-4174-834b-60379bc3a973
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: b03e4c77a485c4ad
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions: {  }
+    fallback_metadata:
+      slot_definitions:
+        header:
+          title: Header
+          description: 'Page header content.'
+        navigation:
+          title: Navigation
+          description: 'Main navigation.'
+        content:
+          title: Content
+          description: 'Main page content.'
+        sidebar:
+          title: Sidebar
+          description: 'Sidebar content.'
+        footer:
+          title: Footer
+          description: 'Page footer.'
+label: 'Page (Canvas)'
+id: sdc.tailpine.canvas-page
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-page'

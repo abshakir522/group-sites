@@ -1,0 +1,34 @@
+uuid: 7d9a728a-3f51-43a1-a1c2-684266b67b72
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: 1e704616334b752f
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        title:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Latest Posts'
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: 'Post Content'
+          description: 'Post cards or listing content rendered below the header.'
+        cta:
+          title: 'Header CTA'
+          description: 'Call-to-action button or link displayed in the header.'
+label: 'Post Style Header (Canvas)'
+id: sdc.tailpine.canvas-postheader
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-postheader'

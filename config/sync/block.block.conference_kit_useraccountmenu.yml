@@ -1,0 +1,35 @@
+uuid: 00146acc-3e86-4d84-92c1-d7ab90ae013d
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - domain
+    - system
+  theme:
+    - conference_kit
+_core:
+  default_config_hash: hHPbUMzLR75UG42npsp_4htYg6GPMGBhWZmjia85_ww
+id: conference_kit_useraccountmenu
+theme: conference_kit
+region: top_right_actions
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility:
+  domain:
+    id: domain
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains:
+      group_sites_ddev_site: group_sites_ddev_site

@@ -1,0 +1,31 @@
+uuid: 22c5a825-871a-486c-8805-ddf993117e40
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: f9c1636a6c118880
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        region_name:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: sidebar
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: Content
+          description: 'Region content (blocks).'
+label: 'Region (Canvas)'
+id: sdc.tailpine.canvas-region
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-region'

@@ -1,0 +1,39 @@
+uuid: f54b7f6e-ede9-446e-8cf3-e354b0204ed7
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: 31aa501d71a2febb
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        title:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Click to Expand'
+          expression: ℹ︎string␟value
+        open:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value: null
+          expression: ℹ︎boolean␟value
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: Content
+          description: 'Collapsible content.'
+label: 'Collapse (Canvas)'
+id: sdc.tailpine.canvas-collapse
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-collapse'

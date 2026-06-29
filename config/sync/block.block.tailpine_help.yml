@@ -1,0 +1,22 @@
+uuid: aa519f25-8d9e-47e3-83a1-d9a630cd40d9
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - tailpine
+_core:
+  default_config_hash: R9hDSqmtL4VGgOL6HyLWI4riUx1BFVaAlh8qV4fjQiM
+id: tailpine_help
+theme: tailpine
+region: help
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

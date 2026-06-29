@@ -1,0 +1,11 @@
+uuid: 25438cf2-be1c-42ef-b556-23e8bdc14b4e
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+id: node.logo
+label: Logo
+description: null
+targetEntityType: node
+cache: true

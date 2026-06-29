@@ -1,0 +1,22 @@
+uuid: eb31ac03-7c1a-433c-8469-4164aa7f4c0d
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - domain
+active_version: f38bbdea674ff4e1
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: domain_server_block
+        label: 'Domain server information'
+        label_display: '0'
+        provider: domain
+    fallback_metadata:
+      slot_definitions: null
+label: 'Domain server information'
+id: block.domain_server_block
+provider: domain
+source: block
+source_local_id: domain_server_block

@@ -1,0 +1,15 @@
+uuid: 8b792455-2089-4e77-a086-52a49cbc103a
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - group.type.conference
+    - user.role.authenticated
+id: conference-outsider
+label: Outsider
+weight: -101
+admin: false
+scope: outsider
+global_role: authenticated
+group_type: conference
+permissions: {  }

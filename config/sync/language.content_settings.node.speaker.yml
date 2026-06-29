@@ -1,0 +1,11 @@
+uuid: 35c6be96-686b-422f-8638-64d703ba17b4
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.speaker
+id: node.speaker
+target_entity_type_id: node
+target_bundle: speaker
+default_langcode: site_default
+language_alterable: false

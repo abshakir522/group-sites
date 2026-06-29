@@ -1,0 +1,44 @@
+uuid: 08b394fa-932d-46af-bad1-8888943507b2
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - tailpine
+active_version: 84d582deef4c007d
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        columns:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: grid-cols-3
+          expression: ℹ︎list_string␟value
+        title:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'This is Team Style Two Header'
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: Content
+          description: 'Content of the Wrapper. Plain text.'
+label: 'Team Style Two Header (Canvas)'
+id: sdc.tailpine.canvas-teamstyletwoheader
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-teamstyletwoheader'

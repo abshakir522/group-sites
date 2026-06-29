@@ -1,0 +1,24 @@
+uuid: 5f373bf3-a464-45b1-9252-d1f07937bbe5
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - entity_block
+active_version: ee7676fe7eafda3d
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'entity_block:comment'
+        label: Comment
+        label_display: '0'
+        provider: entity_block
+        entity: ''
+        view_mode: default
+    fallback_metadata:
+      slot_definitions: null
+label: Comment
+id: block.entity_block.comment
+provider: entity_block
+source: block
+source_local_id: 'entity_block:comment'

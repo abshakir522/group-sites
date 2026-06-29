@@ -1,0 +1,36 @@
+uuid: 15abd5e7-8d69-4b78-a733-cb447711a8ab
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - group
+    - options
+id: group.field_ck_footer_style
+field_name: field_ck_footer_style
+entity_type: group
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: style1
+      label: 'Style 1: Style One'
+    -
+      value: style2
+      label: 'Style 2: Style Two'
+    -
+      value: style3
+      label: 'Style 3: Style Three'
+    -
+      value: style4
+      label: 'Style 4: Footer style of Daisy UI'
+    -
+      value: style5
+      label: 'Style 5: Event footer with glow'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

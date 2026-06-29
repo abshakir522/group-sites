@@ -1,0 +1,17 @@
+uuid: f78e8c12-e944-4fab-9100-fe7bb8afb15b
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - group.type.conference
+    - node.type.session
+  module:
+    - gnode
+    - node
+id: conference-group_node-session
+group_type: conference
+content_plugin: 'group_node:session'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

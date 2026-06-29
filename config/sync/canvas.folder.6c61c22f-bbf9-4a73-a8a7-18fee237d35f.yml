@@ -1,0 +1,10 @@
+uuid: 6c61c22f-bbf9-4a73-a8a7-18fee237d35f
+langcode: en-gb
+status: true
+dependencies: {  }
+name: 'Forms & Inputs'
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.tailpine.canvas-search-result
+  - sdc.tailpine.select

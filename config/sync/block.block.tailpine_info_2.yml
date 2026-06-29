@@ -1,0 +1,35 @@
+uuid: 18e6cc3e-a32b-4988-823a-7f19fc8ea228
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.info
+  module:
+    - group
+    - system
+  theme:
+    - conference_kit
+_core:
+  default_config_hash: LD_oSISSPlSI1aBUQrxBMaUiqJRXNfqgWkufKDzRjzk
+id: tailpine_info_2
+theme: conference_kit
+region: footer_main_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:info'
+settings:
+  id: 'system_menu_block:info'
+  label: INFO
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility:
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    negate: true
+    context_mapping:
+      group: '@group_context_domain.group_from_domain_context:group'
+    bundles:
+      conference: conference

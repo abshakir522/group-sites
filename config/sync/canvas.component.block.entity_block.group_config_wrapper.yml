@@ -1,0 +1,24 @@
+uuid: 67d6689b-ca86-4439-bdbd-5d37baed4056
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - entity_block
+active_version: bcc4a979bf5654eb
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'entity_block:group_config_wrapper'
+        label: 'Config wrapper'
+        label_display: '0'
+        provider: entity_block
+        entity: ''
+        view_mode: default
+    fallback_metadata:
+      slot_definitions: null
+label: 'Config wrapper'
+id: block.entity_block.group_config_wrapper
+provider: entity_block
+source: block
+source_local_id: 'entity_block:group_config_wrapper'

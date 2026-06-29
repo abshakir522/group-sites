@@ -1,0 +1,103 @@
+uuid: 4fcf3bbc-d132-4233-a19e-3f617574b89e
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - tailpine
+active_version: db5a8d09dcd1890f
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        columns_mobile:
+          required: false
+          field_type: integer
+          field_storage_settings: {  }
+          field_instance_settings:
+            min: 1
+            max: 12
+          field_widget: number
+          default_value:
+            -
+              value: 1
+          expression: ℹ︎integer␟value
+        columns_tablet:
+          required: false
+          field_type: integer
+          field_storage_settings: {  }
+          field_instance_settings:
+            min: 1
+            max: 12
+          field_widget: number
+          default_value:
+            -
+              value: 6
+          expression: ℹ︎integer␟value
+        columns_desktop:
+          required: false
+          field_type: integer
+          field_storage_settings: {  }
+          field_instance_settings:
+            min: 1
+            max: 12
+          field_widget: number
+          default_value:
+            -
+              value: 12
+          expression: ℹ︎integer␟value
+        columns_wide:
+          required: false
+          field_type: integer
+          field_storage_settings: {  }
+          field_instance_settings:
+            min: 1
+            max: 12
+          field_widget: number
+          default_value:
+            -
+              value: 12
+          expression: ℹ︎integer␟value
+        gap:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: medium
+          expression: ℹ︎list_string␟value
+        align_items:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: stretch
+          expression: ℹ︎list_string␟value
+        extra_classes:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'mx-auto max-w-screen-xl'
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: 'Grid Items'
+          description: 'Drop Flexible Grid Item components here. Add as many as needed — they will flow left-to-right and wrap to a new row automatically.'
+label: 'Flexible Grid (Canvas)'
+id: sdc.tailpine.tailpine-flexible-grid
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:tailpine-flexible-grid'

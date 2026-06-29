@@ -1,0 +1,21 @@
+uuid: 8d73c6bd-a99f-42b2-88ee-420e17f24d89
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_ck_footer_style
+    - group.type.conference
+  module:
+    - options
+id: group.conference.field_ck_footer_style
+field_name: field_ck_footer_style
+entity_type: group
+bundle: conference
+label: 'Footer style'
+description: 'Choose the footer style for this microsite. Leave empty to use the global theme setting.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

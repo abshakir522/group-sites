@@ -1,0 +1,38 @@
+uuid: 92d8699f-639e-4d34-904e-2944b661f545
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.conference_kit.canvas-card-style-three
+    - core.entity_view_mode.node.teaser
+    - field.field.media.image.field_media_image
+    - field.field.node.speaker.field_description
+    - field.field.node.speaker.field_media_image
+    - filter.format.basic_html
+    - image.style.canvas_parametrized_width
+    - media.type.image
+    - node.type.speaker
+  module:
+    - file
+    - media
+    - node
+id: node.speaker.teaser
+content_entity_type_id: node
+content_entity_type_bundle: speaker
+content_entity_type_view_mode: teaser
+component_tree:
+  '0:f8bef852-ae4b-4259-b7dc-b69abb3cbb50':
+    uuid: f8bef852-ae4b-4259-b7dc-b69abb3cbb50
+    component_id: sdc.conference_kit.canvas-card-style-three
+    component_version: b1523d47f75b7fcc
+    inputs:
+      image:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:speaker␝field_media_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}'
+      title:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:speaker␝title␞␟value'
+      description:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:speaker␝field_description␞␟processed'
+exposed_slots: {  }

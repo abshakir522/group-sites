@@ -1,0 +1,24 @@
+uuid: 23777ee9-d377-45f3-893c-c6b9ae8044db
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - entity_block
+active_version: e54a041ab24729b3
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'entity_block:group_relationship'
+        label: 'Group relationship'
+        label_display: '0'
+        provider: entity_block
+        entity: ''
+        view_mode: default
+    fallback_metadata:
+      slot_definitions: null
+label: 'Group relationship'
+id: block.entity_block.group_relationship
+provider: entity_block
+source: block
+source_local_id: 'entity_block:group_relationship'

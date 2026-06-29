@@ -1,0 +1,52 @@
+uuid: 1bdc680d-6ae7-4a42-bdfb-9e6c0efcc467
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_media_image
+    - image.style.canvas_parametrized_width
+    - media.type.image
+  module:
+    - file
+    - media
+    - media_library
+  theme:
+    - tailpine
+active_version: 057c851590101756
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        logo_img:
+          required: false
+          field_type: entity_reference
+          field_storage_settings:
+            target_type: media
+          field_instance_settings:
+            handler: 'default:media'
+            handler_settings:
+              target_bundles:
+                image: image
+          field_widget: media_library_widget
+          default_value: {  }
+          expression: 'ℹ︎entity_reference␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}'
+        logo_title:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'My Website'
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions:
+        inner_content:
+          title: 'Inner Content'
+          description: description
+label: 'Sidebar (Canvas)'
+id: sdc.tailpine.canvas-sidebar
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-sidebar'

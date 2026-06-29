@@ -1,0 +1,21 @@
+uuid: 201c76c7-3319-404c-b63d-a12fc69570f9
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_ck_success_color
+    - group.type.conference
+id: group.conference.field_ck_success_color
+field_name: field_ck_success_color
+entity_type: group
+bundle: conference
+label: 'Success color'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: '#14A44D'
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: 617dc90e-18b2-4203-8d05-8ae87bfd7a71
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - domain
+active_version: 0dcfc9f632e32d6c
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: domain_switcher_block
+        label: 'Domain switcher (for admins and testing)'
+        label_display: '0'
+        provider: domain
+    fallback_metadata:
+      slot_definitions: null
+label: 'Domain switcher (for admins and testing)'
+id: block.domain_switcher_block
+provider: domain
+source: block
+source_local_id: domain_switcher_block

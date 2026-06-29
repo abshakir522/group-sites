@@ -32,7 +32,6 @@
         "drupal/group_sites": "^1.1",
         "drupal/smart_date": "^4.2",
         "drupal/svg_image": "^3.2",
-        "drupal/tailpine": "^2.0@RC",
         "drupal/webform": "^6.3@RC",
         "drush/drush": "^13.7"
     },

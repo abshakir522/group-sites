@@ -1,0 +1,22 @@
+uuid: 3758c621-5d2d-4850-9999-f055bae9efe5
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - group.type.conference
+    - user.role.anonymous
+id: conference-anonymous
+label: Anonymous
+weight: -102
+admin: false
+scope: outsider
+global_role: anonymous
+group_type: conference
+permissions:
+  - 'view conferencekit_canvas_page entity'
+  - 'view group'
+  - 'view group_node:article entity'
+  - 'view group_node:page entity'
+  - 'view group_node:session entity'
+  - 'view group_node:speaker entity'
+  - 'view group_node:sponsor entity'

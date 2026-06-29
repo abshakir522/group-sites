@@ -1,0 +1,28 @@
+uuid: 4ca6da4b-13ef-4f5f-8758-5b12f21f72c4
+langcode: en-gb
+status: false
+dependencies:
+  theme:
+    - tailpine
+active_version: 1eae84ee2d93d5af
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        messages:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: '<p>This is an alert message.</p>'
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Alert (Canvas)'
+id: sdc.tailpine.canvas-alert
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-alert'

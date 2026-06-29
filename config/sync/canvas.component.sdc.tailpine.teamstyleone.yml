@@ -1,0 +1,61 @@
+uuid: 5bfa8b6e-a5f6-4231-b183-e67ee07d628e
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: d43634560b8ec3b6
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        imageurl:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        heading_level:
+          required: false
+          field_type: integer
+          field_storage_settings: {  }
+          field_instance_settings:
+            min: 1
+            max: 6
+          field_widget: number
+          default_value: null
+          expression: ℹ︎integer␟value
+    fallback_metadata:
+      slot_definitions:
+        name:
+          title: Name
+          description: 'Name of the card. Plain text.'
+        subtitle:
+          title: Subtitle
+          description: 'Subtitle of the card. Plain text.'
+  cfd18eb7c3b05a50:
+    settings:
+      prop_field_definitions:
+        imageurl:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions:
+        name:
+          title: Name
+          description: 'Name of the card. Plain text.'
+        subtitle:
+          title: Subtitle
+          description: 'Subtitle of the card. Plain text.'
+label: 'Team Style One'
+id: sdc.tailpine.teamstyleone
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:teamstyleone'

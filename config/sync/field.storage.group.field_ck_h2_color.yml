@@ -1,0 +1,21 @@
+uuid: 0fbc4212-38be-45af-b6c8-58ee083377e8
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - group
+id: group.field_ck_h2_color
+field_name: field_ck_h2_color
+entity_type: group
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

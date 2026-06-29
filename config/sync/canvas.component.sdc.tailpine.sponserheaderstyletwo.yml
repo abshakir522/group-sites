@@ -1,0 +1,24 @@
+uuid: 29e1551e-3aff-4da0-8145-2077f4620e7d
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: 50d13c79a3002e25
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions: {  }
+    fallback_metadata:
+      slot_definitions:
+        title:
+          title: Title
+          description: 'The title of the page.'
+        content:
+          title: Content
+          description: 'The content of the page.'
+label: 'Sponsor Logo Header Style Two'
+id: sdc.tailpine.sponserheaderstyletwo
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:sponserheaderstyletwo'

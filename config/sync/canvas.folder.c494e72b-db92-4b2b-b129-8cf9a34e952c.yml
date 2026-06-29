@@ -1,0 +1,21 @@
+uuid: c494e72b-db92-4b2b-b129-8cf9a34e952c
+langcode: en-gb
+status: true
+dependencies: {  }
+name: Layout
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.conference_kit.canvas-section-spacer
+  - sdc.tailpine.canvas-page
+  - sdc.tailpine.canvas-page-content
+  - sdc.tailpine.canvas-page-footer
+  - sdc.tailpine.canvas-page-navigation
+  - sdc.tailpine.canvas-region
+  - sdc.tailpine.canvas-section
+  - sdc.tailpine.canvas-sidebar
+  - sdc.tailpine.page
+  - sdc.tailpine.page-content
+  - sdc.tailpine.page-footer
+  - sdc.tailpine.page-navigation
+  - sdc.tailpine.region

@@ -1,0 +1,47 @@
+uuid: 739b6583-7829-4087-b559-3d6192547a92
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_us_footer
+    - field.field.block_content.contact_us_footer.field_email
+    - field.field.block_content.contact_us_footer.field_location
+    - field.field.block_content.contact_us_footer.field_social_media
+  module:
+    - link
+    - text
+_core:
+  default_config_hash: '-lAe4isbRQr7eA4GRREU90LtGJmVnIsn7kfTBNO1j_U'
+id: block_content.contact_us_footer.default
+targetEntityType: block_content
+bundle: contact_us_footer
+mode: default
+content:
+  field_email:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_location:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_social_media:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

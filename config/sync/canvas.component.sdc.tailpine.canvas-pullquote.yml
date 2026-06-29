@@ -1,0 +1,96 @@
+uuid: bbed8208-1c11-439b-aea9-8c46e78c610a
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_media_image
+    - filter.format.canvas_html_block
+    - image.style.canvas_parametrized_width
+    - media.type.image
+  module:
+    - file
+    - media
+    - media_library
+    - options
+    - text
+  theme:
+    - tailpine
+active_version: 382b3021310d8cb5
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        border_style:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: left-bar
+          expression: ℹ︎list_string␟value
+        quote:
+          required: false
+          field_type: text_long
+          field_storage_settings: {  }
+          field_instance_settings:
+            allowed_formats:
+              - canvas_html_block
+          field_widget: text_textarea
+          default_value:
+            -
+              value: '<p>Design is not just what it looks like and feels like. Design is how it works.</p>'
+              format: canvas_html_block
+          expression: ℹ︎text_long␟processed
+        author:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Steve Jobs'
+          expression: ℹ︎string␟value
+        source:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Fortune Magazine, 2003'
+          expression: ℹ︎string␟value
+        show_avatar:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: false
+          expression: ℹ︎boolean␟value
+        avatar:
+          required: false
+          field_type: entity_reference
+          field_storage_settings:
+            target_type: media
+          field_instance_settings:
+            handler: 'default:media'
+            handler_settings:
+              target_bundles:
+                image: image
+          field_widget: media_library_widget
+          default_value: {  }
+          expression: 'ℹ︎entity_reference␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}'
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Pullquote (Canvas)'
+id: sdc.tailpine.canvas-pullquote
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-pullquote'

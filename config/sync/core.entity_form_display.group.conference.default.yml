@@ -1,0 +1,208 @@
+uuid: 6da1bedd-e8f5-49e8-a903-1bdf3963ee7f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.group.conference.field_ck_base_primary_color
+    - field.field.group.conference.field_ck_base_secondary_color
+    - field.field.group.conference.field_ck_base_tertiary_color
+    - field.field.group.conference.field_ck_body_bg_color
+    - field.field.group.conference.field_ck_body_color
+    - field.field.group.conference.field_ck_enable_color
+    - field.field.group.conference.field_ck_error_color
+    - field.field.group.conference.field_ck_footer_style
+    - field.field.group.conference.field_ck_h1_color
+    - field.field.group.conference.field_ck_h2_color
+    - field.field.group.conference.field_ck_h3_color
+    - field.field.group.conference.field_ck_h4_color
+    - field.field.group.conference.field_ck_header_style
+    - field.field.group.conference.field_ck_success_color
+    - field.field.group.conference.field_ck_warning_color
+    - field.field.group.conference.field_end_date
+    - field.field.group.conference.field_front_page_path
+    - field.field.group.conference.field_site_logo
+    - field.field.group.conference.field_start_date
+    - group.type.conference
+    - image.style.thumbnail
+  module:
+    - datetime
+    - path
+    - svg_image
+id: group.conference.default
+targetEntityType: group
+bundle: conference
+mode: default
+content:
+  field_ck_base_primary_color:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 10
+      placeholder: '#10B981'
+    third_party_settings: {  }
+  field_ck_base_secondary_color:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 10
+      placeholder: '#064E3B'
+    third_party_settings: {  }
+  field_ck_base_tertiary_color:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 10
+      placeholder: '#06B6D4'
+    third_party_settings: {  }
+  field_ck_body_bg_color:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 10
+      placeholder: '#FFFFFF'
+    third_party_settings: {  }
+  field_ck_body_color:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 10
+      placeholder: '#1F2937'
+    third_party_settings: {  }
+  field_ck_enable_color:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_ck_error_color:
+    type: string_textfield
+    weight: 19
+    region: content
+    settings:
+      size: 10
+      placeholder: '#DC4C64'
+    third_party_settings: {  }
+  field_ck_footer_style:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ck_h1_color:
+    type: string_textfield
+    weight: 13
+    region: content
+    settings:
+      size: 10
+      placeholder: '#1F2937'
+    third_party_settings: {  }
+  field_ck_h2_color:
+    type: string_textfield
+    weight: 14
+    region: content
+    settings:
+      size: 10
+      placeholder: '#1F2937'
+    third_party_settings: {  }
+  field_ck_h3_color:
+    type: string_textfield
+    weight: 15
+    region: content
+    settings:
+      size: 10
+      placeholder: '#1F2937'
+    third_party_settings: {  }
+  field_ck_h4_color:
+    type: string_textfield
+    weight: 16
+    region: content
+    settings:
+      size: 10
+      placeholder: '#1F2937'
+    third_party_settings: {  }
+  field_ck_header_style:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ck_success_color:
+    type: string_textfield
+    weight: 17
+    region: content
+    settings:
+      size: 10
+      placeholder: '#14A44D'
+    third_party_settings: {  }
+  field_ck_warning_color:
+    type: string_textfield
+    weight: 18
+    region: content
+    settings:
+      size: 10
+      placeholder: '#E4A11B'
+    third_party_settings: {  }
+  field_end_date:
+    type: datetime_default
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_front_page_path:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_site_logo:
+    type: image_image
+    weight: 6
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_start_date:
+    type: datetime_default
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 22
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 21
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 20
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  uid: true

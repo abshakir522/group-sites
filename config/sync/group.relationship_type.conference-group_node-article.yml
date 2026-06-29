@@ -1,0 +1,17 @@
+uuid: cd0d91fd-f003-41af-a111-405bbcb373e7
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - group.type.conference
+    - node.type.article
+  module:
+    - gnode
+    - node
+id: conference-group_node-article
+group_type: conference
+content_plugin: 'group_node:article'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

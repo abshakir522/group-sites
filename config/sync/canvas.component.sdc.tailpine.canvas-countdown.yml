@@ -1,0 +1,95 @@
+uuid: 6e3fae42-0f04-43cd-927e-13f15d524a43
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - tailpine
+active_version: ce493e2faece2a58
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        target_date:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: '2026-12-31T23:59:59'
+          expression: ℹ︎string␟value
+        style:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: boxed
+          expression: ℹ︎list_string␟value
+        show_days:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: true
+          expression: ℹ︎boolean␟value
+        show_hours:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: true
+          expression: ℹ︎boolean␟value
+        show_minutes:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: true
+          expression: ℹ︎boolean␟value
+        show_seconds:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: true
+          expression: ℹ︎boolean␟value
+        bg_color:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: dark
+          expression: ℹ︎list_string␟value
+    fallback_metadata:
+      slot_definitions:
+        expired:
+          title: 'Expired content'
+          description: 'Content shown when the countdown reaches zero.'
+label: 'Countdown (Canvas)'
+id: sdc.tailpine.canvas-countdown
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-countdown'

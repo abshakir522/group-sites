@@ -1,0 +1,11 @@
+uuid: 98deadab-9e03-4779-a71a-8739dab5c5ea
+langcode: en-gb
+status: true
+dependencies: {  }
+id: group_sites_ddev_site
+domain_id: 7204893
+hostname: group-sites.ddev.site
+name: ConferenceKit
+scheme: https
+weight: 1
+is_default: true

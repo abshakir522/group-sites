@@ -1,0 +1,74 @@
+uuid: 105bd804-16af-4500-8560-1b55491a1641
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: 65469545ea5b198d
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        node_classes:
+          required: false
+          field_type: string
+          cardinality: -1
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        label:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        url:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        display_submitted:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value: null
+          expression: ℹ︎boolean␟value
+        view_mode:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions:
+        title_prefix:
+          title: 'Title Prefix'
+          description: 'Drupal title prefix output — required for contextual links.'
+        title_suffix:
+          title: 'Title Suffix'
+          description: 'Drupal title suffix output — required for contextual links.'
+        author_picture:
+          title: 'Author Picture'
+          description: 'Rendered author picture image.'
+        author_info:
+          title: 'Author Info'
+          description: 'Submitted by line with date and metadata.'
+        content:
+          title: Content
+          description: 'The main rendered node content.'
+label: Node
+id: sdc.tailpine.node
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:node'

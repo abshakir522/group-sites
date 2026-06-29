@@ -1,0 +1,9 @@
+uuid: f464e691-2d02-442c-82ac-de001811abab
+langcode: en-gb
+status: true
+dependencies: {  }
+name: 'Conference Kit'
+configEntityTypeId: component
+weight: 0
+items:
+  - block.conferencekit_group_branding_block

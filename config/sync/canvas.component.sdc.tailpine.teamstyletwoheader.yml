@@ -1,0 +1,54 @@
+uuid: 9a3f6e14-c79d-41a1-9742-0f4cfacb7282
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - tailpine
+active_version: 37cdc9d7cb673fd9
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        columns:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+    fallback_metadata:
+      slot_definitions:
+        title:
+          title: Title
+          description: 'Name of the card. Plain text.'
+        content:
+          title: Content
+          description: 'Content of the Wrapper. Plain text.'
+  3f807802d0e9edc2:
+    settings:
+      prop_field_definitions:
+        columns:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions:
+        title:
+          title: Title
+          description: 'Name of the card. Plain text.'
+        content:
+          title: Content
+          description: 'Content of the Wrapper. Plain text.'
+label: 'Team Style Two Header'
+id: sdc.tailpine.teamstyletwoheader
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:teamstyletwoheader'

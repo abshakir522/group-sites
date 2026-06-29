@@ -1,0 +1,22 @@
+uuid: 74557ec4-5181-4295-84d5-71b3cfede4a1
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - conference_kit
+_core:
+  default_config_hash: bp4DuWsxCqJAHHggVJLpQtv3LtxJg5bbjEPzN4skZS8
+id: conference_kit_breadcrumbs
+theme: conference_kit
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

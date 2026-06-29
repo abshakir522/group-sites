@@ -1,0 +1,65 @@
+uuid: 1b92e4a9-c7dc-4427-8074-fa63845ea4de
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - tailpine
+active_version: 7e98bccf76b20c58
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        orientation:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: vertical
+          expression: ℹ︎list_string␟value
+        style:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: numbered
+          expression: ℹ︎list_string␟value
+        show_descriptions:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: true
+          expression: ℹ︎boolean␟value
+        current_step:
+          required: false
+          field_type: integer
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: number
+          default_value:
+            -
+              value: 1
+          expression: ℹ︎integer␟value
+    fallback_metadata:
+      slot_definitions:
+        items:
+          title: 'Step items'
+          description: 'Add canvas-step-trailitem components here.'
+label: 'Step Trail (Canvas)'
+id: sdc.tailpine.canvas-step-trail
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-step-trail'

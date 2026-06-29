@@ -1,0 +1,55 @@
+uuid: fc43053f-40a0-4aca-94a7-212693b7ca6b
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - filter.format.canvas_html_block
+  module:
+    - text
+  theme:
+    - tailpine
+active_version: 624517659ff8afcb
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        label:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Create account'
+          expression: ℹ︎string␟value
+        description:
+          required: false
+          field_type: text_long
+          field_storage_settings: {  }
+          field_instance_settings:
+            allowed_formats:
+              - canvas_html_block
+          field_widget: text_textarea
+          default_value:
+            -
+              value: '<p>Fill in your name and email address.</p>'
+              format: canvas_html_block
+          expression: ℹ︎text_long␟processed
+        icon:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: ✓
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Step Trail Item (Canvas)'
+id: sdc.tailpine.canvas-step-trailitem
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-step-trailitem'

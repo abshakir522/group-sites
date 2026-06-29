@@ -1,0 +1,23 @@
+uuid: b6294b49-d5aa-46ef-96ca-5e6b400909b5
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - search
+active_version: 66936558a0932f6b
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: search_form_block
+        label: 'Search form'
+        label_display: '0'
+        provider: search
+        page_id: null
+    fallback_metadata:
+      slot_definitions: null
+label: 'Search form'
+id: block.search_form_block
+provider: search
+source: block
+source_local_id: search_form_block

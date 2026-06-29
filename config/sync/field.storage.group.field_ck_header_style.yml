@@ -1,0 +1,42 @@
+uuid: 4e1ab84b-8a5c-405f-9403-63c8940936de
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - group
+    - options
+id: group.field_ck_header_style
+field_name: field_ck_header_style
+entity_type: group
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: style1
+      label: 'Style 1: Branding left, Menu and Search right'
+    -
+      value: style2
+      label: 'Style 2: Branding left, Menu and Actions right'
+    -
+      value: style3
+      label: 'Style 3: Branding Left, Menu Center, Search right'
+    -
+      value: style4
+      label: 'Style 4: Branding left, Menu Center, Actions right'
+    -
+      value: style5
+      label: 'Style 5: Branding and Menu left, Search right'
+    -
+      value: style6
+      label: 'Style 6: Branding and Menu left, Actions right'
+    -
+      value: style7
+      label: 'Style 7: Fixed glass header with menu and actions'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

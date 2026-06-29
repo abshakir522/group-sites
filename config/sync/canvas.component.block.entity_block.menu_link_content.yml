@@ -1,0 +1,24 @@
+uuid: c66cb03a-befb-4564-a2ab-22a0be528e19
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - entity_block
+active_version: 0ead62297101b620
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'entity_block:menu_link_content'
+        label: 'Custom menu link'
+        label_display: '0'
+        provider: entity_block
+        entity: ''
+        view_mode: default
+    fallback_metadata:
+      slot_definitions: null
+label: 'Custom menu link'
+id: block.entity_block.menu_link_content
+provider: entity_block
+source: block
+source_local_id: 'entity_block:menu_link_content'

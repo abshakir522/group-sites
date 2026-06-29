@@ -1,0 +1,13 @@
+uuid: d6abccab-0d69-4891-863c-36e12948a545
+langcode: en-gb
+status: true
+dependencies: {  }
+name: Heros
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.conference_kit.canvas-camp-hero
+  - sdc.tailpine.canvas-herostylefour
+  - sdc.tailpine.canvas-herostyleone
+  - sdc.tailpine.canvas-herostylethree
+  - sdc.tailpine.canvas-herostyletwo

@@ -1,0 +1,41 @@
+uuid: 46758340-caf2-4018-a0d8-c825eb092a08
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: ce8b5bbc3db6059c
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        title:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'This is Accordion Style One'
+          expression: ℹ︎string␟value
+        default_open:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: false
+          expression: ℹ︎boolean␟value
+    fallback_metadata:
+      slot_definitions:
+        text:
+          title: 'Add  description text'
+          description: 'Add text'
+label: 'Accordion Style One (Canvas)'
+id: sdc.tailpine.canvas-accordionstyleone
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-accordionstyleone'

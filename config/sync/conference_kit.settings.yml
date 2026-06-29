@@ -1,0 +1,29 @@
+_core:
+  default_config_hash: 3tzrUbE4xMsq87NdlEBXr6waDJxEbBz2VXJcpgBGYAU
+favicon:
+  use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  use_default: true
+conference_kit_enable_color: true
+conference_kit_color_scheme: default
+conference_kit_base_primary_color: '#110000'
+conference_kit_base_secondary_color: '#E42A5D'
+conference_kit_base_tertiary_color: '#A72E7A'
+conference_kit_body_color: '#FFFFFF'
+conference_kit_body_bg_color: '#430016'
+conference_kit_h1_color: ''
+conference_kit_h2_color: ''
+conference_kit_h3_color: ''
+conference_kit_h4_color: ''
+conference_kit_success_color: '#14A44D'
+conference_kit_warning_color: '#E4A11B'
+conference_kit_error_color: '#DC4C64'
+header_class: style2
+footer_class: style5
+header_fixed: '1'
+daisyui_enable: false

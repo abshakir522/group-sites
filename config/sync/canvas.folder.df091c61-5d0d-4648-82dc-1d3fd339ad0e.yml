@@ -1,0 +1,9 @@
+uuid: df091c61-5d0d-4648-82dc-1d3fd339ad0e
+langcode: en-gb
+status: true
+dependencies: {  }
+name: Accordions
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.conference_kit.canvas-accordion-style-three

@@ -1,0 +1,15 @@
+uuid: 15dfb68e-4993-409a-842e-e5885128730a
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - group.type.conference
+    - user.role.administrator
+id: conference-admin_in
+label: Administrator
+weight: 102
+admin: true
+scope: insider
+global_role: administrator
+group_type: conference
+permissions: {  }

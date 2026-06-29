@@ -1,0 +1,26 @@
+uuid: c58bd22e-c0a1-4049-93df-bc90b25b55d4
+langcode: en-gb
+status: false
+dependencies:
+  theme:
+    - tailpine
+active_version: d0b02995c01ae51e
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        description:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'file upload help'
+id: sdc.tailpine.file-upload-help
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:file-upload-help'

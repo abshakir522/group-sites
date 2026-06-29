@@ -1,0 +1,41 @@
+uuid: 0c98f6b1-cd43-46c9-b3f2-f9fa39eb786b
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - conference_kit
+active_version: 3339d8d1e9b9667f
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        heading_prefix:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: "They've Attended As"
+          expression: ℹ︎string␟value
+        heading_highlight:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: Sponsors
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: Content
+          description: 'Sponsor logos, cards, or a Views block.'
+label: 'DrupalCamp Sponsors Section'
+id: sdc.conference_kit.canvas-sponsors-section
+provider: conference_kit
+source: sdc
+source_local_id: 'conference_kit:canvas-sponsors-section'

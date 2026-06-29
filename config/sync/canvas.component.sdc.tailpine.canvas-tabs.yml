@@ -1,0 +1,160 @@
+uuid: 3cdfaa24-32ae-4ce4-ba35-8c06219856de
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - tailpine
+active_version: b8c0b6522290c043
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        number_of_tabs:
+          required: false
+          field_type: list_integer
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_integer␟value
+        tab_1_label:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: Overview
+          expression: ℹ︎string␟value
+        tab_2_label:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: Features
+          expression: ℹ︎string␟value
+        tab_3_label:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: Pricing
+          expression: ℹ︎string␟value
+        tab_4_label:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: Support
+          expression: ℹ︎string␟value
+        tab_5_label:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: Contact
+          expression: ℹ︎string␟value
+        tab_6_label:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: About
+          expression: ℹ︎string␟value
+        default_active_tab:
+          required: false
+          field_type: list_integer
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_integer␟value
+        tab_style:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+        tab_alignment:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+        active_tab_color:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+        content_padding:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+        enable_animation:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value: null
+          expression: ℹ︎boolean␟value
+    fallback_metadata:
+      slot_definitions:
+        tab_1_content:
+          title: 'Tab 1 Content'
+          description: 'Content for the first tab panel'
+        tab_2_content:
+          title: 'Tab 2 Content'
+          description: 'Content for the second tab panel'
+        tab_3_content:
+          title: 'Tab 3 Content'
+          description: 'Content for the third tab panel'
+        tab_4_content:
+          title: 'Tab 4 Content'
+          description: 'Content for the fourth tab panel'
+        tab_5_content:
+          title: 'Tab 5 Content'
+          description: 'Content for the fifth tab panel'
+        tab_6_content:
+          title: 'Tab 6 Content'
+          description: 'Content for the sixth tab panel'
+label: 'Tabs (Canvas)'
+id: sdc.tailpine.canvas-tabs
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-tabs'

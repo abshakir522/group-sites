@@ -1,0 +1,26 @@
+uuid: ab858895-d57f-4062-94a9-3be7a6b6c520
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: 1570c5ddfb282be7
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        content:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Local Action'
+id: sdc.tailpine.localaction
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:localaction'

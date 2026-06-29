@@ -1,0 +1,26 @@
+uuid: 4c877e6e-5a8f-466e-8d73-5f17c437c8aa
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: 20bdcffa5a1b811a
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        page_title:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Page Title'
+id: sdc.tailpine.pagetitle
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:pagetitle'

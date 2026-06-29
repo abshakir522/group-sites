@@ -1,0 +1,9 @@
+uuid: 9f8e4977-a4c1-4292-85bc-13c5e9b4c4e6
+langcode: en-gb
+status: true
+dependencies: {  }
+name: Media
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.tailpine.image

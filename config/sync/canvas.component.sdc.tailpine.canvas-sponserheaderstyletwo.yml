@@ -1,0 +1,31 @@
+uuid: 00fc7023-70df-4007-adc4-fec11f7c14e5
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: 4c7a549e0ba0764b
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        title:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Our Sponsors'
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: Content
+          description: 'The content of the page.'
+label: 'Sponsor Logo Header Style Two (Canvas)'
+id: sdc.tailpine.canvas-sponserheaderstyletwo
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-sponserheaderstyletwo'

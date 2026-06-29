@@ -1,0 +1,24 @@
+uuid: 7414446f-df4e-4320-b642-f3d9f0380005
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - entity_block
+active_version: d70acdb0ff04c493
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'entity_block:shortcut'
+        label: 'Shortcut link'
+        label_display: '0'
+        provider: entity_block
+        entity: ''
+        view_mode: default
+    fallback_metadata:
+      slot_definitions: null
+label: 'Shortcut link'
+id: block.entity_block.shortcut
+provider: entity_block
+source: block
+source_local_id: 'entity_block:shortcut'

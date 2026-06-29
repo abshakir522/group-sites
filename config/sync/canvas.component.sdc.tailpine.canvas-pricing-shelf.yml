@@ -1,0 +1,55 @@
+uuid: e4afe8b4-9122-4986-9b66-8ba51d400d73
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - tailpine
+active_version: f702fed152c2b00d
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        columns:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: '3'
+          expression: ℹ︎list_string␟value
+        show_toggle:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: true
+          expression: ℹ︎boolean␟value
+        bg_color:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: default
+          expression: ℹ︎list_string␟value
+    fallback_metadata:
+      slot_definitions:
+        items:
+          title: 'Pricing plans'
+          description: 'Add canvas-pricing-shelfitem components here.'
+label: 'Pricing Shelf (Canvas)'
+id: sdc.tailpine.canvas-pricing-shelf
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-pricing-shelf'

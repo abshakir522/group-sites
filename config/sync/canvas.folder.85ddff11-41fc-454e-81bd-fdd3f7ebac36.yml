@@ -1,0 +1,17 @@
+uuid: 85ddff11-41fc-454e-81bd-fdd3f7ebac36
+langcode: en-gb
+status: true
+dependencies: {  }
+name: 'Cards & Posts'
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.conference_kit.canvas-card-style-three
+  - sdc.tailpine.base-card
+  - sdc.tailpine.canvas-cardheader
+  - sdc.tailpine.canvas-cardonestyle
+  - sdc.tailpine.canvas-cardtwostyle
+  - sdc.tailpine.canvas-postheader
+  - sdc.tailpine.canvas-poststyleone
+  - sdc.tailpine.canvas-poststylethree
+  - sdc.tailpine.canvas-postwrapper

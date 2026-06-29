@@ -1,0 +1,24 @@
+uuid: 06bd6cdb-1fda-4fcc-a92b-80141ab363ec
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - entity_block
+active_version: 5c14d866710a1118
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'entity_block:webform'
+        label: Webform
+        label_display: '0'
+        provider: entity_block
+        entity: ''
+        view_mode: default
+    fallback_metadata:
+      slot_definitions: null
+label: Webform
+id: block.entity_block.webform
+provider: entity_block
+source: block
+source_local_id: 'entity_block:webform'

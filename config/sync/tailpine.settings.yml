@@ -1,0 +1,20 @@
+_core:
+  default_config_hash: bQ93ASbMt2td5sqip4SGzo4Muq5FgFkdmlA0-YH54UA
+tailpine_enable_color: true
+tailpine_color_scheme: default
+tailpine_base_primary_color: '#10B981'
+tailpine_base_secondary_color: '#064E3B'
+tailpine_base_tertiary_color: '#06B6D4'
+tailpine_body_color: '#1F2937'
+tailpine_body_bg_color: '#FFFFFF'
+tailpine_h1_color: '#1F2937'
+tailpine_h2_color: '#1F2937'
+tailpine_h3_color: '#1F2937'
+tailpine_h4_color: '#1F2937'
+tailpine_success_color: '#14A44D'
+tailpine_warning_color: '#E4A11B'
+tailpine_error_color: '#DC4C64'
+header_class: style4
+footer_class: style1
+header_fixed: '0'
+daisyui_enable: false

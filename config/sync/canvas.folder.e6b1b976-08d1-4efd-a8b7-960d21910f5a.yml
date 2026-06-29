@@ -1,0 +1,11 @@
+uuid: e6b1b976-08d1-4efd-a8b7-960d21910f5a
+langcode: en-gb
+status: true
+dependencies: {  }
+name: Forms
+configEntityTypeId: component
+weight: 0
+items:
+  - block.search_form_block
+  - block.user_login_block
+  - sdc.tailpine.canvas-button-group

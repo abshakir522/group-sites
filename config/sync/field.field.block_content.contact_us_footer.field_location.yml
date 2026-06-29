@@ -1,0 +1,24 @@
+uuid: 28bbe988-56d1-4e99-97d6-48b56d70c6f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_us_footer
+    - field.storage.block_content.field_location
+  module:
+    - text
+_core:
+  default_config_hash: 5_TP6q-HXfGPJx78xmEi2HWFmeTcdLObMJEggRCvgGE
+id: block_content.contact_us_footer.field_location
+field_name: field_location
+entity_type: block_content
+bundle: contact_us_footer
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

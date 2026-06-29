@@ -1,0 +1,27 @@
+uuid: 96c325af-c406-4229-9498-b1e7b9d5ef3e
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: 963c09c1304a2e9f
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions: {  }
+    fallback_metadata:
+      slot_definitions:
+        title:
+          title: Title
+          description: 'Name of the card. Plain text.'
+        content:
+          title: Content
+          description: 'Content of the Wrapper. Plain text.'
+        cta:
+          title: Link
+          description: 'Cta Link'
+label: 'Teams  Header'
+id: sdc.tailpine.teamheader
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:teamheader'

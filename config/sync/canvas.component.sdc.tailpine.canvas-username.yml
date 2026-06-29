@@ -1,0 +1,99 @@
+uuid: 81f7ff11-c2a1-41aa-8fe9-d35b7475a8b7
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: a42daecf8e40bc60
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        user_name:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'John Doe'
+          expression: ℹ︎string␟value
+        link_path:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: /user/1
+          expression: ℹ︎string␟value
+        link_target:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: _self
+          expression: ℹ︎string␟value
+        name:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        extra:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+  ee0497da5967ab4d:
+    settings:
+      prop_field_definitions:
+        user_name:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'John Doe'
+          expression: ℹ︎string␟value
+        link_path:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: /user/1
+          expression: ℹ︎string␟value
+        link_target:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: _self
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'User name (Canvas)'
+id: sdc.tailpine.canvas-username
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-username'

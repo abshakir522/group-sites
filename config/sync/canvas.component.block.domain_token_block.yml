@@ -1,0 +1,22 @@
+uuid: 4f7042a9-3219-4b47-9f07-0f77751cde99
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - domain
+active_version: 40962e3fd73a1613
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: domain_token_block
+        label: 'Domain token information'
+        label_display: '0'
+        provider: domain
+    fallback_metadata:
+      slot_definitions: null
+label: 'Domain token information'
+id: block.domain_token_block
+provider: domain
+source: block
+source_local_id: domain_token_block

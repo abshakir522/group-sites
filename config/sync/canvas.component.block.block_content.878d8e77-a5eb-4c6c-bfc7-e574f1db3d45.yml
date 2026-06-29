@@ -1,0 +1,25 @@
+uuid: 67be0d87-daa7-4634-bfd8-2949abce7068
+langcode: en-gb
+status: false
+dependencies:
+  content:
+    - 'block_content:contact_us_footer:878d8e77-a5eb-4c6c-bfc7-e574f1db3d45'
+  module:
+    - block_content
+active_version: 6c27aebb1a210cd1
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:878d8e77-a5eb-4c6c-bfc7-e574f1db3d45'
+        label: 'Contact Us footer'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Contact Us footer'
+id: block.block_content.878d8e77-a5eb-4c6c-bfc7-e574f1db3d45
+provider: block_content
+source: block
+source_local_id: 'block_content:878d8e77-a5eb-4c6c-bfc7-e574f1db3d45'

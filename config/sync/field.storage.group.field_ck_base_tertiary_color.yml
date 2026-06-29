@@ -1,0 +1,21 @@
+uuid: 865f8222-4be5-4b62-9d73-cbc1caa9104c
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - group
+id: group.field_ck_base_tertiary_color
+field_name: field_ck_base_tertiary_color
+entity_type: group
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

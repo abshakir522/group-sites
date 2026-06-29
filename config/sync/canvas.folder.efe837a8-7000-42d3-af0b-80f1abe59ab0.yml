@@ -1,0 +1,34 @@
+uuid: efe837a8-7000-42d3-af0b-80f1abe59ab0
+langcode: en-gb
+status: true
+dependencies: {  }
+name: Tailpine
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.tailpine.canvas-countdown
+  - sdc.tailpine.canvas-divider
+  - sdc.tailpine.canvas-faq-block
+  - sdc.tailpine.canvas-faq-blockitem
+  - sdc.tailpine.canvas-feature-grid
+  - sdc.tailpine.canvas-feature-griditem
+  - sdc.tailpine.canvas-hover-reveal
+  - sdc.tailpine.canvas-image-mosaic
+  - sdc.tailpine.canvas-image-mosaicitem
+  - sdc.tailpine.canvas-map-embed
+  - sdc.tailpine.canvas-notice-banner
+  - sdc.tailpine.canvas-pricing-shelf
+  - sdc.tailpine.canvas-pricing-shelfitem
+  - sdc.tailpine.canvas-pullquote
+  - sdc.tailpine.canvas-signup-strip
+  - sdc.tailpine.canvas-split-panel
+  - sdc.tailpine.canvas-stats-row
+  - sdc.tailpine.canvas-stats-row2
+  - sdc.tailpine.canvas-step-trail
+  - sdc.tailpine.canvas-step-trailitem
+  - sdc.tailpine.canvas-text-only
+  - sdc.tailpine.canvas-timeline
+  - sdc.tailpine.canvas-timelineitem
+  - sdc.tailpine.canvas-video-spotlight
+  - sdc.tailpine.tailpine-flexible-grid
+  - sdc.tailpine.tailpine-flexible-grid-item

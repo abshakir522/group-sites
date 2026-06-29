@@ -1,0 +1,27 @@
+uuid: bc2840c8-5386-430d-8df4-e8bf78b38985
+langcode: en-gb
+status: false
+dependencies:
+  theme:
+    - tailpine
+active_version: e7cabbdc7919875a
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        options:
+          required: false
+          field_type: string
+          cardinality: -1
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: Select
+id: sdc.tailpine.select
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:select'

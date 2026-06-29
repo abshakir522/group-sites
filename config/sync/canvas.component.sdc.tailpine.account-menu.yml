@@ -1,0 +1,42 @@
+uuid: f577fbf2-424d-4ac6-9630-768a797c3a26
+langcode: en-gb
+status: false
+dependencies:
+  theme:
+    - tailpine
+active_version: 95a3ce0c96175f9e
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        title:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        url:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        target:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Account Menu'
+id: sdc.tailpine.account-menu
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:account-menu'

@@ -1,0 +1,12 @@
+uuid: 18657768-dfdb-40d2-9aea-e3b09477bb0f
+langcode: en-gb
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+id: node.page.full
+content_entity_type_id: node
+content_entity_type_bundle: page
+content_entity_type_view_mode: full
+component_tree: {  }
+exposed_slots: {  }

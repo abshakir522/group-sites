@@ -1,0 +1,24 @@
+uuid: 79ef3e8d-ea62-48bf-88c1-2e7214422cce
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: 68f02490b6d1a580
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions: {  }
+    fallback_metadata:
+      slot_definitions:
+        primary:
+          title: Primary
+          description: 'Primary tasks as main navigation items, displayed as tabs.'
+        secondary:
+          title: Secondary
+          description: 'Secondary tasks or sub-navigation items, displayed as pills.'
+label: 'Local Tasks'
+id: sdc.tailpine.menulocaltasks
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:menulocaltasks'

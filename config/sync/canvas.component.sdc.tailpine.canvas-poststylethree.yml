@@ -1,0 +1,98 @@
+uuid: be885c68-f351-4cce-b0c2-55909ced6424
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_media_image
+    - filter.format.canvas_html_block
+    - image.style.canvas_parametrized_width
+    - media.type.image
+  module:
+    - file
+    - media
+    - media_library
+    - text
+  theme:
+    - tailpine
+active_version: cccd3f92f362e254
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        imageurl:
+          required: false
+          field_type: entity_reference
+          field_storage_settings:
+            target_type: media
+          field_instance_settings:
+            handler: 'default:media'
+            handler_settings:
+              target_bundles:
+                image: image
+          field_widget: media_library_widget
+          default_value: {  }
+          expression: 'ℹ︎entity_reference␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}'
+        show_heading:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: true
+          expression: ℹ︎boolean␟value
+        show_description:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: true
+          expression: ℹ︎boolean␟value
+        subtitle:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Example subtitle'
+          expression: ℹ︎string␟value
+        description:
+          required: false
+          field_type: text_long
+          field_storage_settings: {  }
+          field_instance_settings:
+            allowed_formats:
+              - canvas_html_block
+          field_widget: text_textarea
+          default_value:
+            -
+              value: '<p>This is <strong>formatted</strong> description</p>'
+              format: canvas_html_block
+          expression: ℹ︎text_long␟processed
+        date:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'June 20, 2024'
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions:
+        heading:
+          title: heading
+        text:
+          title: text
+label: 'Post Style Three (Canvas)'
+id: sdc.tailpine.canvas-poststylethree
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-poststylethree'

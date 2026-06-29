@@ -1,0 +1,26 @@
+uuid: 410000ce-c197-4753-be3a-1ee3596caf75
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: c5d2140175c4f7a9
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        status:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: Mark
+id: sdc.tailpine.mark
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:mark'

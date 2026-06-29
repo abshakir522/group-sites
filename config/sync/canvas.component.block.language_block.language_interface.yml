@@ -1,0 +1,22 @@
+uuid: bf6709a0-dddb-4458-918c-68313c815ea6
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - language
+active_version: f84882f46cbe4bd5
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'language_block:language_interface'
+        label: 'Language switcher'
+        label_display: '0'
+        provider: language
+    fallback_metadata:
+      slot_definitions: null
+label: 'Language switcher'
+id: block.language_block.language_interface
+provider: language
+source: block
+source_local_id: 'language_block:language_interface'

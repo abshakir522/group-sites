@@ -1,0 +1,26 @@
+uuid: 2e1e69fa-90ac-4929-9809-d36c419ce626
+langcode: en-gb
+status: false
+dependencies:
+  theme:
+    - tailpine
+active_version: d44eac70d24437ec
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        title:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Taxonomy term'
+id: sdc.tailpine.taxonomyterm
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:taxonomyterm'

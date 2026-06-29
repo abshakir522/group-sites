@@ -1,0 +1,10 @@
+uuid: 1b6ca6f3-d380-4252-92fd-b242ce13f449
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BybvSEneULqDuXLM38xqp80-rFx1pfptPNL4TEaz1Ic
+id: quick-links
+label: 'Quick links'
+description: ''
+locked: false

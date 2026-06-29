@@ -1,0 +1,33 @@
+uuid: 24ab17ec-98d1-4712-8524-fa37f3756d7d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:49c7d6b1-caf8-4eda-b951-cbef1dc6a948'
+  module:
+    - block_content
+    - group
+  theme:
+    - conference_kit
+_core:
+  default_config_hash: YInEJQogYZZLkq6aRS6AASaLcYpsFzyU_mXjxf1u97k
+id: tailpine_when
+theme: conference_kit
+region: footer_top_last
+weight: -11
+provider: null
+plugin: 'block_content:49c7d6b1-caf8-4eda-b951-cbef1dc6a948'
+settings:
+  id: 'block_content:49c7d6b1-caf8-4eda-b951-cbef1dc6a948'
+  label: When
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    negate: true
+    context_mapping:
+      group: '@group_context_domain.group_from_domain_context:group'
+    bundles:
+      conference: conference

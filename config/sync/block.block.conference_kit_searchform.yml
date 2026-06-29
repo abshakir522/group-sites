@@ -1,0 +1,23 @@
+uuid: 5be7144d-a3c2-4fff-9b6a-70e83924366a
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - conference_kit
+_core:
+  default_config_hash: Df45oMJLQdDnBJXrEMkGlw1mwQ3-cfZiumcrrY9UK3k
+id: conference_kit_searchform
+theme: conference_kit
+region: search
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: ''
+  provider: search
+  page_id: null
+visibility: {  }

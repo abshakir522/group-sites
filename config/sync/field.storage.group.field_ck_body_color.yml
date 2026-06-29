@@ -1,0 +1,21 @@
+uuid: 53d3411f-4716-4181-9e26-ede94bcf713a
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - group
+id: group.field_ck_body_color
+field_name: field_ck_body_color
+entity_type: group
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,33 @@
+uuid: 948343ef-03a4-45ff-abb3-337b60cf3f35
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:contact_us_footer:878d8e77-a5eb-4c6c-bfc7-e574f1db3d45'
+  module:
+    - block_content
+    - group
+  theme:
+    - conference_kit
+_core:
+  default_config_hash: tPcFEncBCqv5LUVtrhZia5N09yphYeSNop7FMiDoDo8
+id: tailpine_contactusfooter
+theme: conference_kit
+region: footer_main_third
+weight: 0
+provider: null
+plugin: 'block_content:878d8e77-a5eb-4c6c-bfc7-e574f1db3d45'
+settings:
+  id: 'block_content:878d8e77-a5eb-4c6c-bfc7-e574f1db3d45'
+  label: 'CONTACT US'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility:
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    negate: true
+    context_mapping:
+      group: '@group.group_route_context:group'
+    bundles:
+      conference: conference

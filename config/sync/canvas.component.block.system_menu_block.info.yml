@@ -1,0 +1,27 @@
+uuid: 865a8abb-2e8e-4674-ab0e-0656c5995d5d
+langcode: en-gb
+status: false
+dependencies:
+  config:
+    - system.menu.info
+  module:
+    - system
+active_version: e3b209bf74c1a8b6
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'system_menu_block:info'
+        label: INFO
+        label_display: '0'
+        provider: system
+        level: 1
+        depth: null
+        expand_all_items: false
+    fallback_metadata:
+      slot_definitions: null
+label: INFO
+id: block.system_menu_block.info
+provider: system
+source: block
+source_local_id: 'system_menu_block:info'

@@ -1,0 +1,217 @@
+uuid: 1f66b08c-31b8-440c-96e8-b873ea674929
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - options
+  theme:
+    - tailpine
+active_version: c2b1d5588910471e
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        grid_cols:
+          required: false
+          field_type: list_integer
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_integer␟value
+        grid_cols_md:
+          required: false
+          field_type: list_integer
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_integer␟value
+        grid_cols_lg:
+          required: false
+          field_type: list_integer
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_integer␟value
+        grid_cols_xl:
+          required: false
+          field_type: list_integer
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_integer␟value
+        background_color:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+        background_image:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        background_size:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+        container_type:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+        gap:
+          required: false
+          field_type: list_integer
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_integer␟value
+        gap_2xl:
+          required: false
+          field_type: list_integer
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_integer␟value
+        gap_xl:
+          required: false
+          field_type: list_integer
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_integer␟value
+        gap_lg:
+          required: false
+          field_type: list_integer
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_integer␟value
+        gap_md:
+          required: false
+          field_type: list_integer
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_integer␟value
+        gap_sm:
+          required: false
+          field_type: list_integer
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_integer␟value
+        grid_cols_2xl:
+          required: false
+          field_type: list_integer
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_integer␟value
+        grid_cols_sm:
+          required: false
+          field_type: list_integer
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_integer␟value
+    fallback_metadata:
+      slot_definitions:
+        cell_1:
+          title: 'Cell 1'
+          description: 'Grid cell 1.'
+        cell_2:
+          title: 'Cell 2'
+          description: 'Grid cell 2.'
+        cell_3:
+          title: 'Cell 3'
+          description: 'Grid cell 3.'
+        cell_4:
+          title: 'Cell 4'
+          description: 'Grid cell 4.'
+        cell_5:
+          title: 'Cell 5'
+          description: 'Grid cell 5.'
+        cell_6:
+          title: 'Cell 6'
+          description: 'Grid cell 6.'
+        cell_7:
+          title: 'Cell 7'
+          description: 'Grid cell 7.'
+        cell_8:
+          title: 'Cell 8'
+          description: 'Grid cell 8.'
+        cell_9:
+          title: 'Cell 9'
+          description: 'Grid cell 9.'
+        cell_10:
+          title: 'Cell 10'
+          description: 'Grid cell 10.'
+        cell_11:
+          title: 'Cell 11'
+          description: 'Grid cell 11.'
+        cell_12:
+          title: 'Cell 12'
+          description: 'Grid cell 12.'
+        cell_13:
+          title: 'Cell 13'
+          description: 'Grid cell 13.'
+        cell_14:
+          title: 'Cell 14'
+          description: 'Grid cell 14.'
+        cell_15:
+          title: 'Cell 15'
+          description: 'Grid cell 15.'
+        cell_16:
+          title: 'Cell 16'
+          description: 'Grid cell 16.'
+        cell_17:
+          title: 'Cell 17'
+          description: 'Grid cell 17.'
+        cell_18:
+          title: 'Cell 18'
+          description: 'Grid cell 18.'
+label: 'Tailpine Grids'
+id: sdc.tailpine.tailpine_grids
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:tailpine_grids'

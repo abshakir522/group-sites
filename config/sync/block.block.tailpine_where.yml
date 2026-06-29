@@ -1,0 +1,25 @@
+uuid: 6ba6bdf1-c172-41f8-bd08-42958a54a014
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:f2c2f44c-47f7-40c3-813e-6f4c1485016b'
+  module:
+    - block_content
+  theme:
+    - conference_kit
+_core:
+  default_config_hash: 0UeCmWoKoMiZa1o4Apy5OJv5QfaHvyxmgZVbeA9Ihqo
+id: tailpine_where
+theme: conference_kit
+region: footer_top_middle
+weight: -11
+provider: null
+plugin: 'block_content:f2c2f44c-47f7-40c3-813e-6f4c1485016b'
+settings:
+  id: 'block_content:f2c2f44c-47f7-40c3-813e-6f4c1485016b'
+  label: Where
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

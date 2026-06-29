@@ -1,0 +1,21 @@
+uuid: 355b5f51-14de-47be-8c8f-2662a73612cc
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_ck_base_primary_color
+    - group.type.conference
+id: group.conference.field_ck_base_primary_color
+field_name: field_ck_base_primary_color
+entity_type: group
+bundle: conference
+label: 'Primary base color'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: '#10B981'
+default_value_callback: ''
+settings: {  }
+field_type: string

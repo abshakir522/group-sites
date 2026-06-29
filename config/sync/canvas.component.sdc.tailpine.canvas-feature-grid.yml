@@ -1,0 +1,56 @@
+uuid: 7513c4ac-6cb1-4216-a6b4-147f4e02102d
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - tailpine
+active_version: 42e00bfd765777db
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        layout:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: icon-top
+          expression: ℹ︎list_string␟value
+        columns:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: '3'
+          expression: ℹ︎list_string␟value
+        bg_color:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: default
+          expression: ℹ︎list_string␟value
+    fallback_metadata:
+      slot_definitions:
+        items:
+          title: 'Feature items'
+          description: 'Add canvas-feature-griditem components here.'
+label: 'Feature Grid (Canvas)'
+id: sdc.tailpine.canvas-feature-grid
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-feature-grid'

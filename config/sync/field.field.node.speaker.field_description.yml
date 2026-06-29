@@ -1,0 +1,24 @@
+uuid: fd4fd407-0a1f-488b-bc2e-4512bd25f62f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - filter.format.basic_html
+    - node.type.speaker
+  module:
+    - text
+id: node.speaker.field_description
+field_name: field_description
+entity_type: node
+bundle: speaker
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text

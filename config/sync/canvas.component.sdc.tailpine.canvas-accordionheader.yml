@@ -1,0 +1,31 @@
+uuid: 2d00b58b-6e38-472e-b376-8fa0acc03ee6
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: 423536148886309f
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        title:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'This is Accordion Header'
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: content
+          description: 'Content of the of the Accordion. Plain text.'
+label: 'Accordions Header (Canvas)'
+id: sdc.tailpine.canvas-accordionheader
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-accordionheader'

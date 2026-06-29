@@ -1,0 +1,22 @@
+uuid: 2c36ea1e-4638-44c1-a5b4-1d38ffe1ba21
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - conference_kit
+_core:
+  default_config_hash: YPn_YQsrp7of01669HMCEfWu4hRXcwkB299iZheHr0o
+id: conference_kit_mainpagecontent
+theme: conference_kit
+region: content
+weight: -9
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

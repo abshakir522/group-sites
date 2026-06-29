@@ -1,0 +1,26 @@
+uuid: 6d67abc9-1a00-48bc-b74f-4996110f22c3
+langcode: en-gb
+status: false
+dependencies:
+  theme:
+    - tailpine
+active_version: bb0ef3de3acc6709
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        label:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Media Name'
+id: sdc.tailpine.media
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:media'

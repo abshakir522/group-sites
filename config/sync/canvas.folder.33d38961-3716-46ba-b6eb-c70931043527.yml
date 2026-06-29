@@ -1,0 +1,26 @@
+uuid: 33d38961-3716-46ba-b6eb-c70931043527
+langcode: en-gb
+status: true
+dependencies: {  }
+name: 'Entity Block'
+configEntityTypeId: component
+weight: 0
+items:
+  - block.entity_block.block
+  - block.entity_block.block_content
+  - block.entity_block.canvas_page
+  - block.entity_block.comment
+  - block.entity_block.file
+  - block.entity_block.group
+  - block.entity_block.group_config_wrapper
+  - block.entity_block.group_content_menu
+  - block.entity_block.group_relationship
+  - block.entity_block.media
+  - block.entity_block.menu_link_content
+  - block.entity_block.node
+  - block.entity_block.path_alias
+  - block.entity_block.shortcut
+  - block.entity_block.taxonomy_term
+  - block.entity_block.user
+  - block.entity_block.webform
+  - block.entity_block.webform_submission

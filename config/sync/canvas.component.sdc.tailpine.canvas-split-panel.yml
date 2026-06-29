@@ -1,0 +1,79 @@
+uuid: 5fb1169c-7f55-46de-a508-c31cbbb50c66
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - tailpine
+active_version: 178f396f5819651a
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        ratio:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: 50-50
+          expression: ℹ︎list_string␟value
+        reverse:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: false
+          expression: ℹ︎boolean␟value
+        sticky_side:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: none
+          expression: ℹ︎list_string␟value
+        show_divider:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: false
+          expression: ℹ︎boolean␟value
+        vertical_align:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: top
+          expression: ℹ︎list_string␟value
+    fallback_metadata:
+      slot_definitions:
+        left:
+          title: 'Left column'
+          description: 'Content for the left panel.'
+        right:
+          title: 'Right column'
+          description: 'Content for the right panel.'
+label: 'Split Panel (Canvas)'
+id: sdc.tailpine.canvas-split-panel
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-split-panel'

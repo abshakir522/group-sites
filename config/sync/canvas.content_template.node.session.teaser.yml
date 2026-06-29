@@ -1,0 +1,38 @@
+uuid: 7e5c6cd1-d0cc-4478-b966-7c49972710ce
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.conference_kit.canvas-accordion-style-three
+    - core.entity_view_mode.node.teaser
+    - field.field.node.session.body
+    - field.field.node.session.field_speaker
+    - field.field.node.session.field_text_plain
+    - node.type.session
+    - node.type.speaker
+  module:
+    - node
+id: node.session.teaser
+content_entity_type_id: node
+content_entity_type_bundle: session
+content_entity_type_view_mode: teaser
+component_tree:
+  '0:85f3d357-4fbb-4241-90f3-17059b473f50':
+    uuid: 85f3d357-4fbb-4241-90f3-17059b473f50
+    component_id: sdc.conference_kit.canvas-accordion-style-three
+    component_version: 67143dc8da67081a
+    inputs:
+      title:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:session␝title␞␟value'
+      location:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:session␝field_text_plain␞␟value'
+      description:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:session␝body␞␟processed'
+      speaker:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:session␝field_speaker␞␟entity␜␜entity:node␝title␞␟value'
+      default_open: false
+exposed_slots: {  }

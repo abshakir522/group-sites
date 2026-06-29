@@ -1,0 +1,24 @@
+uuid: 4837a28d-6d32-4466-ae7e-027ae4a470d5
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - entity_block
+active_version: e48724b2262b4b8b
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'entity_block:path_alias'
+        label: 'URL alias'
+        label_display: '0'
+        provider: entity_block
+        entity: ''
+        view_mode: default
+    fallback_metadata:
+      slot_definitions: null
+label: 'URL alias'
+id: block.entity_block.path_alias
+provider: entity_block
+source: block
+source_local_id: 'entity_block:path_alias'

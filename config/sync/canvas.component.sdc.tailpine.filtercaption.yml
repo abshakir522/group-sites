@@ -1,0 +1,50 @@
+uuid: f9c5e78b-0b3f-4d73-aa9c-51931033ae5a
+langcode: en-gb
+status: false
+dependencies:
+  theme:
+    - tailpine
+active_version: 24621d9fae003eef
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        tag:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        classes:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        src:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        caption:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: filter_caption
+id: sdc.tailpine.filtercaption
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:filtercaption'

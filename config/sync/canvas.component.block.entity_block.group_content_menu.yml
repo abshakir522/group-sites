@@ -1,0 +1,24 @@
+uuid: e98e82f2-6101-4e67-a08a-ee378401e01e
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - entity_block
+active_version: 42674416497ae71a
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'entity_block:group_content_menu'
+        label: 'Group content menu'
+        label_display: '0'
+        provider: entity_block
+        entity: ''
+        view_mode: default
+    fallback_metadata:
+      slot_definitions: null
+label: 'Group content menu'
+id: block.entity_block.group_content_menu
+provider: entity_block
+source: block
+source_local_id: 'entity_block:group_content_menu'

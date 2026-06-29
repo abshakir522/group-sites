@@ -1,0 +1,55 @@
+uuid: 6f24df58-b2fe-454a-a766-1f1fd1985807
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - filter.format.canvas_html_block
+  module:
+    - text
+  theme:
+    - tailpine
+active_version: 8d8f2debefb82981
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        question:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'How do I get started?'
+          expression: ℹ︎string␟value
+        answer:
+          required: false
+          field_type: text_long
+          field_storage_settings: {  }
+          field_instance_settings:
+            allowed_formats:
+              - canvas_html_block
+          field_widget: text_textarea
+          default_value:
+            -
+              value: '<p>Getting started is easy. Simply sign up and follow the onboarding steps.</p>'
+              format: canvas_html_block
+          expression: ℹ︎text_long␟processed
+        category:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: Billing
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'FAQ Item (Canvas)'
+id: sdc.tailpine.canvas-faq-blockitem
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-faq-blockitem'

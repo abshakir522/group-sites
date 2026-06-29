@@ -1,0 +1,24 @@
+uuid: 42d536f7-3490-4093-bbd3-2abc04d3680b
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: 50d13c79a3002e25
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions: {  }
+    fallback_metadata:
+      slot_definitions:
+        title:
+          title: Title
+          description: 'The title of the page.'
+        content:
+          title: Content
+          description: 'The content of the page.'
+label: 'Sponsor Logo Header'
+id: sdc.tailpine.sponserlogoheader
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:sponserlogoheader'

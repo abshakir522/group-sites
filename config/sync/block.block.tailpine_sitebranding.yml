@@ -1,0 +1,25 @@
+uuid: c7276f22-e9b6-4be0-8f72-2fa9ad3e2609
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - tailpine
+_core:
+  default_config_hash: MWxOhYEshKAHz8krbhWXH3t48sp1eizUzQfBAhrIIbo
+id: tailpine_sitebranding
+theme: tailpine
+region: top_bar
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: ''
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

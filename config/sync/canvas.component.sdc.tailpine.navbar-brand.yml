@@ -1,0 +1,42 @@
+uuid: cc557f5f-dc6c-452d-a332-e61d2b2f7126
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: 5d802baf439616e5
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        url:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        image_url:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        text:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Navbar Brand'
+id: sdc.tailpine.navbar-brand
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:navbar-brand'

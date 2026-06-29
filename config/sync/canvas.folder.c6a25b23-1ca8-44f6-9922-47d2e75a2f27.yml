@@ -1,0 +1,18 @@
+uuid: c6a25b23-1ca8-44f6-9922-47d2e75a2f27
+langcode: en-gb
+status: true
+dependencies: {  }
+name: 'Sponsors / Logos'
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.conference_kit.canvas-sponsor-logo-style-four
+  - sdc.conference_kit.canvas-sponsor-logo-style-three
+  - sdc.tailpine.canvas-sponserheaderstyletwo
+  - sdc.tailpine.canvas-sponserlogoheader
+  - sdc.tailpine.canvas-sponserlogostyleone
+  - sdc.tailpine.canvas-sponserlogostyletwo
+  - sdc.tailpine.sponserheaderstyletwo
+  - sdc.tailpine.sponserlogoheader
+  - sdc.tailpine.sponserlogostyleone
+  - sdc.tailpine.sponserlogostyletwo

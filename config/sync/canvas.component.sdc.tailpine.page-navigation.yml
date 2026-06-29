@@ -1,0 +1,21 @@
+uuid: e2d9ddf6-804c-4b7d-b653-f80c3090d1b1
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: d54b181baa9953d9
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions: {  }
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: Content
+          description: 'Navigation content.'
+label: 'Page Navigation'
+id: sdc.tailpine.page-navigation
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:page-navigation'

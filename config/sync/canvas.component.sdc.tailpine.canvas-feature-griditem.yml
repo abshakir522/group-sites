@@ -1,0 +1,68 @@
+uuid: fc9505c2-de70-468a-87df-a4fcd31cd0d0
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - filter.format.canvas_html_block
+  module:
+    - text
+  theme:
+    - tailpine
+active_version: 6e4861a903c809a1
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        icon:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: ⚡
+          expression: ℹ︎string␟value
+        title:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Lightning fast'
+          expression: ℹ︎string␟value
+        body:
+          required: false
+          field_type: text_long
+          field_storage_settings: {  }
+          field_instance_settings:
+            allowed_formats:
+              - canvas_html_block
+          field_widget: text_textarea
+          default_value:
+            -
+              value: '<p>Optimised for performance from the ground up.</p>'
+              format: canvas_html_block
+          expression: ℹ︎text_long␟processed
+        show_icon:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: true
+          expression: ℹ︎boolean␟value
+    fallback_metadata:
+      slot_definitions:
+        cta:
+          title: 'Call to action'
+          description: 'Optional button or link for this feature.'
+label: 'Feature Grid Item (Canvas)'
+id: sdc.tailpine.canvas-feature-griditem
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-feature-griditem'

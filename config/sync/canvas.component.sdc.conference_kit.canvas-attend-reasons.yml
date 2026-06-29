@@ -1,0 +1,144 @@
+uuid: b28b5dc1-3874-4d68-ade7-58a65ab8b070
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - filter.format.canvas_html_block
+  module:
+    - text
+  theme:
+    - conference_kit
+active_version: e9a390a7427f9502
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        heading_prefix:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Why Attend'
+          expression: ℹ︎string␟value
+        heading_highlight:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: DrupalCamp
+          expression: ℹ︎string␟value
+        heading_suffix:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Middle East 2026'
+          expression: ℹ︎string␟value
+        item_one_title:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'global drupal community'
+          expression: ℹ︎string␟value
+        item_one_description:
+          required: false
+          field_type: text_long
+          field_storage_settings: {  }
+          field_instance_settings:
+            allowed_formats:
+              - canvas_html_block
+          field_widget: text_textarea
+          default_value:
+            -
+              value: 'Connect with the global Drupal community shaping the future of open-source innovation.'
+              format: canvas_html_block
+          expression: ℹ︎text_long␟processed
+        item_two_title:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Unmatched Networking'
+          expression: ℹ︎string␟value
+        item_two_description:
+          required: false
+          field_type: text_long
+          field_storage_settings: {  }
+          field_instance_settings:
+            allowed_formats:
+              - canvas_html_block
+          field_widget: text_textarea
+          default_value:
+            -
+              value: 'Discover how organizations use Drupal to build powerful enterprise-scale digital experiences.'
+              format: canvas_html_block
+          expression: ℹ︎text_long␟processed
+        item_three_title:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Expert-Led Sessions'
+          expression: ℹ︎string␟value
+        item_three_description:
+          required: false
+          field_type: text_long
+          field_storage_settings: {  }
+          field_instance_settings:
+            allowed_formats:
+              - canvas_html_block
+          field_widget: text_textarea
+          default_value:
+            -
+              value: 'Learn from industry experts sharing the latest insights, best practices, and real-world experiences with Drupal.'
+              format: canvas_html_block
+          expression: ℹ︎text_long␟processed
+        item_four_title:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Enterprise Insights'
+          expression: ℹ︎string␟value
+        item_four_description:
+          required: false
+          field_type: text_long
+          field_storage_settings: {  }
+          field_instance_settings:
+            allowed_formats:
+              - canvas_html_block
+          field_widget: text_textarea
+          default_value:
+            -
+              value: 'Learn how organizations leverage Drupal to deliver scalable enterprise digital experiences.'
+              format: canvas_html_block
+          expression: ℹ︎text_long␟processed
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'DrupalCamp Attend Reasons'
+id: sdc.conference_kit.canvas-attend-reasons
+provider: conference_kit
+source: sdc
+source_local_id: 'conference_kit:canvas-attend-reasons'

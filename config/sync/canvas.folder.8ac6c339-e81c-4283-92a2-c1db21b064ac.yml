@@ -1,0 +1,11 @@
+uuid: 8ac6c339-e81c-4283-92a2-c1db21b064ac
+langcode: en-gb
+status: true
+dependencies: {  }
+name: Domain
+configEntityTypeId: component
+weight: 0
+items:
+  - block.domain_server_block
+  - block.domain_switcher_block
+  - block.domain_token_block

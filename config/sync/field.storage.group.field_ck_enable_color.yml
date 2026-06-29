@@ -1,0 +1,18 @@
+uuid: ff191c91-3b6d-435d-b55f-43ff0e4f14b7
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - group
+id: group.field_ck_enable_color
+field_name: field_ck_enable_color
+entity_type: group
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

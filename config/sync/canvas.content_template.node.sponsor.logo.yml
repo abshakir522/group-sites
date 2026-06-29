@@ -1,0 +1,33 @@
+uuid: 84df77e9-8993-4845-8aca-08f137a8dc18
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.conference_kit.canvas-sponsor-logo-style-four
+    - core.entity_view_mode.node.logo
+    - field.field.media.image.field_media_image
+    - field.field.node.sponsor.field_media_image
+    - image.style.canvas_parametrized_width
+    - media.type.image
+    - node.type.sponsor
+  module:
+    - file
+    - media
+    - node
+id: node.sponsor.logo
+content_entity_type_id: node
+content_entity_type_bundle: sponsor
+content_entity_type_view_mode: logo
+component_tree:
+  '0:13861ade-8ca2-48e2-ad3f-467991cece97':
+    uuid: 13861ade-8ca2-48e2-ad3f-467991cece97
+    component_id: sdc.conference_kit.canvas-sponsor-logo-style-four
+    component_version: 47d9d7ef7a3cba23
+    inputs:
+      logo:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:sponsor␝field_media_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}'
+      label:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:sponsor␝title␞␟value'
+exposed_slots: {  }

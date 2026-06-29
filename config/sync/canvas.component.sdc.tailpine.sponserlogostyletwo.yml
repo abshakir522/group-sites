@@ -1,0 +1,42 @@
+uuid: c2a921d4-06b4-44e3-a403-649685bbbb05
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: e414eee72673e3de
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        website_url:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        sponser_logo:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        col_start:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Sponsor Logo Style Two'
+id: sdc.tailpine.sponserlogostyletwo
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:sponserlogostyletwo'

@@ -1,0 +1,16 @@
+uuid: 7eec4684-6263-4119-9413-55276044f547
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - group.type.conference
+  module:
+    - canvas
+    - conferencekit_core
+id: conference-3fc118395057c14a61676
+group_type: conference
+content_plugin: conferencekit_canvas_page
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

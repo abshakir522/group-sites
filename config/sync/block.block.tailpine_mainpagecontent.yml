@@ -1,0 +1,22 @@
+uuid: ed39834b-e11e-4fe9-9a48-4ca77a6b3dba
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tailpine
+_core:
+  default_config_hash: IJ3GD2DwPucnkSoUKQ5sT-DHxLqnOr7zi5p1BSMdhng
+id: tailpine_mainpagecontent
+theme: tailpine
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

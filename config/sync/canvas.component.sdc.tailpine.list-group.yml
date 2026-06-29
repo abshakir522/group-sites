@@ -1,0 +1,35 @@
+uuid: f03a8325-ca83-480c-9a18-a377f61ef14b
+langcode: en-gb
+status: false
+dependencies:
+  theme:
+    - tailpine
+active_version: 4b2fe4ef45b71bf4
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        items:
+          required: false
+          field_type: string
+          cardinality: -1
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        flush:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value: null
+          expression: ℹ︎boolean␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'List Group'
+id: sdc.tailpine.list-group
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:list-group'

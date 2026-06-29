@@ -1,0 +1,70 @@
+uuid: d7cdd0bd-c00b-442c-bf06-21b93c309276
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - conference_kit
+active_version: 50168ab82897fbda
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        heading_prefix:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Learn from Our'
+          expression: ℹ︎string␟value
+        heading_highlight:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: Speakers
+          expression: ℹ︎string␟value
+        cta_title:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'See All Speakers'
+          expression: ℹ︎string␟value
+        cta_url:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: /speakers
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions:
+        speaker_one:
+          title: 'Speaker one'
+          description: 'First speaker card or block.'
+        speaker_two:
+          title: 'Speaker two'
+          description: 'Second speaker card or block.'
+        speaker_three:
+          title: 'Speaker three'
+          description: 'Third speaker card or block.'
+        speaker_four:
+          title: 'Speaker four'
+          description: 'Fourth speaker card or block.'
+label: 'DrupalCamp Speakers Section'
+id: sdc.conference_kit.canvas-speakers-section
+provider: conference_kit
+source: sdc
+source_local_id: 'conference_kit:canvas-speakers-section'

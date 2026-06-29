@@ -1,0 +1,24 @@
+uuid: ccf28c37-d694-4c19-9964-98681edc40b4
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - entity_block
+active_version: 73e03623c6990724
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'entity_block:webform_submission'
+        label: 'Webform submission'
+        label_display: '0'
+        provider: entity_block
+        entity: ''
+        view_mode: default
+    fallback_metadata:
+      slot_definitions: null
+label: 'Webform submission'
+id: block.entity_block.webform_submission
+provider: entity_block
+source: block
+source_local_id: 'entity_block:webform_submission'

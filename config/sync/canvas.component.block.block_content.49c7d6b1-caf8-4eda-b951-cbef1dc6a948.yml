@@ -1,0 +1,25 @@
+uuid: feedd2ff-290b-42e6-b2f5-cade232c4207
+langcode: en-gb
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:49c7d6b1-caf8-4eda-b951-cbef1dc6a948'
+  module:
+    - block_content
+active_version: 70592268ba6643e0
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:49c7d6b1-caf8-4eda-b951-cbef1dc6a948'
+        label: When
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: When
+id: block.block_content.49c7d6b1-caf8-4eda-b951-cbef1dc6a948
+provider: block_content
+source: block
+source_local_id: 'block_content:49c7d6b1-caf8-4eda-b951-cbef1dc6a948'

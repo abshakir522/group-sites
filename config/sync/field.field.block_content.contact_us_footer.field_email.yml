@@ -1,0 +1,24 @@
+uuid: 38797415-20c2-445d-8eef-ae06fd81022a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_us_footer
+    - field.storage.block_content.field_email
+  module:
+    - text
+_core:
+  default_config_hash: mXU9tjwqcGTSm4rY43wu6PK1erWrdY0LZFVdwJ7n8Ic
+id: block_content.contact_us_footer.field_email
+field_name: field_email
+entity_type: block_content
+bundle: contact_us_footer
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,14 @@
+uuid: 13dd2901-1746-4976-b7f1-09bec136654f
+langcode: en-gb
+status: true
+dependencies: {  }
+name: UI
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.tailpine.canvas-close-button
+  - sdc.tailpine.canvas-collapse
+  - sdc.tailpine.canvas-progress
+  - sdc.tailpine.canvas-spinner
+  - sdc.tailpine.progress
+  - sdc.tailpine.spinner

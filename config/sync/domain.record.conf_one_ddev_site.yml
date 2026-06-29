@@ -1,0 +1,16 @@
+uuid: 3be26516-8677-436c-8463-0e2764f94680
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - group_context_domain
+third_party_settings:
+  group_context_domain:
+    group_uuid: 3e494585-87cb-477e-a0d7-0492ac9c7237
+id: conf_one_ddev_site
+domain_id: 12406378
+hostname: conf-one.ddev.site
+name: 'Conference One'
+scheme: https
+weight: 2
+is_default: false

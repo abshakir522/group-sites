@@ -1,0 +1,91 @@
+uuid: d4d03e0e-6c87-43fd-a586-34eb7dfc9784
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: beced9488dbc9f4f
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        node_classes:
+          required: false
+          field_type: string
+          cardinality: -1
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        label:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        url:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        display_submitted:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value: null
+          expression: ℹ︎boolean␟value
+        author_name:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        date:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions:
+        title_prefix:
+          title: 'Title Prefix'
+          description: 'Drupal contextual links prefix — required for in-place editing.'
+        title_suffix:
+          title: 'Title Suffix'
+          description: 'Drupal contextual links suffix.'
+        author_picture:
+          title: 'Author Picture'
+          description: 'Rendered author avatar image.'
+        image:
+          title: 'Featured Image'
+          description: 'Rendered field_image output.'
+        body:
+          title: 'Body Excerpt'
+          description: 'Rendered body/text content with image, tags and links excluded.'
+        tags:
+          title: Tags
+          description: 'Rendered field_tags output.'
+        links:
+          title: 'Node Links'
+          description: 'Rendered node action links (read more, edit, etc.).'
+        metadata:
+          title: Metadata
+          description: 'Additional metadata markup from Drupal.'
+label: 'Node Teaser'
+id: sdc.tailpine.node-teaser
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:node-teaser'

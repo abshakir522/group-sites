@@ -1,0 +1,33 @@
+uuid: 441bff2d-a59c-4029-afdc-cb76e25225aa
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - domain
+    - system
+  theme:
+    - conference_kit
+_core:
+  default_config_hash: JZr3xxF_R6dTvwIPanv7K7iWlDkw8x-C3tOiq4mnk5s
+id: conference_kit_sitebranding
+theme: conference_kit
+region: branding
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility:
+  domain:
+    id: domain
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains:
+      group_sites_ddev_site: group_sites_ddev_site

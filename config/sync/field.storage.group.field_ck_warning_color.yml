@@ -1,0 +1,21 @@
+uuid: d80f0931-300e-401c-97b0-c077ab2e6cd6
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - group
+id: group.field_ck_warning_color
+field_name: field_ck_warning_color
+entity_type: group
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

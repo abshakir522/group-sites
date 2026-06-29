@@ -1,0 +1,25 @@
+uuid: 77bddf4d-9ef8-41a1-a302-d6929393f222
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - conferencekit_branding
+active_version: 1e278750cfeb1570
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: conferencekit_group_branding_block
+        label: 'Conference Kit group branding'
+        label_display: '0'
+        provider: conferencekit_core
+        use_site_logo: true
+        use_site_name: true
+        logo_fields: 'field_logo, field_site_logo, field_branding_logo'
+    fallback_metadata:
+      slot_definitions: null
+label: 'Conference Kit group branding'
+id: block.conferencekit_group_branding_block
+provider: conferencekit_core
+source: block
+source_local_id: conferencekit_group_branding_block

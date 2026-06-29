@@ -1,0 +1,129 @@
+
+{{ attach_library('tailpine/fixed-header') }}
+
+<div class="layout-container min-h-screen flex flex-col">
+
+  {# ── HEADER ── #}
+  <header role="banner">
+      {% include [
+        '@conference_kit/templates/headers/' ~ header_template ~ '.html.twig',
+        '@tailpine/templates/headers/' ~ header_template ~ '.html.twig'
+      ] %}
+    {% if page.secondary_menu %}
+      <div class="">
+        {{ page.secondary_menu }}
+      </div>
+    {% endif %}
+  </header>
+
+  {# ── MAIN ── #}
+  <main role="main" class="flex-1 flex items-center justify-center
+                            px-4 py-16 sm:py-20 md:py-24 lg:py-32
+                            bg-body-bg">
+
+    <div class="w-full max-w-2xl mx-auto text-center">
+
+      {# ── 404 NUMBER ── #}
+      <div class="relative inline-block mb-6 sm:mb-8">
+
+        {# Shadow / outline layer — sits behind, offset slightly #}
+        <span class="absolute inset-0
+                     text-[120px] sm:text-[160px] md:text-[200px] lg:text-[220px]
+                     font-black leading-none
+                     text-transparent
+                     select-none pointer-events-none
+                     translate-x-1 translate-y-1
+                     [-webkit-text-stroke:2px_#c4b5fd]"
+              aria-hidden="true">
+          404
+        </span>
+
+        {# Main 404 text #}
+        <span class="relative
+                     text-[120px] sm:text-[160px] md:text-[200px] lg:text-[220px]
+                     font-black leading-none
+                     text-primary
+                     select-none"
+              style="-webkit-text-stroke: 2px #ede9fe;">
+          404
+        </span>
+
+      </div>
+
+      {# ── MESSAGE ── #}
+      <p class="text-body/45
+                text-base sm:text-lg md:text-xl
+                font-normal
+                leading-relaxed
+                mb-10 sm:mb-12">
+        Page not found
+      </p>
+
+      {# ── DESCRIPTION ── #}
+      <p class="text-body/45
+                text-sm sm:text-base
+                leading-relaxed
+                max-w-md mx-auto
+                mb-10 sm:mb-12">
+        The page you are looking for might have been removed,
+        had its name changed, or is temporarily unavailable.
+      </p>
+
+      {# ── ACTIONS ── #}
+      <div class="flex flex-col sm:flex-row
+                  items-center justify-center
+                  gap-3 sm:gap-4">
+
+        {# Primary — Back to Home #}
+        <a href="/"
+           class="w-full sm:w-auto
+                  inline-flex items-center justify-center gap-2
+                  bg-primary hover:bg-secondary
+                  text-white
+                  font-semibold text-sm
+                  px-7 py-3
+                  rounded-xl
+                  shadow-lg shadow-violet-500/20
+                  hover:shadow-violet-500/30
+                  transition-all duration-200">
+          <svg class="w-4 h-4 flex-shrink-0"
+               fill="none" stroke="currentColor"
+               stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+          </svg>
+          Back to Home
+        </a>
+
+        {# Secondary — Go Back #}
+        <a href="javascript:history.back()"
+           class="w-full sm:w-auto
+                  inline-flex items-center justify-center gap-2
+                  border border-border hover:border-muted
+                  text-muted hover:text-body
+                  font-semibold text-sm
+                  px-7 py-3
+                  rounded-xl
+                  bg-body-bg hover:bg-surface
+                  transition-all duration-200">
+          <svg class="w-4 h-4 flex-shrink-0"
+               fill="none" stroke="currentColor"
+               stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+          </svg>
+          Go Back
+        </a>
+
+      </div>
+
+    </div>
+  </main>
+
+  {# ── FOOTER ── #}
+    {% include [
+    '@conference_kit/templates/footer-styles/' ~ footer_template ~ '.html.twig',
+    '@tailpine/templates/footer-styles/' ~ footer_template ~ '.html.twig'
+  ] %}
+
+</div>

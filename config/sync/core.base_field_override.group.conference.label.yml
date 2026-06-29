@@ -1,0 +1,18 @@
+uuid: 7b3ff4e0-8e01-4ed2-a74e-1610a3620a9e
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - group.type.conference
+id: group.conference.label
+field_name: label
+entity_type: group
+bundle: conference
+label: 'Site name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

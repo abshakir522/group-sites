@@ -1,0 +1,19 @@
+uuid: f9a9b8cf-7591-47b0-bec6-011ed950e51d
+langcode: en-gb
+status: true
+dependencies: {  }
+name: Content
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.conference_kit.canvas-attend-reasons
+  - sdc.conference_kit.canvas-cta-card
+  - sdc.conference_kit.canvas-full-width-cta
+  - sdc.conference_kit.canvas-page-title-description
+  - sdc.conference_kit.canvas-speakers-section
+  - sdc.conference_kit.canvas-sponsors-section
+  - sdc.conference_kit.canvas-venue-stats
+  - sdc.tailpine.canvas-figure
+  - sdc.tailpine.list-group
+  - sdc.tailpine.node
+  - sdc.tailpine.node-teaser

@@ -1,0 +1,27 @@
+uuid: 4440bd81-8c3b-4af4-b70a-e1983b1870ff
+langcode: en-gb
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - tailpine
+_core:
+  default_config_hash: RNq_VIkHctY4B7yohULxD72Fr2HLBEWp_oRG2iRE6vk
+id: tailpine_useraccountmenu
+theme: tailpine
+region: top_bar
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

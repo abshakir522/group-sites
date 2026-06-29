@@ -1,0 +1,91 @@
+uuid: 0286d779-c2a4-4f01-8f15-ee94d09ee8de
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.group.conference.field_ck_base_primary_color
+    - field.field.group.conference.field_ck_base_secondary_color
+    - field.field.group.conference.field_ck_base_tertiary_color
+    - field.field.group.conference.field_ck_body_bg_color
+    - field.field.group.conference.field_ck_body_color
+    - field.field.group.conference.field_ck_enable_color
+    - field.field.group.conference.field_ck_error_color
+    - field.field.group.conference.field_ck_footer_style
+    - field.field.group.conference.field_ck_h1_color
+    - field.field.group.conference.field_ck_h2_color
+    - field.field.group.conference.field_ck_h3_color
+    - field.field.group.conference.field_ck_h4_color
+    - field.field.group.conference.field_ck_header_style
+    - field.field.group.conference.field_ck_success_color
+    - field.field.group.conference.field_ck_warning_color
+    - field.field.group.conference.field_end_date
+    - field.field.group.conference.field_front_page_path
+    - field.field.group.conference.field_site_logo
+    - field.field.group.conference.field_start_date
+    - group.type.conference
+  module:
+    - datetime
+    - svg_image
+id: group.conference.default
+targetEntityType: group
+bundle: conference
+mode: default
+content:
+  field_end_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_site_logo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_start_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  changed: true
+  created: true
+  field_ck_base_primary_color: true
+  field_ck_base_secondary_color: true
+  field_ck_base_tertiary_color: true
+  field_ck_body_bg_color: true
+  field_ck_body_color: true
+  field_ck_enable_color: true
+  field_ck_error_color: true
+  field_ck_footer_style: true
+  field_ck_h1_color: true
+  field_ck_h2_color: true
+  field_ck_h3_color: true
+  field_ck_h4_color: true
+  field_ck_header_style: true
+  field_ck_success_color: true
+  field_ck_warning_color: true
+  field_front_page_path: true
+  langcode: true
+  uid: true

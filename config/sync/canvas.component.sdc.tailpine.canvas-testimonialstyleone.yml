@@ -1,0 +1,87 @@
+uuid: 94e3ce73-a67f-4659-91a2-6a76c52c08cb
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_media_image
+    - filter.format.canvas_html_block
+    - image.style.canvas_parametrized_width
+    - media.type.image
+  module:
+    - file
+    - media
+    - media_library
+    - text
+  theme:
+    - tailpine
+active_version: 53733bad1382b6e5
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        imageurl:
+          required: false
+          field_type: entity_reference
+          field_storage_settings:
+            target_type: media
+          field_instance_settings:
+            handler: 'default:media'
+            handler_settings:
+              target_bundles:
+                image: image
+          field_widget: media_library_widget
+          default_value: {  }
+          expression: 'ℹ︎entity_reference␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}'
+        name:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'John Doe'
+          expression: ℹ︎string␟value
+        description:
+          required: false
+          field_type: text_long
+          field_storage_settings: {  }
+          field_instance_settings:
+            allowed_formats:
+              - canvas_html_block
+          field_widget: text_textarea
+          default_value:
+            -
+              value: '<p>This is <strong>formatted</strong> description</p>'
+              format: canvas_html_block
+          expression: ℹ︎text_long␟processed
+        subtitle:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: Customer
+          expression: ℹ︎string␟value
+        show_rating:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: true
+          expression: ℹ︎boolean␟value
+    fallback_metadata:
+      slot_definitions:
+        rating:
+          title: 'Rating Stars'
+          description: 'the show the rating region'
+label: 'TestimonialStyle One (Canvas)'
+id: sdc.tailpine.canvas-testimonialstyleone
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-testimonialstyleone'

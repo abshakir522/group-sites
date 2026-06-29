@@ -1,0 +1,35 @@
+uuid: 7e239495-bce9-4934-b239-423f31adf2f9
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - filter.format.canvas_html_block
+  module:
+    - text
+  theme:
+    - tailpine
+active_version: fdef0f51ff7f9976
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        content:
+          required: false
+          field_type: text_long
+          field_storage_settings: {  }
+          field_instance_settings:
+            allowed_formats:
+              - canvas_html_block
+          field_widget: text_textarea
+          default_value:
+            -
+              value: '<li><a href="/admin">Admin Action</a></li>'
+              format: canvas_html_block
+          expression: ℹ︎text_long␟processed
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Local Action (Canvas)'
+id: sdc.tailpine.canvas-localaction
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-localaction'

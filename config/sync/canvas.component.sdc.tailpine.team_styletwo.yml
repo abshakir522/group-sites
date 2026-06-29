@@ -1,0 +1,38 @@
+uuid: 929472c1-6a34-4e67-969c-ac1325317c23
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - tailpine
+active_version: a2729f6d71af902f
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        imageurl:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions:
+        title:
+          title: title
+          description: 'title of the team member'
+        subtitle:
+          title: subtitle
+          description: 'designation of the team member'
+        description:
+          title: description
+          description: 'introduction of the team member '
+        icons:
+          title: Icons
+          description: 'social icon links of the team member '
+label: 'Teams style two'
+id: sdc.tailpine.team_styletwo
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:team_styletwo'

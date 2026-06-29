@@ -1,0 +1,33 @@
+uuid: e62ea0e3-6d8f-47db-9517-f0c58c670a2e
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - system
+  theme:
+    - conference_kit
+_core:
+  default_config_hash: 4j4aaloj0zfS6QLFIq0sQqlrwbIF3173IC09kIDpXUc
+id: tailpine_sitebranding_4
+theme: conference_kit
+region: footer_top_first
+weight: -11
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility:
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    negate: true
+    context_mapping:
+      group: '@group.group_route_context:group'
+    bundles:
+      conference: conference

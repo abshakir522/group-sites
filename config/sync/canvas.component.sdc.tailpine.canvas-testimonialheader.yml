@@ -1,0 +1,44 @@
+uuid: fb72b151-cbfc-42fa-bdd5-cee4d6aa5c47
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - tailpine
+active_version: 909669eb92c3dba0
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        bg_color:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: primary
+          expression: ℹ︎list_string␟value
+        title:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Testimonial Header Title'
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: Content
+          description: 'Content of the Wrapper. Plain text.'
+label: 'Testimonial   Header (Canvas)'
+id: sdc.tailpine.canvas-testimonialheader
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:canvas-testimonialheader'

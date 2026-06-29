@@ -1,0 +1,17 @@
+uuid: 90a0feaa-bd7f-4eb1-a698-a489618fa37e
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - group.type.conference
+    - node.type.sponsor
+  module:
+    - gnode
+    - node
+id: conference-group_node-sponsor
+group_type: conference
+content_plugin: 'group_node:sponsor'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

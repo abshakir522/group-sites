@@ -1,0 +1,24 @@
+uuid: 165f3c3f-8d47-4ca2-9024-930313b7565c
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.group_relationship.conference-group_membership.group_roles
+    - group.relationship_type.conference-group_membership
+id: group_relationship.conference-group_membership.default
+targetEntityType: group_relationship
+bundle: conference-group_membership
+mode: default
+content:
+  group_roles:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden:
+  entity_id: true
+  langcode: true
+  uid: true

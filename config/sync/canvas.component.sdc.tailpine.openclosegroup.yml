@@ -1,0 +1,38 @@
+uuid: 58c73d29-f8e9-4e02-b185-9b509141d056
+langcode: en-gb
+status: false
+dependencies:
+  theme:
+    - tailpine
+active_version: cfd496e7b5073e43
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        text:
+          required: true
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Read More'
+          expression: ℹ︎string␟value
+        detail:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Lorem Ipsum ds w asfweee fasdfasdf cdefid asde f alsdfladsf  dslwefdfcd'
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Open Close Group'
+id: sdc.tailpine.openclosegroup
+provider: tailpine
+source: sdc
+source_local_id: 'tailpine:openclosegroup'

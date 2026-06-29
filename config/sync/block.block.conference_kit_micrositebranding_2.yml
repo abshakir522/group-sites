@@ -1,0 +1,30 @@
+uuid: f469fc45-8309-4a61-aed0-5b166efe5fdb
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - conferencekit_branding
+    - group
+  theme:
+    - conference_kit
+id: conference_kit_micrositebranding_2
+theme: conference_kit
+region: footer_top_first
+weight: 0
+provider: null
+plugin: conferencekit_group_branding_block
+settings:
+  id: conferencekit_group_branding_block
+  label: 'Microsite branding'
+  label_display: '0'
+  provider: conferencekit_branding
+  use_site_logo: true
+  use_site_name: false
+visibility:
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    negate: false
+    context_mapping:
+      group: '@group_context_domain.group_from_domain_context:group'
+    bundles:
+      conference: conference

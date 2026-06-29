@@ -1,0 +1,22 @@
+uuid: c2c2b19d-bffe-46df-8c95-9b3538b17df5
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - conference_kit
+_core:
+  default_config_hash: Zpe_2LlVkouwP6iCEeKlPi8Uz2utUN8K4d95In5dD48
+id: conference_kit_help
+theme: conference_kit
+region: help
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

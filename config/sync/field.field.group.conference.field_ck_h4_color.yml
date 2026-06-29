@@ -1,0 +1,21 @@
+uuid: 1328cc2c-d9d0-4a3b-8701-b38f8e83b910
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_ck_h4_color
+    - group.type.conference
+id: group.conference.field_ck_h4_color
+field_name: field_ck_h4_color
+entity_type: group
+bundle: conference
+label: 'H4 color'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: '#1F2937'
+default_value_callback: ''
+settings: {  }
+field_type: string

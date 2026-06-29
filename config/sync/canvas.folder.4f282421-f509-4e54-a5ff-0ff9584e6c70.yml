@@ -1,0 +1,51 @@
+uuid: 4f282421-f509-4e54-a5ff-0ff9584e6c70
+langcode: en-gb
+status: true
+dependencies: {  }
+name: Other
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.conference_kit.canvas-cta
+  - sdc.olivero.teaser
+  - sdc.tailpine.audio
+  - sdc.tailpine.base-media-text
+  - sdc.tailpine.button-with-variants
+  - sdc.tailpine.canvas-accordionheader
+  - sdc.tailpine.canvas-accordionstyleone
+  - sdc.tailpine.canvas-accordionstyletwo
+  - sdc.tailpine.canvas-accordionstyletwoheader
+  - sdc.tailpine.canvas-alert
+  - sdc.tailpine.canvas-contact_form
+  - sdc.tailpine.canvas-contact_us
+  - sdc.tailpine.canvas-cta
+  - sdc.tailpine.canvas-error404
+  - sdc.tailpine.canvas-file-upload-help
+  - sdc.tailpine.canvas-mark
+  - sdc.tailpine.canvas-mediaandtext
+  - sdc.tailpine.canvas-modal
+  - sdc.tailpine.canvas-openclose
+  - sdc.tailpine.canvas-pagetitle
+  - sdc.tailpine.canvas-poststyleoneheader
+  - sdc.tailpine.canvas-sidebarlinks
+  - sdc.tailpine.canvas-subpagehero
+  - sdc.tailpine.canvas-text
+  - sdc.tailpine.canvas-user
+  - sdc.tailpine.canvas-username
+  - sdc.tailpine.carousel
+  - sdc.tailpine.date
+  - sdc.tailpine.file-upload-help
+  - sdc.tailpine.filtercaption
+  - sdc.tailpine.footer
+  - sdc.tailpine.image-style
+  - sdc.tailpine.mark
+  - sdc.tailpine.media
+  - sdc.tailpine.openclose
+  - sdc.tailpine.openclosegroup
+  - sdc.tailpine.pagetitle
+  - sdc.tailpine.rating
+  - sdc.tailpine.sidebar
+  - sdc.tailpine.sidebarlinks
+  - sdc.tailpine.subpagehero
+  - sdc.tailpine.taxonomyterm
+  - sdc.tailpine.video

@@ -1,0 +1,27 @@
+uuid: a2068633-5373-461f-a8fc-cad55a300828
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - group_content_menu.group_content_menu_type.top_actions
+id: group_content_menu.top_actions.default
+targetEntityType: group_content_menu
+bundle: top_actions
+mode: default
+content:
+  label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }
