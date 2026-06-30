@@ -5,7 +5,9 @@
  * Hooks for the Conference Kit Core module.
  */
 
+use Drupal\Core\Entity\EntityInterface;
 use Drupal\group\Entity\GroupInterface;
+use Drupal\group\Entity\GroupRelationshipInterface;
 
 /**
  * Implements hook_views_data_alter().
@@ -46,4 +48,78 @@ function conferencekit_core_get_group_from_active_domain(): ?GroupInterface {
 
   $group = \Drupal::service('entity.repository')->loadEntityByUuid('group', $group_uuid);
   return $group instanceof GroupInterface ? $group : NULL;
+}
+
+/**
+ * Implements hook_entity_insert().
+ */
+function conferencekit_core_entity_insert(EntityInterface $entity): void {
+  _conferencekit_core_attach_entity_to_active_group($entity);
+}
+
+/**
+ * Implements hook_entity_update().
+ */
+function conferencekit_core_entity_update(EntityInterface $entity): void {
+  _conferencekit_core_attach_entity_to_active_group($entity);
+}
+
+/**
+ * Adds newly saved content to the group resolved from the active domain.
+ */
+function _conferencekit_core_attach_entity_to_active_group(EntityInterface $entity): void {
+  if ($entity->id() === NULL) {
+    return;
+  }
+
+  $group = conferencekit_core_get_group_from_active_domain();
+  if (!$group instanceof GroupInterface) {
+    return;
+  }
+
+  $plugin_id = _conferencekit_core_get_group_relation_plugin_id($entity, $group);
+  if ($plugin_id === NULL) {
+    return;
+  }
+
+  _conferencekit_core_ensure_entity_group_relationship($entity, $group, $plugin_id);
+}
+
+/**
+ * Ensures an entity has a relationship to the active group.
+ */
+function _conferencekit_core_ensure_entity_group_relationship(EntityInterface $entity, GroupInterface $group, string $plugin_id): ?GroupRelationshipInterface {
+  $relationship_storage = \Drupal::entityTypeManager()->getStorage('group_relationship');
+  $relationships = $relationship_storage->loadByEntity($entity, $plugin_id);
+
+  foreach ($relationships as $relationship) {
+    if ($relationship instanceof GroupRelationshipInterface
+      && (int) $relationship->get('gid')->target_id === (int) $group->id()) {
+      return $relationship;
+    }
+  }
+
+  if ($relationships) {
+    return NULL;
+  }
+
+  $relationship = $group->addRelationship($entity, $plugin_id);
+  return $relationship instanceof GroupRelationshipInterface ? $relationship : NULL;
+}
+
+/**
+ * Gets the installed group relation plugin ID that supports an entity.
+ */
+function _conferencekit_core_get_group_relation_plugin_id(EntityInterface $entity, GroupInterface $group): ?string {
+  $plugin_id = match ($entity->getEntityTypeId()) {
+    'canvas_page' => 'conferencekit_canvas_page',
+    'node' => 'group_node:' . $entity->bundle(),
+    default => NULL,
+  };
+
+  if ($plugin_id === NULL || !$group->getGroupType()->hasPlugin($plugin_id)) {
+    return NULL;
+  }
+
+  return $plugin_id;
 }
