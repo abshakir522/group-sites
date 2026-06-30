@@ -1,0 +1,21 @@
+uuid: c4ee1b18-faf0-45e6-9ded-c21b9abd6ea8
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - canvas
+id: canvas_page.field_ck_microsite_path
+field_name: field_ck_microsite_path
+entity_type: canvas_page
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

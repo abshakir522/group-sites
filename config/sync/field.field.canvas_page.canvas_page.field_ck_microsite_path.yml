@@ -1,0 +1,20 @@
+uuid: 7378a3f2-aa17-49e2-9b5e-c12b0994c7d4
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.canvas_page.field_ck_microsite_path
+  module:
+    - canvas
+id: canvas_page.canvas_page.field_ck_microsite_path
+field_name: field_ck_microsite_path
+entity_type: canvas_page
+bundle: canvas_page
+label: 'Microsite path'
+description: 'Public path for this page within its conference microsite, for example /speakers.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

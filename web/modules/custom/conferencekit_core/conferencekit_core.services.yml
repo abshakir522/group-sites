@@ -6,3 +6,12 @@ services:
       - '@entity.repository'
     tags:
       - { name: path_processor_inbound, priority: 250 }
+  conferencekit_core.microsite_canvas_path_processor:
+    class: Drupal\conferencekit_core\PathProcessor\ConferenceMicrositeCanvasPathProcessor
+    arguments:
+      - '@domain.negotiator'
+      - '@entity.repository'
+      - '@entity_type.manager'
+    tags:
+      - { name: path_processor_inbound, priority: 350 }
+      - { name: path_processor_outbound, priority: 350 }

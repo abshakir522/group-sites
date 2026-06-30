@@ -1,0 +1,14 @@
+uuid: 2cf10bf7-907e-4348-bd53-5cbd1faaad88
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - user.role.conf_admin
+  module:
+    - user
+id: user_remove_role_action.conf_admin
+label: 'Remove the Conf admin role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: conf_admin

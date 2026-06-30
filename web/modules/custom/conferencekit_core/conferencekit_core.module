@@ -5,7 +5,9 @@
  * Hooks for the Conference Kit Core module.
  */
 
+use Drupal\Component\Utility\UrlHelper;
 use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\Display\EntityFormDisplayInterface;
 use Drupal\group\Entity\GroupInterface;
 use Drupal\group\Entity\GroupRelationshipInterface;
 
@@ -48,6 +50,43 @@ function conferencekit_core_get_group_from_active_domain(): ?GroupInterface {
 
   $group = \Drupal::service('entity.repository')->loadEntityByUuid('group', $group_uuid);
   return $group instanceof GroupInterface ? $group : NULL;
+}
+
+/**
+ * Implements hook_entity_form_display_alter().
+ */
+function conferencekit_core_entity_form_display_alter(EntityFormDisplayInterface $form_display, array $context): void {
+  if (($context['entity_type'] ?? NULL) !== 'canvas_page'
+    || ($context['bundle'] ?? NULL) !== 'canvas_page') {
+    return;
+  }
+
+  $field_definition = \Drupal::service('entity_field.manager')->getFieldDefinitions('canvas_page', 'canvas_page')['field_ck_microsite_path'] ?? NULL;
+  if ($field_definition === NULL) {
+    return;
+  }
+
+  $form_display->setComponent('field_ck_microsite_path', [
+    'type' => 'string_textfield',
+    'weight' => 31,
+    'region' => 'content',
+    'settings' => [
+      'size' => 60,
+      'placeholder' => '/speakers',
+    ],
+  ]);
+}
+
+/**
+ * Implements hook_entity_presave().
+ */
+function conferencekit_core_entity_presave(EntityInterface $entity): void {
+  if ($entity->getEntityTypeId() !== 'canvas_page'
+    || !$entity->hasField('field_ck_microsite_path')) {
+    return;
+  }
+
+  $entity->set('field_ck_microsite_path', _conferencekit_core_normalize_microsite_path((string) $entity->get('field_ck_microsite_path')->value));
 }
 
 /**
@@ -122,4 +161,29 @@ function _conferencekit_core_get_group_relation_plugin_id(EntityInterface $entit
   }
 
   return $plugin_id;
+}
+
+/**
+ * Normalizes a Canvas page microsite path value for storage.
+ */
+function _conferencekit_core_normalize_microsite_path(string $path): ?string {
+  $path = trim($path);
+  if ($path === '') {
+    return NULL;
+  }
+
+  if (str_starts_with($path, 'internal:')) {
+    $path = substr($path, strlen('internal:'));
+  }
+
+  if ($path === '' || $path === '<front>' || $path === '/') {
+    return NULL;
+  }
+
+  if (UrlHelper::isExternal($path)) {
+    return NULL;
+  }
+
+  $path = '/' . ltrim($path, '/');
+  return rtrim($path, '/') ?: NULL;
 }

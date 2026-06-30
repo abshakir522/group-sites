@@ -1,0 +1,54 @@
+{{ attach_library('tailpine/fixed-header') }}
+
+<div class="min-h-screen flex flex-col bg-body-bg">
+
+  {# 🔹 Header (Topbar + Header include) #}
+  <header class="w-full">
+    {{ page.top_bar }}
+    {% include [
+      '@conference_kit/templates/headers/' ~ header_template ~ '.html.twig',
+      '@tailpine/templates/headers/' ~ header_template ~ '.html.twig'
+    ] %}
+  </header>
+
+  {# 🔹 Breadcrumb #}
+  {% if page.breadcrumb %}
+    <div class="container-px py-4">
+      {{ page.breadcrumb }}
+    </div>
+  {% endif %}
+
+  {# 🔹 Main Content #}
+  <main role="main" class="flex-1">
+    <div class="max-w-6xl mx-auto py-10">
+
+      <a id="main-content" tabindex="-1"></a>
+
+      <div class="bg-body-bg  space-y-6">
+
+        {# Page Title (auto from Drupal) #}
+        {% if title %}
+          <h1 class="text-2xl md:text-3xl font-semibold text-heading">
+            {{ title }}
+          </h1>
+        {% endif %}
+
+        {# Help text / intro #}
+        <div class="text-body leading-relaxed space-y-4">
+          {{ page.content }}
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  {# 🔹 Footer #}
+  <footer>
+    {% include [
+      '@conference_kit/templates/footer-styles/' ~ footer_template ~ '.html.twig',
+      '@tailpine/templates/footer-styles/' ~ footer_template ~ '.html.twig'
+    ] %}
+  </footer>
+
+</div>

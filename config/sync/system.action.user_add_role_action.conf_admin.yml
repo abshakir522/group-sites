@@ -1,0 +1,14 @@
+uuid: 4b9b3f95-06af-400b-b6b7-7a28f3a0e6b6
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - user.role.conf_admin
+  module:
+    - user
+id: user_add_role_action.conf_admin
+label: 'Add the Conf admin role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: conf_admin

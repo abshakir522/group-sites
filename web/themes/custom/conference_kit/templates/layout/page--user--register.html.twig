@@ -1,0 +1,51 @@
+{#
+/**
+ * @file
+ * Theme override for the user registration page.
+ *
+ * Provides a centered, single-column layout without sidebars or hero.
+ */
+#}
+{{ attach_library('tailpine/fixed-header') }}
+
+<div class="min-h-screen flex flex-col">
+
+  {# ─── TOP BAR ─────────────────────────────────────────────────────────────── #}
+  {% if page.top_bar|render|trim %}
+    <div class="top-bar w-full" role="navigation" aria-label="Top bar">
+      {{ page.top_bar }}
+    </div>
+  {% endif %}
+
+  {# ─── HEADER ──────────────────────────────────────────────────────────────── #}
+  {% include [
+    '@conference_kit/templates/headers/' ~ header_template ~ '.html.twig',
+    '@tailpine/templates/headers/' ~ header_template ~ '.html.twig'
+  ] %}
+
+  {# ─── MAIN ────────────────────────────────────────────────────────────────── #}
+  <main role="main" class="flex-1 flex items-center justify-center py-12 px-4">
+
+    <a id="main-content" tabindex="-1"></a>
+
+    {% if page.highlighted|render|trim %}
+      <div class="w-full max-w-md mb-4" role="status" aria-live="polite">
+        {{ page.highlighted }}
+      </div>
+    {% endif %}
+
+    <div class="w-full max-w-md">
+      {{ page.content }}
+    </div>
+
+  </main>
+
+  {# ─── FOOTER ──────────────────────────────────────────────────────────────── #}
+  <footer class="bg-secondary">
+    {% include [
+      '@conference_kit/templates/footer-styles/' ~ footer_template ~ '.html.twig',
+      '@tailpine/templates/footer-styles/' ~ footer_template ~ '.html.twig'
+    ] %}
+  </footer>
+
+</div>
